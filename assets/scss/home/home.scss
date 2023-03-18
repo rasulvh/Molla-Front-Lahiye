@@ -1,0 +1,282 @@
+@import "./../variables/variables";
+
+header {
+    width: 100%;
+
+    .head-up {
+        background-color: rgb(51, 51, 51);
+        height: 135px;
+
+        .up {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+
+                i {
+                    text-shadow: 0px 1px rgb(187, 187, 187), 0px -1px rgb(187, 187, 187), 1px 0px rgb(187, 187, 187), -1px 0px rgb(187, 187, 187);
+                    font-size: 14px;
+                }
+
+                span {
+                    color: rgb(169, 178, 187);
+                    margin-left: 10px;
+                    font-size: 13px;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                height: 38px;
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    height: 100%;
+                    align-items: center;
+
+                    li {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: rgb(169, 178, 187);
+                        font-size: 14px;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        height: 20px;
+
+                        i {
+                            font-size: 12px;
+                            margin-left: 5px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(169, 178, 187);
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+
+                    .currency-dropdown {
+                        position: relative;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+
+
+                        .dropdown {
+                            display: none;
+                            position: absolute;
+                            margin-top: 101px;
+
+                            .euro,
+                            .dollar {
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                        }
+
+                        &:hover>.dropdown {
+                            display: block;
+                            z-index: 2;
+                            height: 60px;
+                            background: white;
+                            width: 50px;
+                            padding: 0;
+                        }
+
+
+                    }
+
+                    .language-dropdown {
+                        position: relative;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+
+
+                        .dropdown {
+                            display: none;
+                            position: absolute;
+                            margin-top: 131px;
+
+                            .english,
+                            .spanish,
+                            .french {
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                        }
+
+                        &:hover>.dropdown {
+                            display: block;
+                            z-index: 2;
+                            height: 90px;
+                            background: white;
+                            width: 65px;
+                            padding: 0;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .line {
+            height: 1px;
+            background-color: rgb(193, 193, 193);
+            opacity: 0.5;
+            width: 100%;
+        }
+
+        .down {
+            height: 94px;
+
+            .logo {
+                height: 94px;
+                display: flex;
+                align-items: center;
+            }
+
+            .search {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    z-index: 2;
+                    left: 125px;
+                    transform: rotateY(180deg);
+                    font-size: 20px;
+                    -webkit-text-stroke: 0.5px white;
+                    color: rgb(51, 51, 51);
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+
+                input {
+                    position: absolute;
+                    width: 550px;
+                    height: 44px;
+                    outline: none;
+                    border-radius: 48px;
+                    padding-left: 50px;
+                    border: 0;
+
+                }
+            }
+
+            .right-icons {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                .compare {
+                    align-items: center;
+                    text-align: center;
+                    cursor: pointer;
+
+                    i {
+                        color: white;
+                        font-size: 27px;
+                        -webkit-text-stroke: 2px rgb(51, 51, 51);
+                        transition: all 0.5s;
+                    }
+
+                    p {
+                        color: white;
+                        margin: 0;
+                        font-size: 12px;
+                        opacity: 0.7;
+                    }
+
+                    &:hover>i {
+                        color: $hover-color;
+                    }
+                }
+
+                .wishlist,
+                .cart {
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    i {
+                        color: white;
+                        font-size: 27px;
+                        -webkit-text-stroke: 1px rgb(51, 51, 51);
+                        transition: all 0.5s;
+                    }
+
+                    p {
+                        color: white;
+                        margin: 0;
+                        font-size: 12px;
+                        opacity: 0.7;
+                    }
+
+                    span {
+                        position: absolute;
+                        background-color: orange;
+                        border-radius: 100%;
+                        width: 15px;
+                        height: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 2;
+                        font-size: 11px;
+                    }
+
+                    .wish-count {
+                        right: 2px;
+                        top: -4px;
+                    }
+
+                    .cart-count {
+                        right: -4px;
+                        top: -4px;
+                    }
+
+                    &:hover>i {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.container {
+    width: 1188px !important;
+    margin: 0 auto !important;
+    ;
+}
