@@ -1,5 +1,9 @@
 @import "./../variables/variables";
 
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
 header {
     width: 100%;
 
@@ -324,6 +328,10 @@ header {
         padding: 0;
         height: 60px;
 
+        .container {
+            display: block;
+        }
+
         .left {
             margin-left: 11px;
             display: flex;
@@ -383,7 +391,7 @@ header {
                 color: white;
             }
 
-            &:hover>.left-dropdown{
+            &:hover>.left-dropdown {
                 display: block;
                 position: absolute;
                 width: 100%;
@@ -406,7 +414,7 @@ header {
                         opacity: 0.7;
                         transition: all 0.3s;
 
-                        &:hover{
+                        &:hover {
                             color: $hover-color;
                         }
                     }
@@ -419,6 +427,9 @@ header {
 
             .left-dropdown {
                 display: none;
+                position: absolute;
+                z-index: 4;
+                background: white;
             }
         }
 
@@ -433,7 +444,7 @@ header {
                 background-color: grey;
                 opacity: 0.5;
                 position: absolute;
-                top: 28px;
+                top: 22.5px;
             }
 
             .right-line {
@@ -444,7 +455,7 @@ header {
                 opacity: 0.5;
                 position: absolute;
                 right: 0px;
-                top: 28px;
+                top: 22.5px;
             }
 
             .contents {
@@ -455,25 +466,32 @@ header {
                 position: absolute;
                 width: 93%;
 
-                ul {
+                ul:not(.dropdown-list) {
                     display: flex;
                     list-style: none;
                     margin: 0;
                     padding: 0;
                     width: 580px;
                     justify-content: space-around;
+                    position: relative;
+                    align-items: center;
+                    height: 100%;
+                    font-size: 14px;
 
-                    li {
-                        display: inline-block;
+                    li:not(.dropdown-list-item) {
+                        display: flex;
                         position: relative;
                         width: 55px;
                         text-align: center;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
 
                         a {
                             text-decoration: none;
                             color: black;
                             transition: all 0.25s;
-                            padding-bottom: 10px;
+
 
                             i {
                                 font-size: 10px;
@@ -487,7 +505,7 @@ header {
                             width: 100%;
                             transform: scaleX(0);
                             height: 2px;
-                            bottom: -18px;
+                            bottom: 0;
                             left: 0;
                             background-color: $hover-color;
                             transform-origin: bottom right;
@@ -503,8 +521,56 @@ header {
                             color: $hover-color;
                         }
                     }
-                    
+
                 }
+
+                .drop-hover {
+
+                    &:hover>.dropdown-list ul {
+                        display: block;
+                    }
+                }
+
+                .dropdown-list {
+                    ul {
+                        display: none;
+                        position: absolute;
+                        list-style: none;
+                        padding: 0;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        width: 160px;
+                        height: 180px;
+                        top: 62px;
+                        padding-left: 20px;
+                        left: 0;
+                        z-index: 2;
+
+                        background: white;
+                    }
+
+                    &:hover {
+                        display: block;
+                    }
+
+                    .dropdown-list-item {
+                        display: flex;
+                        justify-content: flex-start;
+                        height: 45px;
+                        align-items: center;
+
+                        a {
+                            opacity: 0.8;
+                            font-size: 15px;
+                            transition: all 0.5s;
+                            padding: 0 !important;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                }
+
             }
         }
 
@@ -538,9 +604,397 @@ header {
 
 }
 
-.container-edit {
+main {
+
+    #slider-banner {
+        position: relative;
+
+        .slider {
+            position: relative;
+
+            .fa-chevron-left,
+            .fa-chevron-right {
+                position: absolute;
+                z-index: 2;
+                font-size: 30px;
+
+                opacity: 0.7;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+
+            .fa-chevron-left {
+                left: 40px;
+                top: 200px;
+            }
+
+            .fa-chevron-right {
+                right: 40px;
+                top: 200px;
+            }
+
+            .slide {
+
+                .tab-1 {
+                    position: relative;
+
+                    .content {
+                        position: absolute;
+                        z-index: 2;
+                        left: 90px;
+                        top: 63px;
+                        height: 295px;
+
+
+
+
+                        p {
+                            color: $hover-color;
+                            font-size: 24px;
+                        }
+
+                        h1 {
+                            width: 200px;
+                            opacity: 0.8;
+                            -webkit-text-stroke: 4px black;
+                        }
+
+                        .span1 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            position: absolute;
+                        }
+
+                        .span2 {
+                            color: rgb(252, 185, 65);
+                            font-size: 50px;
+                            position: absolute;
+                            -webkit-text-stroke: 3px $hover-color;
+                            left: 75px;
+                            bottom: 75px;
+                        }
+
+                        .span3 {
+                            color: rgb(252, 185, 65);
+                            position: absolute;
+                            left: 190px;
+                            bottom: 103px;
+                            font-size: 25px;
+                            font-weight: bolder;
+                        }
+
+                        a {
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 0px;
+                            height: 47px;
+                            text-decoration: none;
+                            color: white;
+                            background-color: rgb(252, 185, 65);
+                            padding: 15px;
+                            border-radius: 30px;
+                            width: 180px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            transition: all 0.5s;
+
+                            i {
+                                font-size: 12px;
+                            }
+
+                            &:hover {
+                                background-color: rgb(191, 145, 61);
+                            }
+                        }
+                    }
+                }
+
+                .tab-2 {
+                    position: relative;
+
+                    .content {
+                        position: absolute;
+                        z-index: 2;
+                        left: 90px;
+                        top: 63px;
+                        height: 295px;
+
+                        p {
+                            color: $hover-color;
+                            font-size: 24px;
+                        }
+
+                        h1 {
+                            width: 200px;
+                            opacity: 0.8;
+                            -webkit-text-stroke: 4px black;
+                        }
+
+                        .span1 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            position: absolute;
+                            text-decoration: line-through;
+                        }
+
+                        .span2 {
+                            color: rgb(252, 185, 65);
+                            font-size: 50px;
+                            position: absolute;
+                            -webkit-text-stroke: 3px $hover-color;
+                            left: 75px;
+                            bottom: 75px;
+                        }
+
+                        .span3 {
+                            color: rgb(252, 185, 65);
+                            position: absolute;
+                            left: 165px;
+                            bottom: 103px;
+                            font-size: 25px;
+                            font-weight: bolder;
+                        }
+
+                        a {
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 0px;
+                            height: 47px;
+                            text-decoration: none;
+                            color: white;
+                            background-color: rgb(252, 185, 65);
+                            padding: 15px;
+                            border-radius: 30px;
+                            width: 180px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            transition: all 0.5s;
+
+                            i {
+                                font-size: 12px;
+                            }
+
+                            &:hover {
+                                background-color: rgb(191, 145, 61);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .banner {
+            height: 600px;
+            width: 100%;
+
+            .card-1 {
+                height: 120px;
+                position: relative;
+
+                .content {
+                    position: absolute;
+                    padding-left: 20px;
+                    height: 120px;
+                    padding-top: 10px;
+
+                    span {
+                        font-size: 15px;
+                        opacity: 0.7;
+                        transition: all 0.5s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        -webkit-text-stroke: 1px black;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        padding-bottom: 8px;
+
+                        &:hover {
+                            color: $hover-color;
+                            -webkit-text-stroke: 1px $hover-color;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $hover-color;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        position: absolute;
+                        left: 10px;
+                        transition: all 0.3s;
+                        font-size: 14px;
+                        bottom: 10px;
+
+                        i {
+                            font-size: 11px;
+                        }
+
+                        &:hover {
+                            color: white;
+                            background-color: $hover-color;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+
+                img {
+                    position: absolute;
+                }
+            }
+
+            .card-2,
+            .card-3 {
+                height: 120px;
+                position: relative;
+                margin-top: 20px;
+
+                .content {
+                    position: absolute;
+                    padding-left: 20px;
+                    height: 120px;
+                    padding-top: 10px;
+
+                    span:not(.secondSpan) {
+                        font-size: 15px;
+                        opacity: 0.7;
+                        transition: all 0.5s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        -webkit-text-stroke: 1px black;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        padding-bottom: 8px;
+                        width: 185px;
+
+                        span{
+                            -webkit-text-stroke: 0px;
+                            font-size: 18px;
+                            position: absolute;
+                            bottom: 41px;
+                        }
+
+                        &:hover {
+                            color: $hover-color;
+                            -webkit-text-stroke: 1px $hover-color;
+                        }
+
+                        &:hover~.secondP {
+                            color: $hover-color;
+                        }
+                    }
+
+
+                    a {
+                        text-decoration: none;
+                        color: $hover-color;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        position: absolute;
+                        left: 10px;
+                        transition: all 0.3s;
+                        font-size: 14px;
+                        bottom: 10px;
+
+                        i {
+                            font-size: 11px;
+                        }
+
+                        &:hover {
+                            color: white;
+                            background-color: $hover-color;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+
+                img {
+                    position: absolute;
+                }
+            }
+
+
+
+
+
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes content {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 50px);
+        transform-origin: 0px 0px;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.content-animation {
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-delay: 100ms;
+    animation-name: content;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.container {
     width: 1188px !important;
-    margin: 0 auto !important;
 }
 
 .col-3,
