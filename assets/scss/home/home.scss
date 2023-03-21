@@ -1305,8 +1305,103 @@ main {
         }
     }
 
-}
+    #new-deals{
 
+        .new-deals{
+            background-image: url(./../../img/home/ad-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1148px;
+            height: 137.5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            .content{
+                width: 100%;
+                height: 95%;
+                background-color: white;
+
+                .row{
+                    height: 100%;
+
+                    .left{
+                        display: inline-block;
+                        position: absolute;
+                        top: 25.5px;
+                        right: 50px;
+
+                        p{
+                            margin: 0;
+                            display: flex;
+                            justify-content: end;
+                            -webkit-text-stroke: 2px $hover-color;
+                            font-size: 20px;
+                        }
+                        span{
+                            font-size: 20px;
+                            -webkit-text-stroke: 1.6px;
+                        }
+                    }
+                    .line{
+                        display: inline-block;
+                        width: 5px;
+                        height: 80px;
+                        background-color: black;
+                        opacity: 0.1;
+                        position: absolute;
+                        top: 15.5px;
+                        right: 0;
+                    }
+                    .center{
+                        position: absolute;
+                        top: 31.5px;
+
+                        p{
+                            font-weight: 600;
+                            color: rgb(135,132,163);
+                            font-size: 18px;
+
+                            span{
+                                color: black;
+                            }
+                        }
+                    }
+                    .right{
+                        padding-left: 40px;
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+
+                        a{
+                            text-decoration: none;
+                            background: $hover-color;
+                            color: white;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            transition: all 0.3s;
+
+                            i{
+                                margin-left: 20px;
+                                font-size: 12px;
+                            }
+
+                            &:hover{
+                                background-color: rgb(191,145,61);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
