@@ -121,13 +121,14 @@ $(function () {
 
       for (const slider of sliders) {
         if (slider.getAttribute("data-id") == item.getAttribute("data-id")) {
-           slider.classList.remove("d-none")
+          slider.classList.remove("d-none")
+          slider.firstElementChild.click()
         }
-        else{
+        else {
           slider.classList.add("d-none")
         }
       }
-      
+
     })
   }
 
@@ -234,8 +235,163 @@ $(function () {
     ]
   });
 
+  $('#firms .slider').owlCarousel({
+    loop: false,
+    margin: 15,
+    items: 7,
+    dots: false,
+    nav: false
+  })
 
-  let addWishlist = document.querySelectorAll(".cards .add-wishlist-icon")
+  $('#trending-products .products .right .slider').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: "#trending-products .products .right .fa-chevron-right",
+    prevArrow: "#trending-products .products .right .fa-chevron-left",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('#top-selling-products .products .slide-first .slider').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: "#top-selling-products .products .slide-first .fa-chevron-right",
+    prevArrow: "#top-selling-products .products .slide-first .fa-chevron-left",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  let trendingProductsOptions = document.querySelectorAll("#trending-products .head .right ul li")
+  for (const item of trendingProductsOptions) {
+
+    item.addEventListener("click", function () {
+
+      for (const option of trendingProductsOptions) {
+        if (option.classList.contains("trend-active")) {
+          option.classList.remove("trend-active")
+        }
+      }
+
+      item.classList.add("trend-active")
+
+      let id = item.getAttribute("data-id")
+
+      let sliders = document.querySelectorAll("#trending-products .products .right .slide-specific")
+
+      for (const slide of sliders) {
+        if (slide.getAttribute("data-id") == id) {
+          slide.classList.remove("d-none")
+
+          if (slide.classList.contains("slider")) {
+            slide.previousElementSibling.classList.remove("d-none")
+            slide.nextElementSibling.classList.remove("d-none")
+          }
+        }
+        else {
+          if (slide.classList.contains("slider")) {
+            slide.previousElementSibling.classList.add("d-none")
+            slide.nextElementSibling.classList.add("d-none")
+          }
+          slide.classList.add("d-none")
+        }
+      }
+
+
+    })
+
+  }
+
+  let topSellingProductsOptions = document.querySelectorAll("#top-selling-products .head .right ul li")
+  for (const item of topSellingProductsOptions) {
+
+    item.addEventListener("click", function () {
+
+      for (const option of topSellingProductsOptions) {
+        if (option.classList.contains("trend-active")) {
+          option.classList.remove("trend-active")
+        }
+      }
+
+      item.classList.add("trend-active")
+
+      let id = item.getAttribute("data-id")
+
+      let sliders = document.querySelectorAll("#top-selling-products .products .slide-specific")
+
+      for (const slide of sliders) {
+        if (slide.getAttribute("data-id") == id) {
+          slide.classList.remove("d-none")
+
+          if (slide.classList.contains("slider")) {
+            slide.previousElementSibling.classList.remove("d-none")
+            slide.nextElementSibling.classList.remove("d-none")
+          }
+        }
+        else {
+          if (slide.classList.contains("slider")) {
+            slide.previousElementSibling.classList.add("d-none")
+            slide.nextElementSibling.classList.add("d-none")
+          }
+          slide.classList.add("d-none")
+        }
+      }
+
+
+    })
+
+  }
+
+  let addWishlist = document.querySelectorAll(".add-wishlist-icon")
 
   for (const item of addWishlist) {
     item.addEventListener("mouseover", function () {
@@ -245,4 +401,6 @@ $(function () {
       this.previousElementSibling.classList.remove("add-wishlist-hover")
     })
   }
+
+
 })

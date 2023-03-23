@@ -1262,6 +1262,1275 @@ main #new-deals .new-deals .content .row .right a i {
 main #new-deals .new-deals .content .row .right a:hover {
   background-color: rgb(191, 145, 61);
 }
+main #deals-outlet {
+  height: 720px;
+  background-color: rgb(244, 247, 255);
+}
+main #deals-outlet .head h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px;
+}
+main #deals-outlet .head p {
+  line-height: 10px;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 16px;
+}
+main #deals-outlet .content .left {
+  background-image: url(./../../img/home/deal-outlets-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 419px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+main #deals-outlet .content .left .up p {
+  font-size: 21px;
+  margin: 0;
+  color: rgb(239, 131, 123);
+  -webkit-text-stroke: 1px;
+}
+main #deals-outlet .content .left .up span {
+  opacity: 0.7;
+  font-size: 15px;
+}
+main #deals-outlet .content .left .center-self .firsta {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+main #deals-outlet .content .left .center-self .firsta:hover {
+  color: rgb(252, 185, 65);
+}
+main #deals-outlet .content .left .center-self .span1 {
+  color: rgb(239, 131, 123);
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 600;
+  line-height: 2;
+}
+main #deals-outlet .content .left .center-self .span2 {
+  font-size: 20px;
+  opacity: 0.7;
+  font-weight: 600;
+  line-height: 2;
+}
+main #deals-outlet .content .left .center-self .seconda {
+  text-decoration: none;
+  color: rgb(252, 185, 65);
+  font-size: 15px;
+  transition: all 0.2s;
+  display: inline-block;
+  position: relative;
+}
+main #deals-outlet .content .left .center-self .seconda i {
+  font-size: 12px;
+  margin-left: 5px;
+  -webkit-text-stroke: 1px white;
+}
+main #deals-outlet .content .left .center-self .seconda::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  opacity: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(252, 185, 65);
+  transition: all 0.2s;
+}
+main #deals-outlet .content .left .center-self .seconda:hover::after {
+  opacity: 1 !important;
+}
+main #deals-outlet .content .left .down .coutdown {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+main #deals-outlet .content .left .down .coutdown .hour,
+main #deals-outlet .content .left .down .coutdown .min {
+  position: relative;
+}
+main #deals-outlet .content .left .down .coutdown .hour .duration,
+main #deals-outlet .content .left .down .coutdown .min .duration {
+  display: block;
+  text-align: center;
+  background-color: rgb(252, 185, 65);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 21px;
+  -webkit-text-stroke: 1px;
+}
+main #deals-outlet .content .left .down .coutdown .hour .type,
+main #deals-outlet .content .left .down .coutdown .min .type {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+main #deals-outlet .content .left .down .coutdown .hour::after,
+main #deals-outlet .content .left .down .coutdown .min::after {
+  color: rgb(51, 51, 51);
+  content: ":";
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  position: absolute;
+  left: 100%;
+  margin-left: 14px;
+  margin-top: -1px;
+  top: 20%;
+}
+main #deals-outlet .content .left .down .coutdown .sec .duration {
+  display: block;
+  text-align: center;
+  background-color: rgb(252, 185, 65);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 21px;
+  -webkit-text-stroke: 1px;
+}
+main #deals-outlet .content .left .down .coutdown .sec .type {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+main #deals-outlet .content .right {
+  display: flex;
+}
+main #deals-outlet .content .right .card {
+  display: inline-block;
+  width: 275px;
+  border-radius: 0;
+  height: 419px;
+  transition: all 0.5s;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+main #deals-outlet .content .right .card .img {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+}
+main #deals-outlet .content .right .card .img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #deals-outlet .content .right .card .img span:not(.add-wishlist) {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 10px;
+}
+main #deals-outlet .content .right .card .img .sale {
+  background-color: rgb(239, 131, 123);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #deals-outlet .content .right .card .img .sale-special {
+  margin-top: 35px;
+}
+main #deals-outlet .content .right .card .img .top {
+  background-color: rgb(125, 210, 234);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #deals-outlet .content .right .card .img .top-special {
+  margin-top: 0;
+}
+main #deals-outlet .content .right .card .img .new {
+  background-color: rgb(166, 199, 108);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #deals-outlet .content .right .card .img .add-wishlist-icon {
+  position: absolute;
+  font-size: 17px;
+  background-color: rgb(252, 185, 65);
+  border-radius: 100%;
+  padding: 5px;
+  -webkit-text-stroke: 0.5px rgb(252, 185, 65);
+  right: 20px;
+  top: 10px;
+  transform: translateX(-20px);
+  transition: all 0.3s;
+  opacity: 0;
+  cursor: pointer;
+}
+main #deals-outlet .content .right .card .img .add-wishlist-icon:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main #deals-outlet .content .right .card .img .add-wishlist {
+  position: absolute;
+  z-index: 2;
+  right: 46px;
+  top: 10px;
+  font-size: 13px;
+  height: 27px;
+  width: 110px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(252, 185, 65);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #deals-outlet .content .right .card .img .add-wishlist-hover {
+  opacity: 1 !important;
+}
+main #deals-outlet .content .right .card .img .options {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(40px);
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #deals-outlet .content .right .card .img .options i {
+  position: static;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #deals-outlet .content .right .card .img .options i:hover {
+  color: rgb(252, 185, 65);
+}
+main #deals-outlet .content .right .card .img .options hr {
+  color: white;
+  width: 20px;
+  transform: rotateZ(90deg);
+  -webkit-opacity: 1;
+}
+main #deals-outlet .content .right .card .content {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+main #deals-outlet .content .right .card .content span:not(.review) {
+  opacity: 0.8;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #deals-outlet .content .right .card .content span:not(.review):hover {
+  color: rgb(252, 185, 65);
+}
+main #deals-outlet .content .right .card .content a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+main #deals-outlet .content .right .card .content a:hover {
+  color: rgb(252, 185, 65);
+}
+main #deals-outlet .content .right .card .content p {
+  font-size: 15px;
+  color: rgb(252, 185, 65);
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #deals-outlet .content .right .card .content .discount-price {
+  display: inline;
+  color: rgb(241, 140, 128);
+}
+main #deals-outlet .content .right .card .content .actual-price {
+  display: inline;
+  color: rgb(205, 204, 204);
+  margin-left: 10px;
+}
+main #deals-outlet .content .right .card .content i {
+  font-size: 13px;
+  position: absolute;
+}
+main #deals-outlet .content .right .card .content i:not(.none) {
+  color: rgb(252, 185, 65);
+}
+main #deals-outlet .content .right .card .content .none {
+  color: rgb(206, 205, 205);
+}
+main #deals-outlet .content .right .card .content .second {
+  margin-left: 15px;
+}
+main #deals-outlet .content .right .card .content .third {
+  margin-left: 30px;
+}
+main #deals-outlet .content .right .card .content .fourth {
+  margin-left: 45px;
+}
+main #deals-outlet .content .right .card .content .last {
+  margin-left: 60px;
+}
+main #deals-outlet .content .right .card .content .special-icon {
+  position: absolute;
+  bottom: -27px;
+}
+main #deals-outlet .content .right .card .content .special-review {
+  bottom: -30px !important;
+}
+main #deals-outlet .content .right .card .content .review {
+  font-size: 13px;
+  color: rgb(204, 204, 204);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 80px;
+  position: absolute;
+  bottom: -32px;
+}
+main #deals-outlet .content .right .card .pro-hover {
+  opacity: 0;
+}
+main #deals-outlet .content .right .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main #deals-outlet .content .right .card:hover .active-pro {
+  opacity: 0;
+}
+main #deals-outlet .content .right .card:hover .pro-hover {
+  opacity: 1;
+}
+main #deals-outlet .content .right .card:hover .fa-heart {
+  transform: translateX(0);
+  opacity: 1;
+}
+main #deals-outlet .content .right .card:hover .options {
+  transform: translateY(0);
+  opacity: 1;
+}
+main #deals-outlet .button a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+}
+main #deals-outlet .button a i {
+  font-size: 13px;
+  margin-left: 10px;
+  -webkit-text-stroke: 1.5px white;
+}
+main #deals-outlet .button a:hover {
+  color: rgb(252, 185, 65);
+  background-color: white;
+}
+main #firms .container {
+  overflow: hidden;
+}
+main #firms .container .slider .owl-prev {
+  display: none;
+}
+main #firms .container .slider .disabled {
+  display: none !important;
+}
+main #firms .container .slider div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+main #trending-products .head .trend-active {
+  color: rgb(252, 185, 65);
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+main #trending-products .head .trend-active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(252, 185, 65);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+main #trending-products .head .left h1 {
+  font-size: 25px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px;
+}
+main #trending-products .head .right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 130px;
+}
+main #trending-products .head .right ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #trending-products .head .right ul li:hover {
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .img {
+  height: 100%;
+}
+main #trending-products .products .img img {
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+}
+main #trending-products .products .right .card {
+  display: inline-block;
+  width: 275px;
+  border-radius: 0;
+  height: 419px;
+  transition: all 0.5s;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+main #trending-products .products .right .card .img {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+}
+main #trending-products .products .right .card .img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #trending-products .products .right .card .img span:not(.add-wishlist) {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 10px;
+}
+main #trending-products .products .right .card .img .sale {
+  background-color: rgb(239, 131, 123);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #trending-products .products .right .card .img .sale-special {
+  margin-top: 35px;
+}
+main #trending-products .products .right .card .img .top {
+  background-color: rgb(125, 210, 234);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #trending-products .products .right .card .img .top-special {
+  margin-top: 0;
+}
+main #trending-products .products .right .card .img .new {
+  background-color: rgb(166, 199, 108);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #trending-products .products .right .card .img .add-wishlist-icon {
+  position: absolute;
+  font-size: 17px;
+  background-color: rgb(252, 185, 65);
+  border-radius: 100%;
+  padding: 5px;
+  -webkit-text-stroke: 0.5px rgb(252, 185, 65);
+  right: 20px;
+  top: 10px;
+  transform: translateX(-20px);
+  transition: all 0.3s;
+  opacity: 0;
+  cursor: pointer;
+}
+main #trending-products .products .right .card .img .add-wishlist-icon:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main #trending-products .products .right .card .img .add-wishlist {
+  position: absolute;
+  z-index: 2;
+  right: 46px;
+  top: 10px;
+  font-size: 13px;
+  height: 27px;
+  width: 110px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(252, 185, 65);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #trending-products .products .right .card .img .add-wishlist-hover {
+  opacity: 1 !important;
+}
+main #trending-products .products .right .card .img .options {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(40px);
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #trending-products .products .right .card .img .options i {
+  position: static;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #trending-products .products .right .card .img .options i:hover {
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .right .card .img .options hr {
+  color: white;
+  width: 20px;
+  transform: rotateZ(90deg);
+  -webkit-opacity: 1;
+}
+main #trending-products .products .right .card .content {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+main #trending-products .products .right .card .content span:not(.review) {
+  opacity: 0.8;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #trending-products .products .right .card .content span:not(.review):hover {
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .right .card .content a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+main #trending-products .products .right .card .content a:hover {
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .right .card .content p {
+  font-size: 15px;
+  color: rgb(252, 185, 65);
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #trending-products .products .right .card .content .discount-price {
+  display: inline;
+  color: rgb(241, 140, 128);
+}
+main #trending-products .products .right .card .content .actual-price {
+  display: inline;
+  color: rgb(205, 204, 204);
+  margin-left: 10px;
+}
+main #trending-products .products .right .card .content i {
+  font-size: 13px;
+  position: absolute;
+}
+main #trending-products .products .right .card .content i:not(.none) {
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .right .card .content .none {
+  color: rgb(206, 205, 205);
+}
+main #trending-products .products .right .card .content .second {
+  margin-left: 15px;
+}
+main #trending-products .products .right .card .content .third {
+  margin-left: 30px;
+}
+main #trending-products .products .right .card .content .fourth {
+  margin-left: 45px;
+}
+main #trending-products .products .right .card .content .last {
+  margin-left: 60px;
+}
+main #trending-products .products .right .card .content .special-icon {
+  position: absolute;
+  bottom: -27px;
+}
+main #trending-products .products .right .card .content .special-review {
+  bottom: -30px !important;
+}
+main #trending-products .products .right .card .content .review {
+  font-size: 13px;
+  color: rgb(204, 204, 204);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 80px;
+  position: absolute;
+  bottom: -32px;
+}
+main #trending-products .products .right .card .pro-hover {
+  opacity: 0;
+}
+main #trending-products .products .right .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main #trending-products .products .right .card:hover .active-pro {
+  opacity: 0;
+}
+main #trending-products .products .right .card:hover .pro-hover {
+  opacity: 1;
+}
+main #trending-products .products .right .card:hover .fa-heart {
+  transform: translateX(0);
+  opacity: 1;
+}
+main #trending-products .products .right .card:hover .options {
+  transform: translateY(0);
+  opacity: 1;
+}
+main #trending-products .products .right .slide-first {
+  position: relative;
+}
+main #trending-products .products .right .slide-first i {
+  position: absolute;
+  cursor: pointer;
+}
+main #trending-products .products .right .slide-first .fa-chevron-left {
+  z-index: 2;
+  height: 417px;
+  top: 1px;
+  left: 0;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 0px 4px;
+  color: rgb(252, 185, 65);
+}
+main #trending-products .products .right .slide-first .fa-chevron-right {
+  z-index: 2;
+  height: 417px;
+  top: 1px;
+  right: 0;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) -3px 0px 4px;
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .head .trend-active {
+  color: rgb(252, 185, 65);
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+main #top-selling-products .head .trend-active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(252, 185, 65);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+main #top-selling-products .head .left h1 {
+  font-size: 25px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px;
+}
+main #top-selling-products .head .right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 130px;
+}
+main #top-selling-products .head .right ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #top-selling-products .head .right ul li:hover {
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .first-card {
+  margin-left: 0 !important;
+}
+main #top-selling-products .products .card {
+  display: inline-block;
+  width: 275px;
+  border-radius: 0;
+  height: 419px;
+  transition: all 0.5s;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+main #top-selling-products .products .card .img {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+}
+main #top-selling-products .products .card .img img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #top-selling-products .products .card .img span:not(.add-wishlist) {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 10px;
+}
+main #top-selling-products .products .card .img .sale {
+  background-color: rgb(239, 131, 123);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #top-selling-products .products .card .img .sale-special {
+  margin-top: 35px;
+}
+main #top-selling-products .products .card .img .top {
+  background-color: rgb(125, 210, 234);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #top-selling-products .products .card .img .top-special {
+  margin-top: 0;
+}
+main #top-selling-products .products .card .img .new {
+  background-color: rgb(166, 199, 108);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+main #top-selling-products .products .card .img .add-wishlist-icon {
+  position: absolute;
+  font-size: 17px;
+  background-color: rgb(252, 185, 65);
+  border-radius: 100%;
+  padding: 5px;
+  -webkit-text-stroke: 0.5px rgb(252, 185, 65);
+  right: 20px;
+  top: 10px;
+  transform: translateX(-20px);
+  transition: all 0.3s;
+  opacity: 0;
+  cursor: pointer;
+}
+main #top-selling-products .products .card .img .add-wishlist-icon:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main #top-selling-products .products .card .img .add-wishlist {
+  position: absolute;
+  z-index: 2;
+  right: 46px;
+  top: 10px;
+  font-size: 13px;
+  height: 27px;
+  width: 110px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(252, 185, 65);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #top-selling-products .products .card .img .add-wishlist-hover {
+  opacity: 1 !important;
+}
+main #top-selling-products .products .card .img .options {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(40px);
+  transition: all 0.3s;
+  opacity: 0;
+}
+main #top-selling-products .products .card .img .options i {
+  position: static;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #top-selling-products .products .card .img .options i:hover {
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .card .img .options hr {
+  color: white;
+  width: 20px;
+  transform: rotateZ(90deg);
+  -webkit-opacity: 1;
+}
+main #top-selling-products .products .card .content {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+main #top-selling-products .products .card .content span:not(.review) {
+  opacity: 0.8;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #top-selling-products .products .card .content span:not(.review):hover {
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .card .content a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+main #top-selling-products .products .card .content a:hover {
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .card .content p {
+  font-size: 15px;
+  color: rgb(252, 185, 65);
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #top-selling-products .products .card .content .discount-price {
+  display: inline;
+  color: rgb(241, 140, 128);
+}
+main #top-selling-products .products .card .content .actual-price {
+  display: inline;
+  color: rgb(205, 204, 204);
+  margin-left: 10px;
+}
+main #top-selling-products .products .card .content i {
+  font-size: 13px;
+  position: absolute;
+}
+main #top-selling-products .products .card .content i:not(.none) {
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .card .content .none {
+  color: rgb(206, 205, 205);
+}
+main #top-selling-products .products .card .content .second {
+  margin-left: 15px;
+}
+main #top-selling-products .products .card .content .third {
+  margin-left: 30px;
+}
+main #top-selling-products .products .card .content .fourth {
+  margin-left: 45px;
+}
+main #top-selling-products .products .card .content .last {
+  margin-left: 60px;
+}
+main #top-selling-products .products .card .content .special-icon {
+  position: absolute;
+  bottom: -27px;
+}
+main #top-selling-products .products .card .content .special-review {
+  bottom: -30px !important;
+}
+main #top-selling-products .products .card .content .review {
+  font-size: 13px;
+  color: rgb(204, 204, 204);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 80px;
+  position: absolute;
+  bottom: -32px;
+}
+main #top-selling-products .products .card .pro-hover {
+  opacity: 0;
+}
+main #top-selling-products .products .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main #top-selling-products .products .card:hover .active-pro {
+  opacity: 0;
+}
+main #top-selling-products .products .card:hover .pro-hover {
+  opacity: 1;
+}
+main #top-selling-products .products .card:hover .fa-heart {
+  transform: translateX(0);
+  opacity: 1;
+}
+main #top-selling-products .products .card:hover .options {
+  transform: translateY(0);
+  opacity: 1;
+}
+main #top-selling-products .products .slide-first {
+  position: relative;
+}
+main #top-selling-products .products .slide-first i {
+  position: absolute;
+  cursor: pointer;
+}
+main #top-selling-products .products .slide-first .fa-chevron-left {
+  z-index: 2;
+  height: 417px;
+  top: 1px;
+  left: 0;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 0px 4px;
+  color: rgb(252, 185, 65);
+}
+main #top-selling-products .products .slide-first .fa-chevron-right {
+  z-index: 2;
+  height: 417px;
+  top: 1px;
+  right: 0;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) -3px 0px 4px;
+  color: rgb(252, 185, 65);
+}
+main #icons {
+  height: 100px;
+}
+main #icons .container {
+  height: 100%;
+}
+main #icons .container .box {
+  position: relative;
+  height: 100px;
+}
+main #icons .container .box i {
+  position: absolute;
+  font-size: 45px;
+  top: 27.5px;
+  left: 35px;
+}
+main #icons .container .box .content {
+  display: inline-block;
+  position: absolute;
+  left: 95px;
+  top: 26px;
+}
+main #icons .container .box .content p {
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px;
+  margin: 0;
+}
+main #icons .container .box .content span {
+  font-size: 15px;
+  opacity: 0.8;
+}
+main #shop-social .all {
+  background-image: url(./../../img/home/ad-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+}
+main #shop-social .all .content {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+main #shop-social .all .content .row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+main #shop-social .all .content .row .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main #shop-social .all .content .row .left h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+main #shop-social .all .content .row .left p {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 600;
+}
+main #shop-social .all .content .row .left .icons {
+  width: 272px;
+  display: flex;
+  justify-content: space-around;
+}
+main #shop-social .all .content .row .left .icons i {
+  display: block;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+main #shop-social .all .content .row .left .icons i:hover {
+  border: 1.6px solid #e1e2e6;
+}
+main #shop-social .all .content .row .left .icons .fa-facebook-f {
+  background-color: rgb(143, 121, 237);
+}
+main #shop-social .all .content .row .left .icons .fa-facebook-f:hover {
+  background-color: white;
+  color: rgb(143, 121, 237);
+}
+main #shop-social .all .content .row .left .icons .fa-twitter {
+  background-color: rgb(121, 200, 237);
+}
+main #shop-social .all .content .row .left .icons .fa-twitter:hover {
+  background-color: white;
+  color: rgb(121, 200, 237);
+}
+main #shop-social .all .content .row .left .icons .fa-instagram {
+  background-color: rgb(221, 109, 154);
+}
+main #shop-social .all .content .row .left .icons .fa-instagram:hover {
+  background-color: white;
+  color: rgb(221, 109, 154);
+}
+main #shop-social .all .content .row .left .icons .fa-youtube,
+main #shop-social .all .content .row .left .icons .fa-pinterest {
+  background-color: rgb(230, 98, 98);
+}
+main #shop-social .all .content .row .left .icons .fa-youtube:hover,
+main #shop-social .all .content .row .left .icons .fa-pinterest:hover {
+  background-color: white;
+  color: rgb(230, 98, 98);
+}
+main #shop-social .all .content .row .vl {
+  height: 80%;
+  width: 1px;
+  background-color: black;
+  top: 28px;
+  position: absolute;
+  opacity: 0.1;
+}
+main #shop-social .all .content .row .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+main #shop-social .all .content .row .right h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+main #shop-social .all .content .row .right p {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 600;
+}
+main #shop-social .all .content .row .right p span {
+  text-decoration: none;
+  color: rgb(252, 185, 65);
+}
+main #shop-social .all .content .row .right .input {
+  display: flex;
+  justify-content: center;
+}
+main #shop-social .all .content .row .right .input input {
+  outline: none;
+  height: 40px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.2s;
+}
+main #shop-social .all .content .row .right .input input::-moz-placeholder {
+  font-size: 14px;
+}
+main #shop-social .all .content .row .right .input input::placeholder {
+  font-size: 14px;
+}
+main #shop-social .all .content .row .right .input input:focus {
+  border-color: rgb(252, 185, 65);
+}
+main #shop-social .all .content .row .right .input i {
+  display: flex;
+  height: 40px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 185, 65);
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  color: white;
+  -webkit-text-stroke: 2px rgb(252, 185, 65);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #shop-social .all .content .row .right .input i:hover {
+  background-color: rgb(191, 145, 61);
+  -webkit-text-stroke: 2px rgb(191, 145, 61);
+}
+
+.go-to-top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 50px;
+  margin-left: 95%;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  text-decoration: none;
+  font-size: 22px;
+  padding: 15px;
+  font-family: sans-serif;
+  color: rgb(153, 153, 153);
+  background: rgb(250, 250, 250);
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+.go-to-top:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 @keyframes content {
   0% {
@@ -1289,6 +2558,10 @@ main #new-deals .new-deals .content .row .right a:hover {
 }
 
 .col-3,
-.col-6 {
+.col-6,
+.col-2,
+.col-12,
+.col-lg-3,
+.col-sm-6 {
   padding: 0;
 }/*# sourceMappingURL=home.css.map */
