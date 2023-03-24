@@ -2779,6 +2779,7 @@ main {
                                 color: white;
                                 font-size: 20px;
                                 border-radius: 100%;
+                                cursor: pointer;
                                 transition: all 0.3s;
                                 
                                 &:hover{
@@ -2904,7 +2905,114 @@ main {
 
 }
 
+footer {
 
+    #footer-up{
+
+        .container{
+            padding: 0;
+
+            .row{
+                width: 100%;
+                margin: 0;
+
+                .left{
+
+                    img{
+                        width: 105px;
+                        height: 26px;
+                    }
+                    p{
+                        opacity: 0.8;
+                        margin: 0;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .number{
+                        padding: 10px;
+                        border: 1px solid;
+                        border-color: rgba(0,0,0,0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+        
+                        i{
+                            font-size: 30px;
+                            color: $hover-color;
+                        }
+                        .text{
+        
+                            span{
+                                font-size: 14px;
+                                opacity: 0.8;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                font-size: 20px;
+                                font-weight: 600;
+                                transition: all 0.3s;
+        
+                                &:hover{
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .links{
+                    padding-left: 20px;
+        
+                    p{
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    ul{
+                        list-style: none;
+                        padding: 0;
+        
+                        li{
+                            margin-top: 10px;
+                            font-size: 14px;
+        
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                opacity: 0.8;
+                                transition: all 0.3s;
+                                
+                                &:hover{
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            hr{
+                margin-bottom: 10px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    #footer-down{
+
+        p{
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.7;
+            padding-top: 20px;
+        }
+        img{
+            float: right;
+            padding-top: 20px;
+        }
+    }
+
+}
 
 
 
@@ -2994,6 +3102,7 @@ body {
 .col-2,
 .col-12,
 .col-lg-3,
-.col-sm-6 {
+.col-sm-6,
+.col-4 {
     padding: 0;
 }
