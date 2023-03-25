@@ -1,7 +1,19 @@
 $(function () {
+  
+  window.onscroll = function () { myFunction() };
 
+  var navbar = document.querySelector(".navbar");
+  var sticky = navbar.offsetTop;
 
-  $('.slide').slick({
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+  $('#slider-banner .slider .slide').slick({
     'setting-name': 'setting-value',
     'infinite': false,
     'nextArrow': '.fa-chevron-right',
@@ -34,8 +46,6 @@ $(function () {
   for (const slide of slides) {
     slide.addEventListener("mouseleave", sliderTextAnimation)
   }
-
-
 
   let language = document.querySelector(".head-up .right .language-dropdown")
   if (localStorage.getItem("language") != null) {
@@ -246,7 +256,7 @@ $(function () {
   $('#trending-products .products .right .slider').slick({
     infinite: false,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: "#trending-products .products .right .fa-chevron-right",
     prevArrow: "#trending-products .products .right .fa-chevron-left",
@@ -392,7 +402,6 @@ $(function () {
   }
 
   let addWishlist = document.querySelectorAll(".add-wishlist-icon")
-
   for (const item of addWishlist) {
     item.addEventListener("mouseover", function () {
       this.previousElementSibling.classList.add("add-wishlist-hover")
@@ -402,5 +411,59 @@ $(function () {
     })
   }
 
+
+  let cartCount = document.querySelector(".head-up .down .right-icons .cart .cart-count")
+
+  function calculateCartCount(){
+    let sum = 0
+
+    for (const item of JSON.parse(localStorage.getItem("products"))) {
+      sum += item.count;
+    }
+
+    cartCount.innerText = sum
+  }
+
+  calculateCartCount()
+
+  let basketProducts = []
+  if (JSON.parse(localStorage.getItem("products") != null)) {
+    basketProducts = JSON.parse(localStorage.getItem("products"));
+  }
+  let addCartIcons = document.querySelectorAll(".add-cart")
+  for (const item of addCartIcons) {
+
+    item.addEventListener("click", function () {
+      if (JSON.parse(localStorage.getItem("products") == null)) {
+        basketProducts = []
+      }
+
+      let proImage = item.closest(".img").firstElementChild.getAttribute("src")
+      let proName = item.closest(".img").nextElementSibling.getElementsByTagName("a")[0].innerText
+      let proPrice = Number(item.closest(".img").nextElementSibling.getElementsByTagName("p")[0].innerText.replace(/[^0-9.-]+/g, ""))
+      let proId = parseInt(item.closest(".card").getAttribute("data-id"))
+
+      let existProduct = basketProducts.find((m) => m.id == proId);
+
+      if (existProduct != undefined) {
+        existProduct.count++;
+      }
+      else {
+        basketProducts.push({
+          id: proId,
+          name: proName,
+          price: proPrice,
+          count: 1,
+          image: proImage
+        })
+      }
+
+      localStorage.setItem("products", JSON.stringify(basketProducts))
+
+      calculateCartCount()
+    })
+  }
+
+  AOS.init();
 
 })

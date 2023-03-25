@@ -155,6 +155,11 @@ header {
         .down {
             height: 94px;
 
+            .row{
+                width: 100%;
+                margin: 0;
+            }
+
             .logo {
                 height: 94px;
                 display: flex;
@@ -171,7 +176,7 @@ header {
                 i {
                     position: absolute;
                     z-index: 2;
-                    left: 125px;
+                    left: 110px;
                     transform: rotateY(180deg);
                     font-size: 20px;
                     -webkit-text-stroke: 0.5px white;
@@ -210,7 +215,6 @@ header {
                     i {
                         color: white;
                         font-size: 27px;
-                        -webkit-text-stroke: 2px rgb(51, 51, 51);
                         transition: all 0.5s;
                     }
 
@@ -279,10 +283,9 @@ header {
                     position: relative;
                     cursor: pointer;
 
-                    i {
+                    a {
                         font-size: 27px;
-                        -webkit-text-stroke: 1px white;
-                        color: rgb(51, 51, 51);
+                        color: white;
                         transition: all 0.5s;
                     }
 
@@ -313,16 +316,24 @@ header {
 
                     .cart-count {
                         right: -4px;
-                        top: -4px;
+                        top: 0;
                     }
 
-                    &:hover>i {
-                        -webkit-text-stroke: 1px $hover-color;
-                        color: rgb(51, 51, 51);
+                    &:hover>a {
+                        color: $hover-color;
                     }
                 }
             }
         }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .navbar {
@@ -995,12 +1006,12 @@ main {
 
                     .card {
                         display: inline-block;
-                        width: 275px;
+                        width: 277px !important;
                         border-radius: 0;
                         height: 419px;
                         transition: all 0.5s;
-                        margin-right: 20px;
-                        margin-left: 20px;
+                        margin-right: 1px;
+                        margin-left: 10px;
 
                         .img {
                             width: 100%;
@@ -1354,7 +1365,7 @@ main {
                         opacity: 0.1;
                         position: absolute;
                         top: 15.5px;
-                        right: 0;
+                        right: 20px;
                     }
 
                     .center {
@@ -1592,12 +1603,12 @@ main {
 
                 .card {
                     display: inline-block;
-                    width: 275px;
                     border-radius: 0;
                     height: 419px;
+                    width: 272px;
                     transition: all 0.5s;
-                    margin-right: 20px;
-                    margin-left: 20px;
+                    margin-right: 10px;
+                    margin-left: 10px;
 
                     .img {
                         width: 100%;
@@ -1982,7 +1993,7 @@ main {
         .products {
 
             .img {
-                height: 100%;
+                height: 360px;
 
                 img {
                     height: 100%;
@@ -1995,16 +2006,16 @@ main {
 
                 .card {
                     display: inline-block;
-                    width: 275px;
+                    width: 213px !important;
                     border-radius: 0;
-                    height: 419px;
+                    height: 360px;
                     transition: all 0.5s;
-                    margin-right: 20px;
-                    margin-left: 20px;
+                    margin-right: 10px;
+                    margin-left: 16px;
 
                     .img {
-                        width: 100%;
-                        height: 275px;
+                        width: 211px;
+                        height: 223px;
                         position: relative;
                         overflow: hidden;
 
@@ -2153,7 +2164,7 @@ main {
 
                         span:not(.review) {
                             opacity: 0.8;
-                            font-size: 15px;
+                            font-size: 13px;
                             cursor: pointer;
                             transition: all 0.3s;
 
@@ -2279,8 +2290,8 @@ main {
     
                     .fa-chevron-left {
                         z-index: 2;
-                        height: 417px;
-                        top: 1px;
+                        height: 360px;
+                        top: 0;
                         left: 0;
                         width: 21px;
                         display: flex;
@@ -2293,8 +2304,8 @@ main {
     
                     .fa-chevron-right {
                         z-index: 2;
-                        height: 417px;
-                        top: 1px;
+                        height: 360px;
+                        top: 0;
                         right: 0;
                         width: 21px;
                         display: flex;
@@ -2377,12 +2388,12 @@ main {
 
             .card {
                 display: inline-block;
-                width: 275px;
+                width: 276px !important;
                 border-radius: 0;
                 height: 419px;
                 transition: all 0.5s;
-                margin-right: 20px;
-                margin-left: 20px;
+                margin-right: 10px;
+                margin-left: 11px;
 
                 .img {
                     width: 100%;
@@ -3013,7 +3024,6 @@ footer {
     }
 
 }
-
 
 
 

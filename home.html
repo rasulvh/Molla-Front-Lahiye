@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/slick/slick.css">
     <link rel="stylesheet" href="./assets/slick/slick-theme.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/scss/home/home.css">
@@ -66,16 +69,16 @@
                         <div class="col-2">
                             <div class="right-icons">
                                 <div class="compare">
-                                    <i class="fa-solid fa-shuffle"></i>
+                                    <i class="fa-light fa-shuffle"></i>
                                     <p>Compare</p>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-light fa-heart"></i>
                                     <span class="wish-count">0</span>
                                     <p>Wishlist</p>
                                 </div>
                                 <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="cart.html" ><i class="fa-regular fa-cart-shopping"></i></a>
                                     <span class="cart-count">0</span>
                                     <p>Cart</p>
                                 </div>
@@ -117,24 +120,24 @@
                             <div class="left-line"></div>
                             <div class="contents">
                                 <ul>
-                                    <li><a href="home.html">Home</a></li>
-                                    <li><a href="">Shop</a></li>
-                                    <li><a href="">Product</a></li>
+                                    <li><a href="home.html" >Home</a></li>
+                                    <li><a href="" >Shop</a></li>
+                                    <li><a href="" >Product</a></li>
                                     <li class="drop-hover">
                                         <a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
 
                                         <div class="dropdown-list">
                                             <ul>
-                                                <li class="dropdown-list-item"><a href="">Account</a></li>
-                                                <li class="dropdown-list-item"><a href="">About</a></li>
-                                                <li class="dropdown-list-item"><a href="">Cart</a></li>
-                                                <li class="dropdown-list-item"><a href="">Wishlist</a></li>
+                                                <li class="dropdown-list-item"><a href="" >Account</a></li>
+                                                <li class="dropdown-list-item"><a href="" >About</a></li>
+                                                <li class="dropdown-list-item"><a href="cart.html" >Cart</a></li>
+                                                <li class="dropdown-list-item"><a href="" >Wishlist</a></li>
                                             </ul>
                                         </div>
 
                                     </li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="" >Blog</a></li>
+                                    <li><a href="" >Contact</a></li>
                                 </ul>
                             </div>
                             <div class="right-line"></div>
@@ -151,7 +154,6 @@
 
         <hr class="header-line">
     </header>
-
 
     <main>
 
@@ -240,7 +242,7 @@
                     <div class="featured carousel-self" data-id="1">
                         <i class="fa-solid fa-chevron-left"></i>
                         <div class="slider">
-                            <div class="card">
+                            <div class="card" data-id="1">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
@@ -249,7 +251,7 @@
                                     <span class="add-wishlist">add to wishlist</span>
                                     <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                     <div class="options">
-                                        <i class="fa-solid fa-cart-plus add-cart"></i>
+                                        <i class="fa-regular fa-list-check"></i>
                                         <hr>
                                         <i class="fa-regular fa-eye view"></i>
                                     </div>
@@ -268,7 +270,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="2">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
@@ -296,7 +298,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="3">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -323,7 +325,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="4">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-3-hover.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3.jpg" alt="">
@@ -352,7 +354,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="5">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -384,7 +386,7 @@
                     <div class="on-sale carousel-self d-none" data-id="2">
                         <i class="fa-solid fa-chevron-left"></i>
                         <div class="slider">
-                            <div class="card">
+                            <div class="card" data-id="1">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
@@ -393,7 +395,7 @@
                                     <span class="add-wishlist">add to wishlist</span>
                                     <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                     <div class="options">
-                                        <i class="fa-solid fa-cart-plus add-cart"></i>
+                                        <i class="fa-regular fa-list-check"></i>
                                         <hr>
                                         <i class="fa-regular fa-eye view"></i>
                                     </div>
@@ -412,7 +414,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="6">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-6.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -441,7 +443,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="4">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-3-hover.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3.jpg" alt="">
@@ -470,7 +472,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="7">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-7.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-2.jpg" alt="">
@@ -499,10 +501,10 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="8">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-8.jpg" alt="">
-                                    <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
+                                    <img class="pro-hover" src="./assets/img/home/product-8-hover.jpg" alt="">
                                     <span class="new">New</span><br>
                                     <span class="sale sale-special">Sale</span>
                                     <span class="add-wishlist">add to wishlist</span>
@@ -528,7 +530,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="9">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -563,7 +565,7 @@
                     <div class="top-rated carousel-self d-none" data-id="3">
                         <i class="fa-solid fa-chevron-left"></i>
                         <div class="slider">
-                            <div class="card">
+                            <div class="card" data-id="10">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-10.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -590,14 +592,14 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="11">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-11.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-10.jpg" alt="">
                                     <span class="add-wishlist">add to wishlist</span>
                                     <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                     <div class="options">
-                                        <i class="fa-solid fa-cart-plus add-cart"></i>
+                                        <<i class="fa-regular fa-list-check"></i>
                                         <hr>
                                         <i class="fa-regular fa-eye view"></i>
                                     </div>
@@ -616,7 +618,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="1">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
@@ -625,7 +627,7 @@
                                     <span class="add-wishlist">add to wishlist</span>
                                     <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                     <div class="options">
-                                        <i class="fa-solid fa-cart-plus add-cart"></i>
+                                        <i class="fa-regular fa-list-check"></i>
                                         <hr>
                                         <i class="fa-regular fa-eye view"></i>
                                     </div>
@@ -644,7 +646,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="6">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-6.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -673,7 +675,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="3">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -700,7 +702,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="5">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -726,7 +728,7 @@
                                     <span class="review">( 2 Reviews )</span>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="8">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-8.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-8-hover.jpg" alt="">
@@ -755,7 +757,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="9">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -784,14 +786,14 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-id="12">
                                 <div class="img">
                                     <img class="active-pro" src="./assets/img/home/product-8-hover.jpg" alt="">
                                     <img class="pro-hover" src="./assets/img/home/product-8.jpg" alt="">
                                     <span class="add-wishlist">add to wishlist</span>
                                     <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                     <div class="options">
-                                        <i class="fa-solid fa-cart-plus add-cart"></i>
+                                        <i class="fa-regular fa-list-check"></i>
                                         <hr>
                                         <i class="fa-regular fa-eye view"></i>
                                     </div>
@@ -888,7 +890,7 @@
                         </div>
                         <div class="col-6">
                             <div class="right">
-                                <div class="card">
+                                <div class="card" data-id="10">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-10.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -916,7 +918,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card" data-id="7">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-7.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-2.jpg" alt="">
@@ -1010,7 +1012,7 @@
                                 <div class="slide-first">
                                     <i class="fa-solid fa-chevron-left"></i>
                                     <div data-id="1" class="slide-specific slider">
-                                        <div class="card">
+                                        <div class="card" data-id="1">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                                 <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg"
@@ -1020,7 +1022,7 @@
                                                 <span class="add-wishlist">add to wishlist</span>
                                                 <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                                 <div class="options">
-                                                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                                                    <i class="fa-regular fa-list-check"></i>
                                                     <hr>
                                                     <i class="fa-regular fa-eye view"></i>
                                                 </div>
@@ -1039,7 +1041,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card" data-id="2">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                                 <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg"
@@ -1068,7 +1070,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card" data-id="3">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
                                                 <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg"
@@ -1096,7 +1098,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card" data-id="4">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-3-hover.jpg"
                                                     alt="">
@@ -1126,7 +1128,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card" data-id="5">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                                 <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg"
@@ -1152,7 +1154,7 @@
                                                     <span class="review">( 2 Reviews )</span>
                                             </div>
                                         </div>
-                                        <div class="card">
+                                        <div class="card" data-id="9">
                                             <div class="img">
                                                 <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                                 <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1185,7 +1187,7 @@
                                     <i class="fa-solid fa-chevron-right"></i>
                                 </div>
                                 <div data-id="2" class="slide-specific d-none">
-                                    <div class="card">
+                                    <div class="card" data-id="1">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
@@ -1194,7 +1196,7 @@
                                             <span class="add-wishlist">add to wishlist</span>
                                             <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                             <div class="options">
-                                                <i class="fa-solid fa-cart-plus add-cart"></i>
+                                                <i class="fa-regular fa-list-check"></i>
                                                 <hr>
                                                 <i class="fa-regular fa-eye view"></i>
                                             </div>
@@ -1213,7 +1215,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="2">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
@@ -1241,7 +1243,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="9">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1272,7 +1274,7 @@
                                     </div>
                                 </div>
                                 <div data-id="3" class="slide-specific d-none">
-                                    <div class="card">
+                                    <div class="card" data-id="3">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -1299,7 +1301,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="4">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-3-hover.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-3.jpg" alt="">
@@ -1330,7 +1332,7 @@
                                     </div>
                                 </div>
                                 <div data-id="4" class="slide-specific d-none">
-                                    <div class="card">
+                                    <div class="card" data-id="5">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -1357,7 +1359,7 @@
                                     </div>
                                 </div>
                                 <div data-id="5" class="slide-specific d-none">
-                                    <div class="card">
+                                    <div class="card" data-id="2">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
@@ -1385,7 +1387,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="5">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -1410,7 +1412,7 @@
                                                 <span class="review">( 2 Reviews )</span>
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="9">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1478,16 +1480,17 @@
                             <div class="slide-first">
                                 <i class="fa-solid fa-chevron-left"></i>
                                 <div data-id="1" class="slide-specific slider">
-                                    <div class="card">
+                                    <div class="card" data-id="1">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
-                                            <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
+                                            <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg"
+                                                alt="">
                                             <span class="sale">Sale</span><br>
                                             <span class="top">Top</span>
                                             <span class="add-wishlist">add to wishlist</span>
                                             <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                             <div class="options">
-                                                <i class="fa-solid fa-cart-plus add-cart"></i>
+                                                <i class="fa-regular fa-list-check"></i>
                                                 <hr>
                                                 <i class="fa-regular fa-eye view"></i>
                                             </div>
@@ -1506,10 +1509,11 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="2">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
-                                            <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
+                                            <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg"
+                                                alt="">
                                             <span class="new">New</span><br>
                                             <span class="top">Top</span>
                                             <span class="add-wishlist">add to wishlist</span>
@@ -1534,10 +1538,11 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="3">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
-                                            <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
+                                            <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg"
+                                                alt="">
                                             <span class="top top-special">Top</span>
                                             <span class="add-wishlist">add to wishlist</span>
                                             <i class="fa-regular fa-heart add-wishlist-icon"></i>
@@ -1561,9 +1566,10 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="4">
                                         <div class="img">
-                                            <img class="active-pro" src="./assets/img/home/product-3-hover.jpg" alt="">
+                                            <img class="active-pro" src="./assets/img/home/product-3-hover.jpg"
+                                                alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-3.jpg" alt="">
                                             <span class="new">New</span><br>
                                             <span class="top">Top</span>
@@ -1590,10 +1596,11 @@
 
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="5">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
-                                            <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
+                                            <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg"
+                                                alt="">
                                             <span class="top top-special">Top</span>
                                             <span class="add-wishlist">add to wishlist</span>
                                             <i class="fa-regular fa-heart add-wishlist-icon"></i>
@@ -1615,7 +1622,7 @@
                                                 <span class="review">( 2 Reviews )</span>
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-id="9">
                                         <div class="img">
                                             <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                             <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1648,7 +1655,7 @@
                                 <i class="fa-solid fa-chevron-right"></i>
                             </div>
                             <div data-id="2" class="slide-specific d-none">
-                                <div class="card first-card">
+                                <div class="card" data-id="1">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-1.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-1-hover.jpg" alt="">
@@ -1657,7 +1664,7 @@
                                         <span class="add-wishlist">add to wishlist</span>
                                         <i class="fa-regular fa-heart add-wishlist-icon"></i>
                                         <div class="options">
-                                            <i class="fa-solid fa-cart-plus add-cart"></i>
+                                            <i class="fa-regular fa-list-check"></i>
                                             <hr>
                                             <i class="fa-regular fa-eye view"></i>
                                         </div>
@@ -1676,7 +1683,7 @@
 
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-id="2">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
@@ -1704,7 +1711,7 @@
 
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-id="9">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1735,7 +1742,7 @@
                                 </div>
                             </div>
                             <div data-id="3" class="slide-specific d-none">
-                                <div class="card first-card">
+                                <div class="card" data-id="3">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-3.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-3-hover.jpg" alt="">
@@ -1762,7 +1769,7 @@
 
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-id="4">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-3-hover.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-3.jpg" alt="">
@@ -1793,7 +1800,7 @@
                                 </div>
                             </div>
                             <div data-id="4" class="slide-specific d-none">
-                                <div class="card first-card">
+                                <div class="card" data-id="5">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -1820,7 +1827,7 @@
                                 </div>
                             </div>
                             <div data-id="5" class="slide-specific d-none">
-                                <div class="card first-card">
+                                <div class="card" data-id="2">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-2.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-2-hover.jpg" alt="">
@@ -1848,7 +1855,7 @@
 
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-id="5">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-5.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-5-hover.jpg" alt="">
@@ -1873,8 +1880,7 @@
                                             <span class="review">( 2 Reviews )</span>
                                     </div>
                                 </div>
-
-                                <div class="card">
+                                <div class="card" data-id="9">
                                     <div class="img">
                                         <img class="active-pro" src="./assets/img/home/product-9.jpg" alt="">
                                         <img class="pro-hover" src="./assets/img/home/product-1.jpg" alt="">
@@ -1900,6 +1906,7 @@
                                         <i class="fa-solid fa-star fourth special-icon"></i>
                                         <i class="fa-solid fa-star last special-icon"></i>
                                         <span class="review special-review">( 2 Reviews )</span>
+
                                     </div>
                                 </div>
                             </div>
@@ -1915,7 +1922,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="box">
-                            <i class="fa-regular fa-rocket-launch"></i>
+                            <i class="fa-regular fa-rocket-launch" data-aos="fade-right"></i>
                             <div class="content">
                                 <p>Free Shipping</p>
                                 <span>orders $50 or more</span>
@@ -1925,7 +1932,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="box">
-                            <i class="fa-light fa-arrow-rotate-left fa-rotate-90"></i>
+                            <i class="fa-light fa-arrow-rotate-left fa-rotate-90" data-aos="fade-right"></i>
                             <div class="content">
                                 <p>Free Returns</p>
                                 <span>within 30 days</span>
@@ -1980,7 +1987,7 @@
                             </div>
                             <div class="col-6 position-relative">
                                 <div class="vl"></div>
-                                <div class="right">
+                                <div class="right" data-aos="fade-right">
                                     <h3>Get the Latest Deals</h3>
                                     <p>
                                         and <br>
@@ -2050,7 +2057,7 @@
                                     <p>My Account</p>
                                     <ul>
                                         <li><a href="">Sign In</a></li>
-                                        <li><a href="">View Cart</a></li>
+                                        <li><a href="cart.html" target="bl">View Cart</a></li>
                                         <li><a href="">My Wishlist</a></li>
                                         <li><a href="">Track My Order</a></li>
                                         <li><a href="">Help</a></li>
@@ -2091,6 +2098,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/slick/slick.min.js"></script>
     <script src="./assets/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
