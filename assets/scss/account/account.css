@@ -1,5 +1,6 @@
 body {
   font-family: "Mulish", sans-serif;
+  position: relative;
 }
 
 .sidebar {
@@ -840,34 +841,6 @@ header .header-line {
   margin-bottom: 0;
 }
 
-main #page-header {
-  width: 100%;
-  height: 170px;
-  background-image: url(./../../img/cart/page-header-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main #page-header .container {
-  height: 100%;
-}
-main #page-header .container .head {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main #page-header .container .head h1 {
-  font-weight: 600;
-  font-size: 38px;
-  margin-bottom: 0;
-}
-main #page-header .container .head p {
-  font-size: 20px;
-  font-weight: 600;
-  color: orange;
-}
 main #page-links .container {
   margin-top: 16px;
 }
@@ -891,318 +864,230 @@ main #page-links .container span {
   font-size: 15px;
   color: black;
 }
-main #no-product .content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+main #page-links hr {
+  margin-bottom: 0;
 }
-main #no-product .content i {
-  font-size: 105px;
-  opacity: 0.8;
-}
-main #no-product .content p {
-  margin-top: 20px;
-  opacity: 0.8;
-  font-size: 15px;
-}
-main #no-product .content a {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(252, 185, 65);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
-  transition: all 0.3s;
-}
-main #no-product .content a:hover {
-  background-color: rgb(191, 145, 61);
-}
-main #products .left table {
+main #login-register {
+  background-image: url(./../../img/account/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-}
-main #products .left table thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products .left table thead .product {
-  width: 400px;
-}
-main #products .left table thead .total-price {
-  padding-left: 30px;
-}
-main #products .left table th {
-  opacity: 0.7;
-  font-size: 14px;
-}
-main #products .left table tbody tr {
-  height: 90px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products .left table tbody td img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-main #products .left table tbody .product,
-main #products .left table tbody .price,
-main #products .left table tbody .total-price {
-  font-size: 15px;
-  font-weight: 600;
-}
-main #products .left table tbody .price {
-  padding-top: 3px;
-}
-main #products .left table tbody .product {
+  height: 900px;
   display: flex;
-  align-items: center;
-  height: 90px;
-}
-main #products .left table tbody .quantity {
-  position: relative;
-}
-main #products .left table tbody .quantity input::-webkit-outer-spin-button,
-main #products .left table tbody .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-main #products .left table tbody .quantity input {
-  text-align: center;
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  top: 25px;
-  left: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 13px;
-  transition: all 0.3s;
-  outline: none;
-}
-main #products .left table tbody .quantity input:focus {
-  z-index: 4;
-  border: 1px solid rgb(252, 185, 65) !important;
-}
-main #products .left table tbody .quantity .decrease {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 9px;
-  font-size: 20px;
-  transition: all 0.3s;
-}
-main #products .left table tbody .quantity .decrease:hover {
-  color: rgb(252, 185, 65);
-}
-main #products .left table tbody .quantity .increase {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 80px;
-  font-size: 20px;
-  transition: all 0.3s;
-}
-main #products .left table tbody .quantity .increase:hover {
-  color: rgb(252, 185, 65);
-}
-main #products .left table tbody .total-price {
-  color: rgb(252, 185, 65);
-  padding-left: 30px;
-}
-main #products .left table tbody .option {
-  font-size: 14px;
-  opacity: 0.3;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-main #products .left table tbody .option:hover {
-  opacity: 1;
-}
-main #products .down {
-  display: flex;
-  justify-content: space-between;
-}
-main #products .down .input {
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
-main #products .down .input input {
-  height: 40px;
-  width: 250px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  outline: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgb(249, 249, 249);
-  transition: all 0.3s;
-}
-main #products .down .input input:focus {
-  border: 1px solid rgb(252, 185, 65) !important;
+main #login-register .login,
+main #login-register .register {
+  width: 545px;
+  height: 535px;
   background-color: white;
+  padding: 35px;
 }
-main #products .down .input i {
-  height: 40px;
-  width: 40px;
+main #login-register .login .head,
+main #login-register .register .head {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  border: 1px solid rgb(252, 185, 65);
-  color: rgb(252, 185, 65);
-  font-size: 13px;
-  transition: all 0.3s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-main #products .down .input i:hover {
-  background-color: rgb(252, 185, 65);
-  color: white;
-}
-main #products .down .update {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
-}
-main #products .down .update a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
+main #login-register .login .head p,
+main #login-register .register .head p {
+  font-size: 25px;
+  margin: 0;
+  height: 35px !important;
   font-weight: 600;
+  width: 50%;
+  text-align: center;
   transition: all 0.3s;
+  cursor: pointer;
 }
-main #products .down .update i {
-  font-size: 13px;
-  transition: all 0.3s;
-}
-main #products .down .update:hover > i {
+main #login-register .login .head p:hover:not(.active-p),
+main #login-register .register .head p:hover:not(.active-p) {
   color: rgb(252, 185, 65);
 }
-main #products .down .update:hover > a {
-  color: rgb(252, 185, 65);
+main #login-register .login .head .active-p,
+main #login-register .register .head .active-p {
+  border-bottom: 2px solid rgb(252, 185, 65);
 }
-main #products .cart-summary {
-  height: -moz-max-content;
-  height: max-content;
+main #login-register .login .body,
+main #login-register .register .body {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+main #login-register .login .body span,
+main #login-register .register .body span {
+  font-size: 14px;
+}
+main #login-register .login .body input:not(.check),
+main #login-register .register .body input:not(.check) {
   width: 100%;
-  background-color: rgb(249, 249, 249);
-  border: 1px dotted rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-main #products .cart-summary .cart-total {
-  font-weight: 600;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-main #products .cart-summary .sub-total {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .sub-total p {
-  font-weight: 600;
-}
-main #products .cart-summary .form p {
-  margin-top: 16px;
-  font-weight: 600;
-}
-main #products .cart-summary .form input {
-  margin-bottom: 15px;
-}
-main #products .cart-summary .form label {
-  width: 93%;
-  font-size: 14px;
-  opacity: 0.8;
-  font-weight: 600;
-}
-main #products .cart-summary .country {
-  margin-top: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .country p {
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-main #products .cart-summary .country a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 3px;
-  opacity: 0.7;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 250, 250);
+  margin-top: 5px;
   transition: all 0.3s;
+  padding-left: 20px;
 }
-main #products .cart-summary .country a:hover {
-  color: rgb(252, 185, 65);
-  opacity: 1;
+main #login-register .login .body input:not(.check):focus,
+main #login-register .register .body input:not(.check):focus {
+  background-color: white;
   border-color: rgb(252, 185, 65);
 }
-main #products .cart-summary .total {
+main #login-register .login .body .down,
+main #login-register .register .body .down {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-}
-main #products .cart-summary .total p {
-  font-weight: 600;
-  color: rgb(252, 185, 65);
-}
-main #products .cart-summary .button {
-  margin-top: 20px;
-}
-main #products .cart-summary .button a {
-  height: 40px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: rgb(252, 185, 65);
+}
+main #login-register .login .body .down button,
+main #login-register .register .body .down button {
+  height: 40px;
+  width: 115px;
   border: 1px solid rgb(252, 185, 65);
-  font-size: 13px;
-  font-weight: 600;
+  background-color: white;
+  color: rgb(252, 185, 65);
+  font-size: 14px;
   transition: all 0.3s;
 }
-main #products .cart-summary .button a:hover {
+main #login-register .login .body .down button i,
+main #login-register .register .body .down button i {
+  font-size: 12px;
+  margin-left: 8px;
+}
+main #login-register .login .body .down button:hover,
+main #login-register .register .body .down button:hover {
   background-color: rgb(252, 185, 65);
   color: white;
 }
-main #products .continue-shopping {
+main #login-register .login .body .down .remember,
+main #login-register .register .body .down .remember {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 40px;
-  margin-top: 25px;
-  margin-bottom: 50px;
 }
-main #products .continue-shopping a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+main #login-register .login .body .down .remember input,
+main #login-register .register .body .down .remember input {
+  all: revert;
+  margin-right: 5px;
+  accent-color: rgb(51, 51, 51);
+}
+main #login-register .login .body .down .remember label,
+main #login-register .register .body .down .remember label {
+  font-size: 15px;
+  opacity: 0.8;
+}
+main #login-register .login .body .down a,
+main #login-register .register .body .down a {
   text-decoration: none;
   color: black;
+  font-size: 15px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+main #login-register .login .body .down a:hover,
+main #login-register .register .body .down a:hover {
+  color: rgb(252, 185, 65);
+  opacity: 1 !important;
+}
+main #login-register .login .body .down-register button,
+main #login-register .register .body .down-register button {
+  height: 40px;
+  width: 115px;
+  border: 1px solid rgb(252, 185, 65);
+  background-color: white;
+  color: rgb(252, 185, 65);
   font-size: 14px;
-  font-weight: 600;
   transition: all 0.3s;
 }
-main #products .continue-shopping i {
-  font-size: 13px;
+main #login-register .login .body .down-register button i,
+main #login-register .register .body .down-register button i {
+  font-size: 12px;
+  margin-left: 8px;
+}
+main #login-register .login .body .down-register button:hover,
+main #login-register .register .body .down-register button:hover {
+  background-color: rgb(252, 185, 65);
+  color: white;
+}
+main #login-register .login .body .down-register .agree,
+main #login-register .register .body .down-register .agree {
+  display: flex;
+  align-items: center;
+  display: inline;
+  margin-left: 10px;
+}
+main #login-register .login .body .down-register .agree input,
+main #login-register .register .body .down-register .agree input {
+  all: revert;
+  margin-right: 5px;
+  accent-color: rgb(51, 51, 51);
+}
+main #login-register .login .body .down-register .agree label,
+main #login-register .register .body .down-register .agree label {
+  font-size: 15px;
+  opacity: 0.8;
+}
+main #login-register .login .body hr,
+main #login-register .register .body hr {
+  margin-top: 35px;
+}
+main #login-register .login .alternatives,
+main #login-register .register .alternatives {
+  margin-top: 25px;
+}
+main #login-register .login .alternatives p,
+main #login-register .register .alternatives p {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.8;
+}
+main #login-register .login .alternatives .links,
+main #login-register .register .alternatives .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+}
+main #login-register .login .alternatives .links .google,
+main #login-register .login .alternatives .links .facebook,
+main #login-register .register .alternatives .links .google,
+main #login-register .register .alternatives .links .facebook {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+  cursor: pointer;
   transition: all 0.3s;
 }
-main #products .continue-shopping:hover > i {
-  color: rgb(252, 185, 65);
+main #login-register .login .alternatives .links .google .fa-google,
+main #login-register .login .alternatives .links .facebook .fa-google,
+main #login-register .register .alternatives .links .google .fa-google,
+main #login-register .register .alternatives .links .facebook .fa-google {
+  color: rgb(204, 51, 51);
+  font-size: 15px;
 }
-main #products .continue-shopping:hover > a {
-  color: rgb(252, 185, 65);
+main #login-register .login .alternatives .links .google .fa-facebook-f,
+main #login-register .login .alternatives .links .facebook .fa-facebook-f,
+main #login-register .register .alternatives .links .google .fa-facebook-f,
+main #login-register .register .alternatives .links .facebook .fa-facebook-f {
+  color: rgb(51, 102, 204);
+  font-size: 15px;
+}
+main #login-register .login .alternatives .links .google span,
+main #login-register .login .alternatives .links .facebook span,
+main #login-register .register .alternatives .links .google span,
+main #login-register .register .alternatives .links .facebook span {
+  font-size: 14px;
+}
+main #login-register .login .alternatives .links .google:hover,
+main #login-register .login .alternatives .links .facebook:hover,
+main #login-register .register .alternatives .links .google:hover,
+main #login-register .register .alternatives .links .facebook:hover {
+  background-color: #f5f6f9;
 }
 
 footer #footer-up .container {
@@ -1396,4 +1281,4 @@ body {
 .col-sm-6,
 .col-4 {
   padding: 0;
-}/*# sourceMappingURL=cart.css.map */
+}/*# sourceMappingURL=account.css.map */

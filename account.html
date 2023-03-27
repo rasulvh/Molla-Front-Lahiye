@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
-    <link rel="stylesheet" href="./assets/scss/cart/cart.css">
-    <title>Cart</title>
+    <link rel="stylesheet" href="./assets/scss/account/account.css">
+    <title>Account</title>
 </head>
 
 <body>
@@ -85,7 +85,6 @@
             </div>
         </div>
     </div>
-
 
     <header>
         <div class="head-up">
@@ -233,7 +232,7 @@
                                         </div>
 
                                     </li>
-                                    <li><a href="">Blog</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
                                     <li><a href="">Contact</a></li>
                                 </ul>
                             </div>
@@ -255,110 +254,84 @@
 
     <main>
 
-        <section id="page-header">
-
-            <div class="container">
-                <div class="head">
-                    <h1>Shopping Cart</h1>
-                    <p>Shop</p>
-                </div>
-            </div>
-        </section>
-
         <section id="page-links">
             <div class="container">
                 <a href="home.html">Home</a><i class="fa-light fa-chevron-right"></i>
-                <a href="">Shop</a><i class="fa-light fa-chevron-right"></i>
-                <span>Shopping Cart</span>
+                <a href="">Pages</a><i class="fa-light fa-chevron-right"></i>
+                <span>Account</span>
             </div>
             <hr>
         </section>
 
-        <section id="no-product" class="">
-            <div class="container">
-                <div class="content">
-                    <i class="fa-regular fa-cart-shopping"></i>
-                    <p>No products added to the cart</p>
-                    <a href="">RETURN TO SHOP</a>
+        <section id="login-register" class="account">
+            <div class="login">
+                <div class="head">
+                    <p class="active-p option">Sign In</p>
+                    <p class="option">Register</p>
                 </div>
-            </div>
-            <hr>
-        </section>
-
-        <section id="products" class="">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-9">
-                        <div class="left">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="product">Product</th>
-                                        <th scope="col" class="price">Price</th>
-                                        <th scope="col" class="quantity">Quantity</th>
-                                        <th scope="col" class="total-price">Total</th>
-                                        <th scope="col" class="option"></th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-
-                                </tbody>
-                            </table>
-                            <div class="down my-4">
-                                <div class="input">
-                                    <input type="text" placeholder="coupon code">
-                                    <i class="fa-light fa-arrow-right-long"></i>
-                                </div>
-                                <div class="update">
-                                    <a href="">UPDATE CART</a><i class="fa-regular fa-arrows-repeat"></i>
-                                </div>
-                            </div>
+                <div class="body">
+                    <span>Username or email address*</span><br>
+                    <input type="text"><br><br>
+                    <span>Password</span><br>
+                    <input type="text"><br><br>
+                    <div class="down">
+                        <button>LOG IN <i class="fa-regular fa-arrow-right-long"></i></button>
+                        <div class="remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Remember Me</label>
                         </div>
+                        <a href="">Forgot Your Password?</a>
                     </div>
-                    <div class="col-3">
-                        <div class="right">
-                            <div class="cart-summary">
-                                <p class="cart-total">Cart Total</p>
-                                <div class="sub-total">
-                                    <p>Subtotal:</p>
-                                    <p class="sub-total-price">$499.99</p>
-                                </div>
-                                <div class="form">
-                                    <p>Shipping:</p>
-
-                                    <input type="radio" id="free" name="shipping" value="0" checked>
-                                    <label for="free">Free Shipping: <span class="float-end">$0.00</span></label><br>
-                                    <input type="radio" id="standard" name="shipping" value="10">
-                                    <label for="standard">Standard: <span class="float-end">$10.00</span></label><br>
-                                    <input type="radio" id="express" name="shipping" value="20">
-                                    <label for="express">Express: <span class="float-end">$20.00</span></label>
-                                </div>
-                                <div class="country">
-                                    <p>Estimate for Your Country</p>
-                                    <a href="">Change Address</a>
-                                </div>
-                                <div class="total">
-                                    <p>Total:</p>
-                                    <p class="total-price">$499.99</p>
-                                </div>
-                                <div class="button">
-                                    <a href="">PROCEED TO CHECKOUT</a>
-                                </div>
-                            </div>
-                            <div class="continue-shopping">
-                                <a href="">CONTINUE SHOPPING</a><i class="fa-regular fa-arrows-repeat"></i>
-                            </div>
+                    <hr>
+                </div>
+                <div class="alternatives">
+                    <p>or sign in with</p>
+                    <div class="links">
+                        <div class="google">
+                            <i class="fa-brands fa-google"></i> <span>Login With Google</span>
+                        </div>
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i> <span>Login With Facebook</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <hr>
+            <div class="register d-none">
+                <div class="head">
+                    <p class="option">Sign In</p>
+                    <p class="active-p option">Register</p>
+                </div>
+                <div class="body">
+                    <span>Your email address *</span><br>
+                    <input type="text"><br><br>
+                    <span>Password</span><br>
+                    <input type="text"><br><br>
+                    <div class="down-register">
+                        <button>SIGN UP <i class="fa-regular fa-arrow-right-long"></i></button>
+                        <div class="agree">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I agree to the privacy policy *</label>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="alternatives">
+                    <p>or sign in with</p>
+                    <div class="links">
+                        <div class="google">
+                            <i class="fa-brands fa-google"></i> <span>Login With Google</span>
+                        </div>
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i> <span>Login With Facebook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
+
+
 
     <footer>
 
@@ -437,17 +410,8 @@
 
 
 
+
     <a href="#" class="go-to-top"><i class="fa-regular fa-arrow-up"></i></a>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -463,7 +427,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/account.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 body {
   font-family: "Mulish", sans-serif;
+  position: relative;
 }
 
 .sidebar {
@@ -891,318 +892,277 @@ main #page-links .container span {
   font-size: 15px;
   color: black;
 }
-main #no-product .content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main #no-product .content i {
-  font-size: 105px;
-  opacity: 0.8;
-}
-main #no-product .content p {
-  margin-top: 20px;
-  opacity: 0.8;
-  font-size: 15px;
-}
-main #no-product .content a {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(252, 185, 65);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
-  transition: all 0.3s;
-}
-main #no-product .content a:hover {
-  background-color: rgb(191, 145, 61);
-}
-main #products .left table {
+main #all .blog .img img {
+  cursor: pointer;
   width: 100%;
 }
-main #products .left table thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+main #all .blog .content {
+  padding-top: 15px;
 }
-main #products .left table thead .product {
-  width: 400px;
+main #all .blog .content .up-span {
+  font-size: 13px;
+  opacity: 0.8;
 }
-main #products .left table thead .total-price {
-  padding-left: 30px;
-}
-main #products .left table th {
-  opacity: 0.7;
+main #all .blog .content .up-links {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
   font-size: 14px;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
 }
-main #products .left table tbody tr {
-  height: 90px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+main #all .blog .content .up-links:hover {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
 }
-main #products .left table tbody td img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-main #products .left table tbody .product,
-main #products .left table tbody .price,
-main #products .left table tbody .total-price {
-  font-size: 15px;
+main #all .blog .content h1 {
   font-weight: 600;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
 }
-main #products .left table tbody .price {
-  padding-top: 3px;
+main #all .blog .content h1:hover {
+  color: rgb(252, 185, 65);
 }
-main #products .left table tbody .product {
-  display: flex;
-  align-items: center;
-  height: 90px;
+main #all .blog .content .middle-links {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  opacity: 0.8;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
 }
-main #products .left table tbody .quantity {
+main #all .blog .content .middle-links:hover {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #all .blog .content .middle {
+  font-size: 13px;
+  opacity: 0.8;
+}
+main #all .blog .content p {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+main #all .blog .content .continue {
+  text-decoration: none;
+  color: rgb(252, 185, 65);
+  font-size: 14px;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
+}
+main #all .blog .content .continue i {
+  font-size: 11px;
+  transform: translateX(-15px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+main #all .blog .content .continue:hover {
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #all .blog .content .continue:hover i {
+  transform: translateX(0);
+  opacity: 1;
+}
+main #all .blog:not(.first) {
+  margin-top: 50px;
+}
+main #all .play-icon .img {
   position: relative;
 }
-main #products .left table tbody .quantity input::-webkit-outer-spin-button,
-main #products .left table tbody .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-main #products .left table tbody .quantity input {
-  text-align: center;
+main #all .play-icon .img .play {
   position: absolute;
-  width: 100px;
-  height: 40px;
-  top: 25px;
-  left: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 13px;
-  transition: all 0.3s;
-  outline: none;
-}
-main #products .left table tbody .quantity input:focus {
-  z-index: 4;
-  border: 1px solid rgb(252, 185, 65) !important;
-}
-main #products .left table tbody .quantity .decrease {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 9px;
-  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 100%;
   transition: all 0.3s;
 }
-main #products .left table tbody .quantity .decrease:hover {
+main #all .play-icon .img .play i {
   color: rgb(252, 185, 65);
-}
-main #products .left table tbody .quantity .increase {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 80px;
-  font-size: 20px;
-  transition: all 0.3s;
-}
-main #products .left table tbody .quantity .increase:hover {
-  color: rgb(252, 185, 65);
-}
-main #products .left table tbody .total-price {
-  color: rgb(252, 185, 65);
-  padding-left: 30px;
-}
-main #products .left table tbody .option {
-  font-size: 14px;
-  opacity: 0.3;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-main #products .left table tbody .option:hover {
-  opacity: 1;
-}
-main #products .down {
-  display: flex;
-  justify-content: space-between;
-}
-main #products .down .input {
-  display: flex;
-  align-items: center;
-}
-main #products .down .input input {
-  height: 40px;
-  width: 250px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  outline: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgb(249, 249, 249);
-  transition: all 0.3s;
-}
-main #products .down .input input:focus {
-  border: 1px solid rgb(252, 185, 65) !important;
+  font-size: 30px;
   background-color: white;
-}
-main #products .down .input i {
-  height: 40px;
-  width: 40px;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-left: 10px;
-  border: 1px solid rgb(252, 185, 65);
-  color: rgb(252, 185, 65);
-  font-size: 13px;
+  align-items: center;
   transition: all 0.3s;
+  cursor: pointer;
 }
-main #products .down .input i:hover {
-  background-color: rgb(252, 185, 65);
+main #all .play-icon .img .play:hover {
+  padding: 10px;
+}
+main #all .play-icon .img .play:hover i {
   color: white;
+  background-color: #bf913d;
 }
-main #products .down .update {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
-}
-main #products .down .update a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
+main #all .search p {
+  font-size: 19px;
   font-weight: 600;
-  transition: all 0.3s;
+  margin-bottom: 5px;
 }
-main #products .down .update i {
-  font-size: 13px;
-  transition: all 0.3s;
+main #all .search .input {
+  position: relative;
+  height: 40px;
 }
-main #products .down .update:hover > i {
-  color: rgb(252, 185, 65);
-}
-main #products .down .update:hover > a {
-  color: rgb(252, 185, 65);
-}
-main #products .cart-summary {
-  height: -moz-max-content;
-  height: max-content;
+main #all .search .input input {
+  position: absolute;
   width: 100%;
-  background-color: rgb(249, 249, 249);
-  border: 1px dotted rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-main #products .cart-summary .cart-total {
-  font-weight: 600;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-main #products .cart-summary .sub-total {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .sub-total p {
-  font-weight: 600;
-}
-main #products .cart-summary .form p {
-  margin-top: 16px;
-  font-weight: 600;
-}
-main #products .cart-summary .form input {
-  margin-bottom: 15px;
-}
-main #products .cart-summary .form label {
-  width: 93%;
-  font-size: 14px;
-  opacity: 0.8;
-  font-weight: 600;
-}
-main #products .cart-summary .country {
-  margin-top: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .country p {
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-main #products .cart-summary .country a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 3px;
-  opacity: 0.7;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+  padding-right: 30px;
   transition: all 0.3s;
 }
-main #products .cart-summary .country a:hover {
-  color: rgb(252, 185, 65);
-  opacity: 1;
-  border-color: rgb(252, 185, 65);
+main #all .search .input input:focus {
+  border: 1px solid rgb(252, 185, 65);
 }
-main #products .cart-summary .total {
+main #all .search .input input::-moz-placeholder {
+  font-size: 13px;
+}
+main #all .search .input input::placeholder {
+  font-size: 13px;
+}
+main #all .search .input i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #all .search .input i:hover {
+  color: rgb(252, 185, 65);
+}
+main #all .categories {
+  margin-top: 20px;
+}
+main #all .categories p {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main #all .categories .option {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+main #all .categories .option span {
+  font-size: 14px;
+  transition: all 0.3s;
+}
+main #all .categories .option:hover span {
+  color: rgb(252, 185, 65);
+}
+main #all .popular-posts {
+  margin-top: 20px;
+}
+main #all .popular-posts p {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+main #all .popular-posts .post {
+  display: flex;
+  margin-bottom: 20px;
+}
+main #all .popular-posts .post .img {
+  width: 80px;
+  height: 80px;
+}
+main #all .popular-posts .post .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main #all .popular-posts .post .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 15px;
+  width: 175px;
+}
+main #all .popular-posts .post .content span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+main #all .popular-posts .post .content p {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #all .popular-posts .post .content p:hover {
+  color: rgb(252, 185, 65);
+}
+main #all .ad-box {
+  width: 280px;
+  height: 280px;
   margin-top: 30px;
 }
-main #products .cart-summary .total p {
-  font-weight: 600;
-  color: rgb(252, 185, 65);
+main #all .ad-box .head p {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  opacity: 0.8;
 }
-main #products .cart-summary .button {
-  margin-top: 20px;
-}
-main #products .cart-summary .button a {
-  height: 40px;
+main #all .ad-box .box {
+  width: 100%;
+  height: 270px;
+  background-image: url(./../../img/blog/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: rgb(252, 185, 65);
-  border: 1px solid rgb(252, 185, 65);
-  font-size: 13px;
-  font-weight: 600;
-  transition: all 0.3s;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-main #products .cart-summary .button a:hover {
-  background-color: rgb(252, 185, 65);
+main #all .ad-box .box span {
   color: white;
+  opacity: 0.8;
 }
-main #products .continue-shopping {
+main #all .ad-box .box p {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+main #all .ad-box .box h3 {
+  font-size: 23px;
+  color: white;
+  -webkit-text-stroke: 1.5px;
+  width: 175px;
+}
+main #all .ad-box .box a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 40px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-}
-main #products .continue-shopping a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 600;
+  border: 1px solid white;
   transition: all 0.3s;
 }
-main #products .continue-shopping i {
-  font-size: 13px;
-  transition: all 0.3s;
-}
-main #products .continue-shopping:hover > i {
-  color: rgb(252, 185, 65);
-}
-main #products .continue-shopping:hover > a {
-  color: rgb(252, 185, 65);
+main #all .ad-box .box a:hover {
+  background-color: rgb(252, 185, 65);
+  border: 1px solid rgb(252, 185, 65);
 }
 
 footer #footer-up .container {
@@ -1396,4 +1356,4 @@ body {
 .col-sm-6,
 .col-4 {
   padding: 0;
-}/*# sourceMappingURL=cart.css.map */
+}/*# sourceMappingURL=blog.css.map */

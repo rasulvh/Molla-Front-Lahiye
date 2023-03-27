@@ -24,7 +24,7 @@
 
     <header>
         <div class="head-up">
-            <div class="container">
+            <div class="container-lg">
                 <div class="up">
                     <div class="left">
                         <i class="fa-solid fa-phone"></i><span>Call: +0123 456 789</span>
@@ -48,37 +48,69 @@
                             </li>
                             <li><a href="">Sign in / Sign up</a></li>
                         </ul>
+                        <div class="links">
+                            <div class="links-body">
+                              <p class="choosen">Links <i class="fa-solid fa-angle-down down"></i></p>
+          
+                              <ul class="menu p-0 m-0">
+                                <li class="link">
+                                  <p class="link-choosen">USD <i class="fa-solid fa-angle-down down"></i></p>
+          
+                                  <ul class="link-menu p-0 m-0">
+                                    <li>Eur</li>
+                                    <li>Usd</li>
+                                  </ul>
+                                </li>
+                                <li class="link">
+                                  <p class="link-choosen">Language <i class="fa-solid fa-angle-down down"></i></p>
+          
+                                  <ul class="link-menu p-0 m-0">
+                                    <li>English</li>
+                                    <li>French</li>
+                                    <li>Spanish</li>
+                                  </ul>
+                                </li>
+                                <li class="link">
+                                  <p class="account">Sign in / Sign up</p>
+                                </li>
+                              </ul>
+                            </div>
+          
+                          </div>
                     </div>
                 </div>
                 <div class="line"></div>
                 <div class="down">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-2 col-sm-3">
                             <div class="logo">
+                                <i class="fa-regular fa-bars d-none"></i>
                                 <a href="home.html">
                                     <img src="./assets/img/home/logo.png" alt="logo">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div class="search">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="text" placeholder="Search product ...">
+                        <div class="col-8 col-sm-6">
+                            <div class="search-area">
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search product ...">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 col-sm-3">
                             <div class="right-icons">
                                 <div class="compare">
-                                    <i class="fa-light fa-shuffle"></i>
+                                    <a href=""><i class="fa-light fa-shuffle"></i></a>
                                     <p>Compare</p>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa-light fa-heart"></i>
+                                    <a href=""><i class="fa-light fa-heart"></i></a>
                                     <span class="wish-count">0</span>
                                     <p>Wishlist</p>
                                 </div>
                                 <div class="cart">
-                                    <a href="cart.html" ><i class="fa-regular fa-cart-shopping"></i></a>
+                                    <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
                                     <span class="cart-count">0</span>
                                     <p>Cart</p>
                                 </div>
@@ -120,24 +152,24 @@
                             <div class="left-line"></div>
                             <div class="contents">
                                 <ul>
-                                    <li><a href="home.html" >Home</a></li>
-                                    <li><a href="" >Shop</a></li>
-                                    <li><a href="" >Product</a></li>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="">Shop</a></li>
+                                    <li><a href="">Product</a></li>
                                     <li class="drop-hover">
                                         <a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
 
                                         <div class="dropdown-list">
                                             <ul>
-                                                <li class="dropdown-list-item"><a href="" >Account</a></li>
-                                                <li class="dropdown-list-item"><a href="" >About</a></li>
-                                                <li class="dropdown-list-item"><a href="cart.html" >Cart</a></li>
-                                                <li class="dropdown-list-item"><a href="" >Wishlist</a></li>
+                                                <li class="dropdown-list-item"><a href="account.html">Account</a></li>
+                                                <li class="dropdown-list-item"><a href="">About</a></li>
+                                                <li class="dropdown-list-item"><a href="cart.html">Cart</a></li>
+                                                <li class="dropdown-list-item"><a href="">Wishlist</a></li>
                                             </ul>
                                         </div>
 
                                     </li>
-                                    <li><a href="" >Blog</a></li>
-                                    <li><a href="" >Contact</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact</a></li>
                                 </ul>
                             </div>
                             <div class="right-line"></div>
@@ -2012,7 +2044,7 @@
         <section id="footer-up" class="mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="left">
                             <img src="./assets/img/home/logo-footer.png" alt="">
                             <p>
@@ -2029,42 +2061,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
-                        <div class="links">
-                            <div class="row">
-                                <div class="col-4">
-                                    <p>Useful Links</p>
-                                    <ul>
-                                        <li><a href="">About Molla</a></li>
-                                        <li><a href="">Our Services</a></li>
-                                        <li><a href="">How to shop on Molla</a></li>
-                                        <li><a href="">FAQ</a></li>
-                                        <li><a href="">Contact us</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4">
-                                    <p>Customer Service</p>
-                                    <ul>
-                                        <li><a href="">Payment Methods</a></li>
-                                        <li><a href="">Money-back guarantee!</a></li>
-                                        <li><a href="">Returns</a></li>
-                                        <li><a href="">Shipping</a></li>
-                                        <li><a href="">Terms and conditions</a></li>
-                                        <li><a href="">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4">
-                                    <p>My Account</p>
-                                    <ul>
-                                        <li><a href="">Sign In</a></li>
-                                        <li><a href="cart.html" target="bl">View Cart</a></li>
-                                        <li><a href="">My Wishlist</a></li>
-                                        <li><a href="">Track My Order</a></li>
-                                        <li><a href="">Help</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Useful Links</p>
+                        <ul>
+                            <li><a href="">About Molla</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">How to shop on Molla</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Customer Service</p>
+                        <ul>
+                            <li><a href="">Payment Methods</a></li>
+                            <li><a href="">Money-back guarantee!</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Terms and conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>My Account</p>
+                        <ul>
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="cart.html" target="bl">View Cart</a></li>
+                            <li><a href="">My Wishlist</a></li>
+                            <li><a href="">Track My Order</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -2075,11 +2101,11 @@
         <section id="footer-down">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
                         <p>Copyright © 2023 Molla Store. All Rights Reserved.</p>
                     </div>
-                    <div class="col-4"></div>
-                    <div class="col-4">
+                    <div class="col-3"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 img-div">
                         <img src="./assets/img/home/payments.png" alt="">
                     </div>
                 </div>
