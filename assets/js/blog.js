@@ -25,6 +25,22 @@ $(function () {
 
     })
 
+    function calculateWishlistCount() {
+        if (JSON.parse(localStorage.getItem("wishlist")) != null) {
+            let sum = 0
+
+            for (const item of JSON.parse(localStorage.getItem("wishlist"))) {
+                sum++
+            }
+
+            wishlistCount.innerText = sum
+        }
+        else {
+            wishlistCount.innerText = "0"
+        }
+    }
+
+    calculateWishlistCount()
 
     let sidebarHeader = $(".sidebar .tab-menu .header .head");
 

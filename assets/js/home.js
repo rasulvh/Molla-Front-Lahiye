@@ -1,5 +1,5 @@
 $(function () {
-  
+
   window.onscroll = function () { myFunction() };
 
   var navbar = document.querySelector(".navbar");
@@ -401,6 +401,49 @@ $(function () {
 
   }
 
+  let cartCount = document.querySelector(".head-up .down .right-icons .cart .cart-count")
+  let wishlistCount = document.querySelector(".head-up .down .right-icons .wishlist .wish-count")
+
+  function calculateCartCount() {
+    let sum = 0
+
+    if (JSON.parse(localStorage.getItem("products")) != null) {
+      for (const item of JSON.parse(localStorage.getItem("products"))) {
+        sum += item.count;
+      }
+
+      cartCount.innerText = sum
+    }
+    else {
+      cartCount.innerText = "0"
+    }
+
+  }
+
+  calculateCartCount()
+
+  function calculateWishlistCount() {
+    if (JSON.parse(localStorage.getItem("wishlist")) != null) {
+      let sum = 0
+
+      for (const item of JSON.parse(localStorage.getItem("wishlist"))) {
+        sum++
+      }
+
+      wishlistCount.innerText = sum
+    }
+    else {
+      wishlistCount.innerText = "0"
+    }
+  }
+
+  calculateWishlistCount()
+
+  let wishlistProduct = []
+  if (JSON.parse(localStorage.getItem("wishlist") != null)) {
+    wishlistProduct = JSON.parse(localStorage.getItem("wishlist"));
+  }
+
   let addWishlist = document.querySelectorAll(".add-wishlist-icon")
   for (const item of addWishlist) {
     item.addEventListener("mouseover", function () {
@@ -409,28 +452,62 @@ $(function () {
     item.addEventListener("mouseout", function () {
       this.previousElementSibling.classList.remove("add-wishlist-hover")
     })
-  }
 
-
-  let cartCount = document.querySelector(".head-up .down .right-icons .cart .cart-count")
-
-  function calculateCartCount(){
-    let sum = 0
-
-    if (JSON.parse(localStorage.getItem("products")) != null) {
-      for (const item of JSON.parse(localStorage.getItem("products"))) {
-        sum += item.count;
+    item.addEventListener("click", function () {
+      if (JSON.parse(localStorage.getItem("wishlist") == null)) {
+        wishlistProduct = []
       }
-  
-      cartCount.innerText = sum
-    }
-    else{
-      cartCount.innerText = "0"
-    }
 
+      checkWishlist(item)
+
+      let proImage = item.closest(".img").firstElementChild.getAttribute("src")
+      let proName = item.closest(".img").nextElementSibling.getElementsByTagName("a")[0].innerText
+      let proPrice = item.closest(".img").nextElementSibling.getElementsByTagName("p")[0].innerText
+      let proId = parseInt(item.closest(".card").getAttribute("data-id"))
+
+      let existProduct = wishlistProduct.find((m) => m.id == proId);
+
+      if (existProduct != undefined) {
+        let index = wishlistProduct.indexOf(existProduct)
+
+        if (index > -1) {
+          wishlistProduct.splice(index, 1)
+        }
+
+        this.className = "fa-regular fa-heart add-wishlist-icon"
+      }
+      else {
+        wishlistProduct.push({
+          id: proId,
+          name: proName,
+          price: proPrice,
+          image: proImage
+        })
+
+        this.className = "fa-solid fa-heart add-wishlist-icon"
+      }
+
+      localStorage.setItem("wishlist", JSON.stringify(wishlistProduct))
+
+      calculateWishlistCount()
+    })
+
+    checkWishlist(item)
   }
 
-  calculateCartCount()
+  function checkWishlist(item) {
+    let card = item.closest(".card")
+    let existProduct = wishlistProduct.find((m) => m.id == card.getAttribute("data-id"));
+
+    if (existProduct != undefined) {
+      item.className = "fa-solid fa-heart add-wishlist-icon"
+      calculateWishlistCount()
+    }
+    else {
+      item.className = "fa-regular fa-heart add-wishlist-icon"
+      calculateWishlistCount()
+    }
+  }
 
   let basketProducts = []
   if (JSON.parse(localStorage.getItem("products") != null)) {

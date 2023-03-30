@@ -79,6 +79,23 @@ $(function () {
     }
   }
 
+  function calculateWishlistCount() {
+    if (JSON.parse(localStorage.getItem("wishlist")) != null) {
+      let sum = 0
+
+      for (const item of JSON.parse(localStorage.getItem("wishlist"))) {
+        sum++
+      }
+
+      wishlistCount.innerText = sum
+    }
+    else {
+      wishlistCount.innerText = "0"
+    }
+  }
+
+  calculateWishlistCount()
+
   function checkProductCount() {
     if (JSON.parse(localStorage.getItem("products")).length > 0) {
       $("#no-product").addClass("d-none")
@@ -195,10 +212,10 @@ $(function () {
   }
 
   for (const input of countInputs) {
-    input.addEventListener("change", function(){
+    input.addEventListener("change", function () {
       let changeProduct = products.find(m => m.id == input.parentNode.parentNode.getAttribute("data-id"))
 
-      if(input.value >= 1 && input.value <= 1000){
+      if (input.value >= 1 && input.value <= 1000) {
         changeProduct.count = input.value
 
         localStorage.setItem("products", JSON.stringify(products))
@@ -208,13 +225,13 @@ $(function () {
         calculateCartCount()
 
         calculateSubTotal()
-      
+
         calculateTotal()
       }
-      else{
+      else {
         input.value = changeProduct.count
       }
-      
+
     })
   }
 
@@ -240,7 +257,7 @@ $(function () {
     return sum
   }
 
-  function calculateTotal(){
+  function calculateTotal() {
     let sum = calculateSubTotal() + parseInt(document.querySelector('.cart-summary .form input:checked').value)
 
     totalPrice.innerText = `$${sum.toFixed(2)}`
