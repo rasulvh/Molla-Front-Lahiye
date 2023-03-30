@@ -22,6 +22,74 @@
 
 <body>
 
+    <div class="sidebar">
+        <div class="close">
+            <i class="fa-light fa-xmark fa-xs"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search product ...">
+            <i class="fa-light fa-magnifying-glass fa-flip-horizontal"></i>
+        </div>
+        <div class="tab-menu">
+            <div class="header">
+                <p class="head active-head" data-id="1">MENU</p>
+                <p class="head" data-id="2">CATEGORIES</p>
+            </div>
+            <div class="content">
+                <ul data-id="1" class="menu show">
+                    <li class="menu-item">
+                        <p>HOME</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>SHOP</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>PRODUCT</p>
+                    </li>
+                    <li class="menu-pages menu-item">
+                        <p>PAGES <i class="fa-solid fa-angle-down down"></i></p>
+
+                        <ul class="pages">
+                            <li class="dropdown-self">Account</li>
+                            <li class="dropdown-self">About</li>
+                            <li class="dropdown-self">Cart</li>
+                            <li class="dropdown-self">Wishlist</li>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item">
+                        <p>BLOG</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>CONTACT</p>
+                    </li>
+                </ul>
+
+                <ul data-id="2" class="categories">
+                    <li>Electronics</li>
+                    <li>Gift Ideas</li>
+                    <li>Beds</li>
+                    <li>Lighting</li>
+                    <li>Sofas & Sleeper sofas</li>
+                    <li>Storage</li>
+                    <li>Armchairs & Chaises</li>
+                    <li>Decoration</li>
+                    <li>Kitchen Cabinets</li>
+                    <li>Coffee & Tables</li>
+                    <li>Outdoor Furniture</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="head-up">
             <div class="container-lg">
@@ -161,7 +229,7 @@
                                         <div class="dropdown-list">
                                             <ul>
                                                 <li class="dropdown-list-item"><a href="account.html">Account</a></li>
-                                                <li class="dropdown-list-item"><a href="">About</a></li>
+                                                <li class="dropdown-list-item"><a href="about.html">About</a></li>
                                                 <li class="dropdown-list-item"><a href="cart.html">Cart</a></li>
                                                 <li class="dropdown-list-item"><a href="">Wishlist</a></li>
                                             </ul>
@@ -189,7 +257,7 @@
 
     <main>
 
-        <section id="slider-banner">
+        <section id="slider-banner" class="my-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12">

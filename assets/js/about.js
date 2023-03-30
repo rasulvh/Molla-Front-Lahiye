@@ -143,6 +143,13 @@ $(function () {
 
     calculateCartCount()
 
-    
+    $('.comments').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        nextArrow: "#customers-comment .fa-chevron-right",
+        prevArrow: "#customers-comment .fa-chevron-left",
+    });
 
 })

@@ -2,6 +2,189 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  transform: translateX(-300px);
+  z-index: 11;
+  background-color: white;
+  left: 0;
+  box-shadow: 0px 0px 5px 2px rgb(88, 88, 88);
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .close {
+  align-self: flex-end;
+  margin-top: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.sidebar .close i {
+  font-size: 15 px;
+  transition: all 0.3s;
+}
+.sidebar .close:hover {
+  color: rgb(252, 185, 65);
+}
+.sidebar .search {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  padding: 0px 20px;
+  display: flex;
+  margin-top: 20px;
+}
+.sidebar .search input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(214, 214, 214);
+  font-size: 13px;
+  padding-left: 15px;
+}
+.sidebar .search i {
+  padding: 14px;
+  align-self: center;
+  color: white;
+  font-size: 9px;
+  background-color: rgb(252, 185, 65);
+  -webkit-text-stroke: 0.1px white;
+  cursor: pointer;
+}
+.sidebar .tab-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.sidebar .tab-menu .header {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  justify-content: center;
+}
+.sidebar .tab-menu .header .head {
+  padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  transition: all 0.4s;
+}
+.sidebar .tab-menu .header .head:hover {
+  color: rgb(252, 185, 65);
+  border-bottom: 2px solid rgb(252, 185, 65);
+}
+.sidebar .tab-menu .header .active-head {
+  color: rgb(252, 185, 65);
+  border-bottom: 2px solid rgb(252, 185, 65);
+}
+.sidebar .tab-menu .content ul {
+  display: none;
+}
+.sidebar .tab-menu .content .menu {
+  padding: 0;
+}
+.sidebar .tab-menu .content .menu li {
+  list-style: none;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar .tab-menu .content .menu li p {
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  font-size: 12px;
+  color: gray;
+  padding-left: 20px;
+  display: flex;
+  transition: all 0.4s;
+}
+.sidebar .tab-menu .content .menu li p i {
+  -webkit-text-stroke: 0.5px white;
+  align-self: center;
+  margin-left: auto;
+  transition: all 0.4s;
+}
+.sidebar .tab-menu .content .menu li p:hover {
+  color: orange;
+}
+.sidebar .tab-menu .content .menu .menu-pages {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .tab-menu .content .menu .menu-pages .pages {
+  width: 100%;
+  padding: 0;
+}
+.sidebar .tab-menu .content .menu .menu-pages .pages .dropdown-self {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 0px 8px 30px;
+  font-size: 13px;
+  color: gray;
+  transition: all 0.4s;
+}
+.sidebar .tab-menu .content .menu .menu-pages .pages .dropdown-self:hover {
+  color: rgb(252, 185, 65);
+}
+.sidebar .tab-menu .content .categories {
+  padding: 0;
+}
+.sidebar .tab-menu .content .categories li {
+  list-style: none;
+  padding: 8px 0px;
+  padding-left: 20px;
+  color: gray;
+  font-size: 13px;
+  width: 100%;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.sidebar .tab-menu .content .categories li:hover {
+  color: rgb(252, 185, 65);
+}
+.sidebar .tab-menu .content .show {
+  display: block;
+}
+.sidebar .social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sidebar .social-media .links {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .social-media .links i {
+  color: rgb(175, 175, 175);
+  padding: 10px;
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(175, 175, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.sidebar .social-media .links i:hover {
+  color: rgb(252, 185, 65);
+  border: 1px solid rgb(252, 185, 65);
+}
+
 header {
   width: 100%;
   height: 196px;
