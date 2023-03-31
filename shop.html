@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="./assets/scss/shop/shop.css">
+    <title>Shop</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="close">
+            <i class="fa-light fa-xmark fa-xs"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search product ...">
+            <i class="fa-light fa-magnifying-glass fa-flip-horizontal"></i>
+        </div>
+        <div class="tab-menu">
+            <div class="header">
+                <p class="head active-head" data-id="1">MENU</p>
+                <p class="head" data-id="2">CATEGORIES</p>
+            </div>
+            <div class="content">
+                <ul data-id="1" class="menu show">
+                    <li class="menu-item">
+                        <p>HOME</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>SHOP</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>PRODUCT</p>
+                    </li>
+                    <li class="menu-pages menu-item">
+                        <p>PAGES <i class="fa-solid fa-angle-down down"></i></p>
+
+                        <ul class="pages">
+                            <li class="dropdown-self">Account</li>
+                            <li class="dropdown-self">About</li>
+                            <li class="dropdown-self">Cart</li>
+                            <li class="dropdown-self">Wishlist</li>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item">
+                        <p>BLOG</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>CONTACT</p>
+                    </li>
+                </ul>
+
+                <ul data-id="2" class="categories">
+                    <li>Electronics</li>
+                    <li>Gift Ideas</li>
+                    <li>Beds</li>
+                    <li>Lighting</li>
+                    <li>Sofas & Sleeper sofas</li>
+                    <li>Storage</li>
+                    <li>Armchairs & Chaises</li>
+                    <li>Decoration</li>
+                    <li>Kitchen Cabinets</li>
+                    <li>Coffee & Tables</li>
+                    <li>Outdoor Furniture</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="head-up">
+            <div class="container-lg">
+                <div class="up">
+                    <div class="left">
+                        <i class="fa-solid fa-phone"></i><span>Call: +0123 456 789</span>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="currency-dropdown">
+                                USD <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li class="euro">Eur</li>
+                                    <li class="dollar">Usd</li>
+                                </ul>
+                            </li>
+                            <li class="language-dropdown">
+                                English <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li class="english">English</li>
+                                    <li class="french">French</li>
+                                    <li class="spanish">Spanish</li>
+                                </ul>
+                            </li>
+                            <li><a href="">Sign in / Sign up</a></li>
+                        </ul>
+                        <div class="links">
+                            <div class="links-body">
+                                <p class="choosen">Links <i class="fa-solid fa-angle-down down"></i></p>
+
+                                <ul class="menu p-0 m-0">
+                                    <li class="link">
+                                        <p class="link-choosen">USD <i class="fa-solid fa-angle-down down"></i></p>
+
+                                        <ul class="link-menu p-0 m-0">
+                                            <li>Eur</li>
+                                            <li>Usd</li>
+                                        </ul>
+                                    </li>
+                                    <li class="link">
+                                        <p class="link-choosen">Language <i class="fa-solid fa-angle-down down"></i></p>
+
+                                        <ul class="link-menu p-0 m-0">
+                                            <li>English</li>
+                                            <li>French</li>
+                                            <li>Spanish</li>
+                                        </ul>
+                                    </li>
+                                    <li class="link">
+                                        <p class="account">Sign in / Sign up</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="down">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-3">
+                            <div class="logo">
+                                <i class="fa-regular fa-bars d-none"></i>
+                                <a href="home.html">
+                                    <img src="./assets/img/home/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                            <div class="search-area">
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search product ...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <div class="right-icons">
+                                <div class="compare">
+                                    <a href=""><i class="fa-light fa-shuffle"></i></a>
+                                    <p>Compare</p>
+                                </div>
+                                <div class="wishlist">
+                                    <a href="wishlist.html"><i class="fa-light fa-heart"></i></a>
+                                    <span class="wish-count">0</span>
+                                    <p>Wishlist</p>
+                                </div>
+                                <div class="cart">
+                                    <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+                                    <span class="cart-count">0</span>
+                                    <p>Cart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="left">
+                            <i class="fa-solid fa-x"></i>
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Browse Catagories</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div class="left-dropdown">
+                                <ul>
+                                    <li>Electronics</li>
+                                    <li>Gift Ideas</li>
+                                    <li>Beds</li>
+                                    <li>Lighting</li>
+                                    <li>Sofas & Sleeper sofas</li>
+                                    <li>Storage</li>
+                                    <li>Armchairs & Chaises</li>
+                                    <li>Decoration</li>
+                                    <li>Kitchen Cabinets</li>
+                                    <li>Coffee & Tables</li>
+                                    <li class="last-list-element">Outdoor Furniture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="center">
+                            <div class="left-line"></div>
+                            <div class="contents">
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="">Product</a></li>
+                                    <li class="drop-hover">
+                                        <a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
+
+                                        <div class="dropdown-list">
+                                            <ul>
+                                                <li class="dropdown-list-item"><a href="account.html">Account</a></li>
+                                                <li class="dropdown-list-item"><a href="about.html">About</a></li>
+                                                <li class="dropdown-list-item"><a href="cart.html">Cart</a></li>
+                                                <li class="dropdown-list-item"><a href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="right">
+                            <i class="fa-regular fa-lightbulb"></i><span><span>Clearance</span> Up to 30% Off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="header-line">
+    </header>
+
+
+    <main>
+        <section id="page-header">
+
+            <div class="container">
+                <div class="head">
+                    <h1>List</h1>
+                    <p>Shop</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-links">
+            <div class="container">
+                <a href="home.html">Home</a><i class="fa-light fa-chevron-right"></i>
+                <a href="shop.html">Shop</a><i class="fa-light fa-chevron-right"></i>
+                <span>List</span>
+            </div>
+            <hr>
+        </section>
+
+        <section id="all" class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left">
+                            <div class="header">
+                                <span>Filters:</span>
+                                <span>Clear All</span>
+                            </div>
+                            <hr>
+                            <div class="category">
+                                <div class="head">
+                                    <p>Category</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                    <i class="fa-light fa-chevron-up d-none"></i>
+                                </div>
+                                <div class="categories-item">
+                                    <div class="item item-first">
+                                        <span>Furniture</span>
+                                        <span>8</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Coffee & Tables</span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Lighting</span>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Decoration</span>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Electronics</span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Beds</span>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Armchairs & Chaises</span>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Sofas & Sleeper Sofas</span>
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="size">
+                                <div class="head">
+                                    <p>Size</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                    <i class="fa-light fa-chevron-up d-none"></i>
+                                </div>
+                                <div class="size-items">
+                                    <div class="item item-first">
+                                        <input type="checkbox" id="size-1">
+                                        <label for="size-1">Extra Small</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="size-2">
+                                        <label for="size-2">Small</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="size-3">
+                                        <label for="size-3">Medium</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="size-4">
+                                        <label for="size-4">Large</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="size-5">
+                                        <label for="size-5">Extra Large</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="colour">
+                                <div class="head">
+                                    <p>Colour</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                    <i class="fa-light fa-chevron-up d-none"></i>
+                                </div>
+                                <div class="colour-items">
+                                    <div class="brown"></div>
+                                    <div class="blue"></div>
+                                    <div class="violet"></div>
+                                    <div class="black"></div>
+                                    <div class="green"></div>
+                                    <div class="red"></div>
+                                    <div class="grey"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="brand">
+                                <div class="head">
+                                    <p>Brand</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                    <i class="fa-light fa-chevron-up d-none"></i>
+                                </div>
+                                <div class="brand-items">
+                                    <div class="item item-first">
+                                        <input type="checkbox" id="brand-1">
+                                        <label for="brand-1">Next</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-2">
+                                        <label for="brand-2">River Island</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-3">
+                                        <label for="brand-3">Geox</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-4">
+                                        <label for="brand-4">New Balance</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-5">
+                                        <label for="brand-5">UGG</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-6">
+                                        <label for="brand-6">F&F</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="brand-7">
+                                        <label for="brand-7">Nike</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="price">
+                                <div class="head">
+                                    <p>Price</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                    <i class="fa-light fa-chevron-up d-none"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="right">
+                            <div class="header">
+                                <div class="left-head">
+                                    <span>Showing</span>
+                                    <span>5 of 50</span>
+                                    <span>Products</span>
+                                </div>
+                                <div class="right-head">
+                                    <span>Sort by:</span>
+                                    <select name="" id="">
+                                        <option value="">Default</option>
+                                        <option value="">Most Popular</option>
+                                        <option value="">Most Rated</option>
+                                        <option value="">Date</option>
+                                    </select>
+                                    <div class="icons">
+                                        <svg width="16" height="10" class="first-svg">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="10" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="10" height="4"></rect>
+                                        </svg>
+                                        <svg width="10" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                        <svg width="16" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="12" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                            <rect x="12" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                        <svg width="22" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="12" y="0" width="4" height="4"></rect>
+                                            <rect x="18" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                            <rect x="12" y="6" width="4" height="4"></rect>
+                                            <rect x="18" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./assets/img/shop/product-1.jpg" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <a href="">Beige metal hoop tote bag</a>
+                                        <p>
+                                            Sed egestas, ante et vulputate volutpat,
+                                            eros pede semper est, vitae luctus metus
+                                            libero eu augue. Morbi purus libero,
+                                            faucibus adipiscing. Sed lectus.
+                                        </p>
+                                        <div class="colors">
+                                            <div class="black"></div>
+                                            <div class="blue"></div>
+                                            <div class="green"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <span class="price">$75.00–$80.00</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                            </div>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="view">
+                                                <i class="fa-thin fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wishlist">
+                                                <i class="fa-light fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="down-button">
+                                            <i class="fa-light fa-list-check"></i>
+                                            <span>SELECT OPTIONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./assets/img/shop/product-2.jpg" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <a href="">Beige ring handle circle cross body bag</a>
+                                        <p>
+                                            Morbi purus libero, faucibus adipiscing, commodo quis, gravida
+                                             id, est. Sed lectus. Praesent elementum hendrerit tortor. 
+                                            Sed semper lorem at felis. Vestibulum volutpat, lacus...
+                                        </p>
+                                    </div>
+                                    <div class="right">
+                                        <span class="price">$55.00</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                            </div>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="view">
+                                                <i class="fa-thin fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wishlist">
+                                                <i class="fa-light fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="down-button">
+                                            <i class="fa-light fa-cart-plus"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./assets/img/shop/product-3.jpg" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <a href="">Beige V neck button cardigan</a>
+                                        <p>
+                                            Sed egestas, ante et vulputate volutpat, 
+                                            eros pede semper est, vitae luctus metus libero eu augue.
+                                            Morbi purus libero, faucibus adipiscing. Sed lectus.
+                                        </p>
+                                    </div>
+                                    <div class="right">
+                                        <span class="price">$72.00</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                            </div>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="view">
+                                                <i class="fa-thin fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wishlist">
+                                                <i class="fa-light fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="down-button">
+                                            <i class="fa-light fa-cart-plus"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./assets/img/shop/product-4.jpg" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <a href="">Black denim dungaree dress</a>
+                                        <p>
+                                            Sed egestas, ante et vulputate volutpat, eros 
+                                            pede semper est, vitae luctus metus libero eu augue. 
+                                            Morbi purus libero, faucibus adipiscing. Sed lectus.
+                                        </p>
+                                    </div>
+                                    <div class="right">
+                                        <span class="price">$60.00</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                            </div>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="view">
+                                                <i class="fa-thin fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wishlist">
+                                                <i class="fa-light fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="down-button">
+                                            <i class="fa-light fa-cart-plus"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./assets/img/shop/product-5.jpg" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <span>Women</span>
+                                        <a href="">Black faux leather chain trim sandals</a>
+                                        <p>
+                                            Morbi purus libero, faucibus adipiscing, commodo quis, 
+                                            gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. 
+                                            Sed semper lorem at felis. Vestibulum volutpat, lacus...
+                                        </p>
+                                    </div>
+                                    <div class="right">
+                                        <span class="price">$90.00</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                                <i class="fa-solid fa-star not"></i>
+                                            </div>
+                                            <span>( 2 Reviews )</span>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="view">
+                                                <i class="fa-thin fa-binoculars"></i>
+                                                <span>quick view</span>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="wishlist">
+                                                <i class="fa-light fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </div>
+                                        </div>
+                                        <div class="down-button">
+                                            <i class="fa-light fa-cart-plus"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination mt-5">
+                                <div class="prev">
+                                    <i class="fa-light fa-arrow-left-long"></i>
+                                    <span>Prev</span>
+                                </div>
+                                <div class="page-numbers">
+                                    <span class="first-span">1</span>
+                                    <span class="middle-spans">2</span>
+                                    <span class="middle-spans">3</span>
+                                    <span class="last-span">of 10</span>
+                                </div>
+                                <div class="next">
+                                    <span>Next</span>
+                                    <i class="fa-light fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="last-hr">
+        </section>
+    </main>
+
+
+    <footer>
+
+        <section id="footer-up" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="left">
+                            <img src="./assets/img/home/logo-footer.png" alt="">
+                            <p>
+                                Praesent dapibus, neque id cursus ucibus,
+                                tortor neque egestas augue,
+                                eu vulputate magna eros eu erat.
+                            </p>
+                            <div class="number">
+                                <i class="fa-light fa-phone"></i>
+                                <div class="text">
+                                    <span>Got Question? Call us 24/7</span><br>
+                                    <a href="">+0123 456 789</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Useful Links</p>
+                        <ul>
+                            <li><a href="">About Molla</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">How to shop on Molla</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Customer Service</p>
+                        <ul>
+                            <li><a href="">Payment Methods</a></li>
+                            <li><a href="">Money-back guarantee!</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Terms and conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>My Account</p>
+                        <ul>
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="cart.html" target="bl">View Cart</a></li>
+                            <li><a href="">My Wishlist</a></li>
+                            <li><a href="">Track My Order</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </section>
+
+        <section id="footer-down">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p>Copyright © 2023 Molla Store. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 img-div">
+                        <img src="./assets/img/home/payments.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+    <a href="#" class="go-to-top"><i class="fa-regular fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/shop.js"></script>
+</body>
+
+</html>

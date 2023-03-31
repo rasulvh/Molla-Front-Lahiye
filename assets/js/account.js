@@ -45,6 +45,8 @@ $(function () {
 
   })
 
+  let wishlistCount = document.querySelector(".head-up .down .right-icons .wishlist .wish-count")
+
   function calculateWishlistCount() {
     if (JSON.parse(localStorage.getItem("wishlist")) != null) {
       let sum = 0

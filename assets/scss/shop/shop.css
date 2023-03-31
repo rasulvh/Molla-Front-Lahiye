@@ -891,156 +891,531 @@ main #page-links .container span {
   font-size: 15px;
   color: black;
 }
-main #no-product .content {
-  height: 300px;
+main #all .left {
+  position: sticky;
+  top: -350px;
+}
+main #all .left hr {
+  opacity: 0.1;
+}
+main #all .left .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
-main #no-product .content i {
-  font-size: 105px;
-  opacity: 0.8;
+main #all .left .header span {
+  font-weight: 600;
 }
-main #no-product .content p {
-  margin-top: 20px;
-  opacity: 0.8;
-  font-size: 15px;
+main #all .left .header span:last-child {
+  color: rgb(252, 185, 65);
+  cursor: pointer;
+  font-size: 13px;
 }
-main #no-product .content a {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(252, 185, 65);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
-  transition: all 0.3s;
-}
-main #no-product .content a:hover {
-  background-color: rgb(191, 145, 61);
-}
-main #products thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products thead th {
-  opacity: 0.7;
+main #all .left .header span:first-child {
   font-size: 14px;
 }
-main #products thead .product {
-  width: 500px;
+main #all .left .category,
+main #all .left .size,
+main #all .left .colour,
+main #all .left .brand,
+main #all .left .price {
+  width: 97%;
 }
-main #products thead .price {
-  width: 200px;
-}
-main #products thead .status {
-  width: 100px;
-}
-main #products tbody tr {
-  height: 90px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products tbody td img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
+main #all .left .category .head,
+main #all .left .size .head,
+main #all .left .colour .head,
+main #all .left .brand .head,
+main #all .left .price .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
-main #products tbody .product,
-main #products tbody .price,
-main #products tbody .status {
+main #all .left .category .head p,
+main #all .left .size .head p,
+main #all .left .colour .head p,
+main #all .left .brand .head p,
+main #all .left .price .head p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+main #all .left .category .head i,
+main #all .left .size .head i,
+main #all .left .colour .head i,
+main #all .left .brand .head i,
+main #all .left .price .head i {
+  font-size: 13px;
+}
+main #all .left .category .categories-item .item,
+main #all .left .size .categories-item .item,
+main #all .left .colour .categories-item .item,
+main #all .left .brand .categories-item .item,
+main #all .left .price .categories-item .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #all .left .category .categories-item .item span:first-child,
+main #all .left .size .categories-item .item span:first-child,
+main #all .left .colour .categories-item .item span:first-child,
+main #all .left .brand .categories-item .item span:first-child,
+main #all .left .price .categories-item .item span:first-child {
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #all .left .category .categories-item .item span:first-child:hover,
+main #all .left .size .categories-item .item span:first-child:hover,
+main #all .left .colour .categories-item .item span:first-child:hover,
+main #all .left .brand .categories-item .item span:first-child:hover,
+main #all .left .price .categories-item .item span:first-child:hover {
+  color: rgb(252, 185, 65);
+}
+main #all .left .category .categories-item .item span:last-child,
+main #all .left .size .categories-item .item span:last-child,
+main #all .left .colour .categories-item .item span:last-child,
+main #all .left .brand .categories-item .item span:last-child,
+main #all .left .price .categories-item .item span:last-child {
+  font-size: 13px;
+  opacity: 0.8;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+}
+main #all .left .category .categories-item .item:not(.item-first),
+main #all .left .size .categories-item .item:not(.item-first),
+main #all .left .colour .categories-item .item:not(.item-first),
+main #all .left .brand .categories-item .item:not(.item-first),
+main #all .left .price .categories-item .item:not(.item-first) {
+  margin-top: 5px;
+}
+main #all .left .category .size-items .item,
+main #all .left .category .brand-items .item,
+main #all .left .size .size-items .item,
+main #all .left .size .brand-items .item,
+main #all .left .colour .size-items .item,
+main #all .left .colour .brand-items .item,
+main #all .left .brand .size-items .item,
+main #all .left .brand .brand-items .item,
+main #all .left .price .size-items .item,
+main #all .left .price .brand-items .item {
+  display: flex;
+  align-items: center;
+}
+main #all .left .category .size-items .item input,
+main #all .left .category .brand-items .item input,
+main #all .left .size .size-items .item input,
+main #all .left .size .brand-items .item input,
+main #all .left .colour .size-items .item input,
+main #all .left .colour .brand-items .item input,
+main #all .left .brand .size-items .item input,
+main #all .left .brand .brand-items .item input,
+main #all .left .price .size-items .item input,
+main #all .left .price .brand-items .item input {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  accent-color: rgb(51, 51, 51);
+}
+main #all .left .category .size-items .item label,
+main #all .left .category .brand-items .item label,
+main #all .left .size .size-items .item label,
+main #all .left .size .brand-items .item label,
+main #all .left .colour .size-items .item label,
+main #all .left .colour .brand-items .item label,
+main #all .left .brand .size-items .item label,
+main #all .left .brand .brand-items .item label,
+main #all .left .price .size-items .item label,
+main #all .left .price .brand-items .item label {
   font-size: 15px;
   font-weight: 600;
 }
-main #products tbody .product {
+main #all .left .category .size-items .item:not(.item-first),
+main #all .left .category .brand-items .item:not(.item-first),
+main #all .left .size .size-items .item:not(.item-first),
+main #all .left .size .brand-items .item:not(.item-first),
+main #all .left .colour .size-items .item:not(.item-first),
+main #all .left .colour .brand-items .item:not(.item-first),
+main #all .left .brand .size-items .item:not(.item-first),
+main #all .left .brand .brand-items .item:not(.item-first),
+main #all .left .price .size-items .item:not(.item-first),
+main #all .left .price .brand-items .item:not(.item-first) {
+  margin-top: 5px;
+}
+main #all .left .category .colour-items,
+main #all .left .size .colour-items,
+main #all .left .colour .colour-items,
+main #all .left .brand .colour-items,
+main #all .left .price .colour-items {
   display: flex;
-  align-items: center;
-  height: 90px;
+  justify-content: space-between;
+  width: 75%;
 }
-main #products tbody .product a {
-  text-decoration: none;
-  color: black;
+main #all .left .category .colour-items div,
+main #all .left .size .colour-items div,
+main #all .left .colour .colour-items div,
+main #all .left .brand .colour-items div,
+main #all .left .price .colour-items div {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  border: 0.1px solid white;
   transition: all 0.3s;
 }
-main #products tbody .product a:hover {
-  color: rgb(252, 185, 65);
+main #all .left .category .colour-items div:hover,
+main #all .left .size .colour-items div:hover,
+main #all .left .colour .colour-items div:hover,
+main #all .left .brand .colour-items div:hover,
+main #all .left .price .colour-items div:hover {
+  box-shadow: 0 0 0 0.1rem #ccc;
+  padding: 2px;
 }
-main #products tbody .price,
-main #products tbody .status {
-  color: rgb(252, 185, 65);
-  position: relative;
+main #all .left .category .colour-items .brown,
+main #all .left .size .colour-items .brown,
+main #all .left .colour .colour-items .brown,
+main #all .left .brand .colour-items .brown,
+main #all .left .price .colour-items .brown {
+  background-color: rgb(204, 153, 102);
 }
-main #products tbody .price span,
-main #products tbody .status span {
-  position: absolute;
-  top: 32px;
-  font-size: 16px;
+main #all .left .category .colour-items .blue,
+main #all .left .size .colour-items .blue,
+main #all .left .colour .colour-items .blue,
+main #all .left .brand .colour-items .blue,
+main #all .left .price .colour-items .blue {
+  background-color: rgb(51, 153, 204);
 }
-main #products tbody .options {
-  position: relative;
+main #all .left .category .colour-items .violet,
+main #all .left .size .colour-items .violet,
+main #all .left .colour .colour-items .violet,
+main #all .left .brand .colour-items .violet,
+main #all .left .price .colour-items .violet {
+  background-color: rgb(153, 102, 204);
 }
-main #products tbody .options a {
-  position: absolute;
-  text-decoration: none;
-  color: rgb(252, 185, 65);
+main #all .left .category .colour-items .black,
+main #all .left .size .colour-items .black,
+main #all .left .colour .colour-items .black,
+main #all .left .brand .colour-items .black,
+main #all .left .price .colour-items .black {
+  background-color: rgb(51, 51, 51);
+}
+main #all .left .category .colour-items .green,
+main #all .left .size .colour-items .green,
+main #all .left .colour .colour-items .green,
+main #all .left .brand .colour-items .green,
+main #all .left .price .colour-items .green {
+  background-color: rgb(102, 153, 51);
+}
+main #all .left .category .colour-items .red,
+main #all .left .size .colour-items .red,
+main #all .left .colour .colour-items .red,
+main #all .left .brand .colour-items .red,
+main #all .left .price .colour-items .red {
+  background-color: rgb(204, 51, 51);
+}
+main #all .left .category .colour-items .grey,
+main #all .left .size .colour-items .grey,
+main #all .left .colour .colour-items .grey,
+main #all .left .brand .colour-items .grey,
+main #all .left .price .colour-items .grey {
+  background-color: rgb(153, 153, 153);
+}
+main #all .right .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+main #all .right .header .left-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 155px;
+}
+main #all .right .header .left-head span:nth-child(1),
+main #all .right .header .left-head span:nth-child(3) {
+  font-weight: 600;
   font-size: 13px;
-  border: 1px solid rgb(252, 185, 65);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  top: 26.6px;
-  transition: all 0.3s;
+  opacity: 0.6;
 }
-main #products tbody .options a i {
-  margin-right: 10px;
-}
-main #products tbody .options a:hover {
-  color: white;
-  background-color: rgb(252, 185, 65);
-}
-main #products tbody .options .fa-x {
+main #all .right .header .left-head span:nth-child(2) {
+  font-weight: 600;
   font-size: 13px;
+}
+main #all .right .header .right-head span {
+  font-size: 13px;
+  font-weight: 600;
+}
+main #all .right .header .right-head select {
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
   opacity: 0.7;
+  font-size: 14px;
+  padding-left: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+main #all .right .header .right-head .icons {
+  display: inline;
+}
+main #all .right .header .right-head .icons svg:not(.first-svg) {
+  opacity: 0.5;
+}
+main #all .right .header .right-head .icons svg {
+  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
-  position: absolute;
-  top: 41px;
-  left: 210px;
   transition: all 0.3s;
 }
-main #products tbody .options .fa-x:hover {
+main #all .right .header .right-head .icons svg:hover {
   opacity: 1;
 }
-main #share .container .content {
-  width: 235px;
+main #all .right .items hr {
+  margin: 2rem 0;
+  opacity: 0.1;
+}
+main #all .right .items .item {
+  display: flex;
+}
+main #all .right .items .item .img {
+  height: 201px;
+  width: 201px;
+  display: inline-block;
+}
+main #all .right .items .item .img img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+main #all .right .items .item .center {
+  width: 410px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #all .right .items .item .center span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+main #all .right .items .item .center a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+main #all .right .items .item .center a:hover {
+  color: rgb(252, 185, 65);
+}
+main #all .right .items .item .center p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+main #all .right .items .item .center .colors {
+  display: flex;
+  justify-content: space-between;
+  width: 23%;
+}
+main #all .right .items .item .center .colors div {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+}
+main #all .right .items .item .center .colors .black {
+  background-color: rgb(51, 51, 51);
+}
+main #all .right .items .item .center .colors .blue {
+  background-color: rgb(51, 153, 204);
+}
+main #all .right .items .item .center .colors .green {
+  background-color: rgb(102, 153, 51);
+}
+main #all .right .items .item .center .colors .red {
+  background-color: rgb(204, 51, 51);
+}
+main #all .right .items .item .right {
+  height: -moz-max-content;
+  height: max-content;
+  align-self: center;
+  padding-left: 20px;
+}
+main #all .right .items .item .right .price {
+  font-weight: 600;
+  color: rgb(252, 185, 65);
+}
+main #all .right .items .item .right .rating {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #all .right .items .item .right .rating .stars i {
+  font-size: 12px;
+  color: rgb(252, 185, 65);
+}
+main #all .right .items .item .right .rating .stars .not {
+  color: rgb(204, 204, 204);
+}
+main #all .right .items .item .right .rating span {
+  font-size: 13px;
+  opacity: 0.7;
+}
+main #all .right .items .item .right .icons {
+  display: flex;
+  width: 200px;
+  margin-bottom: 15px;
+  justify-content: space-around;
+}
+main #all .right .items .item .right .icons .view {
+  width: 95px;
+}
+main #all .right .items .item .right .icons .wishlist {
+  width: 74px;
+}
+main #all .right .items .item .right .icons .view,
+main #all .right .items .item .right .icons .wishlist {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
-main #share .container .content span {
-  font-size: 14px;
-  opacity: 0.8;
+main #all .right .items .item .right .icons .view i,
+main #all .right .items .item .right .icons .wishlist i {
+  transition: all 0.3s;
+}
+main #all .right .items .item .right .icons .view span,
+main #all .right .items .item .right .icons .wishlist span {
+  font-size: 15px;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
+}
+main #all .right .items .item .right .icons .view:hover i,
+main #all .right .items .item .right .icons .wishlist:hover i {
+  color: rgb(252, 185, 65);
+}
+main #all .right .items .item .right .icons .view:hover span,
+main #all .right .items .item .right .icons .wishlist:hover span {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #all .right .items .item .right .icons .line {
+  height: 23px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main #all .right .items .item .right .down-button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(252, 185, 65);
+  color: rgb(252, 185, 65);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #all .right .items .item .right .down-button:hover {
+  color: white;
+  background-color: rgb(252, 185, 65);
+}
+main #all .right .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #all .right .pagination .prev {
+  margin-right: 10px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-main #share .container .content i {
-  color: rgb(119, 119, 119);
+main #all .right .pagination .prev i {
+  font-size: 10px;
+  opacity: 0.5;
+  position: relative;
+  top: 2px;
+}
+main #all .right .pagination .prev span {
+  opacity: 0.5;
+  font-size: 14px;
+}
+main #all .right .pagination .page-numbers span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+main #all .right .pagination .page-numbers span:not(.last-span) {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 13px;
-  border: 1px solid rgba(119, 119, 119, 0.3);
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 0.3s;
 }
-main #share .container .content i:hover {
+main #all .right .pagination .page-numbers span:not(.last-span):hover {
   color: rgb(252, 185, 65);
-  border: 1px solid rgb(252, 185, 65);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+main #all .right .pagination .page-numbers .middle-spans {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+main #all .right .pagination .page-numbers .first-span {
+  color: rgb(252, 185, 65);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+main #all .right .pagination .page-numbers .last-span {
+  font-weight: 600;
+  opacity: 0.4;
+}
+main #all .right .pagination .next {
+  margin-left: 10px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.3s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+main #all .right .pagination .next i {
+  font-size: 10px;
+  position: relative;
+  top: 2px;
+}
+main #all .right .pagination .next span {
+  font-size: 14px;
+  font-weight: 600;
+}
+main #all .right .pagination .next:hover {
+  color: rgb(252, 185, 65);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+main #all .last-hr {
+  margin-top: 40px;
+  opacity: 0.1;
 }
 
 footer #footer-up .container {
@@ -1230,8 +1605,7 @@ body {
 .col-6,
 .col-2,
 .col-12,
-.col-lg-3,
 .col-sm-6,
 .col-4 {
   padding: 0;
-}/*# sourceMappingURL=wishlist.css.map */
+}/*# sourceMappingURL=shop.css.map */

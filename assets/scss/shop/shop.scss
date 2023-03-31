@@ -368,265 +368,265 @@ header {
                     // display: flex;
                     // flex-direction: column;
                     // align-items: center;
-      
+
                     .links-body {
-                      display: flex;
-                      position: relative;
-                      z-index: 1;
-                      align-items: center;
-      
-                      .choosen {
-                        color: rgb(214, 214, 214);
-                        margin: 0;
-                        font-weight: 100;
-                        font-size: 14px;
                         display: flex;
-                        gap: 7px;
+                        position: relative;
+                        z-index: 1;
                         align-items: center;
-                        cursor: pointer;
-                        height: max-content;
-      
-                        &:hover {
-                          color: orange;
-                        }
-      
-                        &:hover .down {
-                          color: orange;
-                        }
-      
-                        .down {
-                          font-family: 'Font Awesome 5 Free';
-                          // margin-right: 10px;
-                          -webkit-text-stroke: 1px #333;
-                          // color: transparent;
-                          font-size: 13px;
-                          color: rgb(214, 214, 214);
-                          align-self: center;
-                        }
-                      }
-      
-                      .menu {
-                        position: absolute;
-                        top: 38px;
-                        left: -110px;
-                        align-self: center;
-                        background-color: white;
-                        width: 150px;
-                        display: none;
-                        // height: max-content;
-      
-                        .link {
-                          list-style: none;
-                          font-size: 14px;
-                          font-weight: 100;
-                          // color: rgb(206, 206, 206);
-                          padding: 5px;
-                          display: flex;
-                          // justify-content: center;
-                          align-items: center;
-                          // cursor: pointer;
-                          // padding-left: 10px !important;
-                          position: relative;
-      
-                          &:nth-child(3) {
-                            padding: 0px 0px 6px 10px;
-      
-                            .account {
-                              font-size: 13px;
-                              cursor: pointer;
-                              color: rgb(206, 206, 206);
-                              transition: all 0.4s;
-      
-                              &:hover {
+
+                        .choosen {
+                            color: rgb(214, 214, 214);
+                            margin: 0;
+                            font-weight: 100;
+                            font-size: 14px;
+                            display: flex;
+                            gap: 7px;
+                            align-items: center;
+                            cursor: pointer;
+                            height: max-content;
+
+                            &:hover {
                                 color: orange;
-                              }
                             }
-                          }
-      
-                          &:nth-child(2) {
-                            padding: 0px 0px 6px 0px;
-      
-                            .link-choosen {
-                              color: rgb(206, 206, 206);
-                              margin: 0;
-                              font-weight: 100;
-                              font-size: 13px;
-                              display: flex;
-                              gap: 7px;
-                              align-self: center;
-                              cursor: pointer;
-                              height: max-content;
-                              padding-left: 10px !important;
-                              transition: all 0.4s;
-      
-                              &:hover {
+
+                            &:hover .down {
                                 color: orange;
-                              }
-      
-                              &:hover .down {
-                                color: orange;
-                              }
-      
-                              .down {
+                            }
+
+                            .down {
                                 font-family: 'Font Awesome 5 Free';
                                 // margin-right: 10px;
-                                -webkit-text-stroke: 0.5px white;
+                                -webkit-text-stroke: 1px #333;
                                 // color: transparent;
-                                font-size: 12px;
-                                color: rgb(206, 206, 206);
+                                font-size: 13px;
+                                color: rgb(214, 214, 214);
                                 align-self: center;
-                                margin-top: 4px;
-                              }
                             }
-      
-                            .link-menu {
-                              position: absolute;
-                              background-color: white;
-                              left: -100%;
-                              top: 5px;
-                              width: 100%;
-                              margin: 0;
-                              padding: 0;
-                              display: none;
-      
-                              li {
-                                color: rgb(206, 206, 206);
-                                margin: 0;
+                        }
+
+                        .menu {
+                            position: absolute;
+                            top: 38px;
+                            left: -110px;
+                            align-self: center;
+                            background-color: white;
+                            width: 150px;
+                            display: none;
+                            // height: max-content;
+
+                            .link {
                                 list-style: none;
-                                padding-left: 20px;
-                                cursor: pointer;
-                                transition: all 0.4s;
-      
-                                &:hover {
-                                  color: orange;
-                                }
-      
-                                &:nth-child(1) {
-                                  padding: 5px 0px 0px 20px;
-                                }
-      
-                                &:nth-child(2) {
-                                  padding: 0px 0px 0px 20px;
-                                }
-      
+                                font-size: 14px;
+                                font-weight: 100;
+                                // color: rgb(206, 206, 206);
+                                padding: 5px;
+                                display: flex;
+                                // justify-content: center;
+                                align-items: center;
+                                // cursor: pointer;
+                                // padding-left: 10px !important;
+                                position: relative;
+
                                 &:nth-child(3) {
-                                  padding: 0px 0px 6px 20px;
+                                    padding: 0px 0px 6px 10px;
+
+                                    .account {
+                                        font-size: 13px;
+                                        cursor: pointer;
+                                        color: rgb(206, 206, 206);
+                                        transition: all 0.4s;
+
+                                        &:hover {
+                                            color: orange;
+                                        }
+                                    }
                                 }
-                              }
-                            }
-                          }
-      
-                          &:nth-child(1) {
-                            padding: 8px 0px 6px 0px;
-      
-                            .link-choosen {
-                              color: rgb(206, 206, 206);
-                              margin: 0;
-                              font-weight: 100;
-                              padding-left: 10px !important;
-                              font-size: 13px;
-                              display: flex;
-                              gap: 7px;
-                              align-self: center;
-                              cursor: pointer;
-                              height: max-content;
-                              transition: all 0.4s;
-      
-                              &:hover {
-                                color: orange;
-                              }
-      
-                              &:hover .down {
-                                color: orange;
-                              }
-      
-      
-      
-                              .down {
-                                font-family: 'Font Awesome 5 Free';
-                                // margin-right: 10px;
-                                -webkit-text-stroke: 0.5px white;
-                                // color: transparent;
-                                font-size: 12px;
-                                color: rgb(206, 206, 206);
-                                align-self: center;
-                                margin-top: 4px;
-                              }
-                            }
-      
-                            .link-menu {
-                              position: absolute;
-                              background-color: white;
-                              left: -100%;
-                              top: 5px;
-                              width: 100%;
-                              margin: 0;
-                              padding: 0;
-                              display: none;
-      
-                              li {
-                                color: rgb(206, 206, 206);
-                                margin: 0;
-                                list-style: none;
-                                padding-left: 20px;
-                                cursor: pointer;
-                                transition: all 0.4s;
-      
-                                &:hover {
-                                  color: orange;
-                                }
-      
-                                &:nth-child(1) {
-                                  padding: 5px 0px 0px 20px;
-                                }
-      
+
                                 &:nth-child(2) {
-                                  padding: 0px 0px 6px 20px;
+                                    padding: 0px 0px 6px 0px;
+
+                                    .link-choosen {
+                                        color: rgb(206, 206, 206);
+                                        margin: 0;
+                                        font-weight: 100;
+                                        font-size: 13px;
+                                        display: flex;
+                                        gap: 7px;
+                                        align-self: center;
+                                        cursor: pointer;
+                                        height: max-content;
+                                        padding-left: 10px !important;
+                                        transition: all 0.4s;
+
+                                        &:hover {
+                                            color: orange;
+                                        }
+
+                                        &:hover .down {
+                                            color: orange;
+                                        }
+
+                                        .down {
+                                            font-family: 'Font Awesome 5 Free';
+                                            // margin-right: 10px;
+                                            -webkit-text-stroke: 0.5px white;
+                                            // color: transparent;
+                                            font-size: 12px;
+                                            color: rgb(206, 206, 206);
+                                            align-self: center;
+                                            margin-top: 4px;
+                                        }
+                                    }
+
+                                    .link-menu {
+                                        position: absolute;
+                                        background-color: white;
+                                        left: -100%;
+                                        top: 5px;
+                                        width: 100%;
+                                        margin: 0;
+                                        padding: 0;
+                                        display: none;
+
+                                        li {
+                                            color: rgb(206, 206, 206);
+                                            margin: 0;
+                                            list-style: none;
+                                            padding-left: 20px;
+                                            cursor: pointer;
+                                            transition: all 0.4s;
+
+                                            &:hover {
+                                                color: orange;
+                                            }
+
+                                            &:nth-child(1) {
+                                                padding: 5px 0px 0px 20px;
+                                            }
+
+                                            &:nth-child(2) {
+                                                padding: 0px 0px 0px 20px;
+                                            }
+
+                                            &:nth-child(3) {
+                                                padding: 0px 0px 6px 20px;
+                                            }
+                                        }
+                                    }
                                 }
-                              }
+
+                                &:nth-child(1) {
+                                    padding: 8px 0px 6px 0px;
+
+                                    .link-choosen {
+                                        color: rgb(206, 206, 206);
+                                        margin: 0;
+                                        font-weight: 100;
+                                        padding-left: 10px !important;
+                                        font-size: 13px;
+                                        display: flex;
+                                        gap: 7px;
+                                        align-self: center;
+                                        cursor: pointer;
+                                        height: max-content;
+                                        transition: all 0.4s;
+
+                                        &:hover {
+                                            color: orange;
+                                        }
+
+                                        &:hover .down {
+                                            color: orange;
+                                        }
+
+
+
+                                        .down {
+                                            font-family: 'Font Awesome 5 Free';
+                                            // margin-right: 10px;
+                                            -webkit-text-stroke: 0.5px white;
+                                            // color: transparent;
+                                            font-size: 12px;
+                                            color: rgb(206, 206, 206);
+                                            align-self: center;
+                                            margin-top: 4px;
+                                        }
+                                    }
+
+                                    .link-menu {
+                                        position: absolute;
+                                        background-color: white;
+                                        left: -100%;
+                                        top: 5px;
+                                        width: 100%;
+                                        margin: 0;
+                                        padding: 0;
+                                        display: none;
+
+                                        li {
+                                            color: rgb(206, 206, 206);
+                                            margin: 0;
+                                            list-style: none;
+                                            padding-left: 20px;
+                                            cursor: pointer;
+                                            transition: all 0.4s;
+
+                                            &:hover {
+                                                color: orange;
+                                            }
+
+                                            &:nth-child(1) {
+                                                padding: 5px 0px 0px 20px;
+                                            }
+
+                                            &:nth-child(2) {
+                                                padding: 0px 0px 6px 20px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // .link-menu {
+                                //   position: absolute;
+                                //   background-color: white;
+                                //   left: -100%;
+                                //   top: 5px;
+                                //   width: 100%;
+                                //   margin: 0;
+                                //   padding: 0;
+                                //   display: none;
+
+                                //   li {
+                                //     color: rgb(206, 206, 206);
+                                //     margin: 0;
+                                //     list-style: none;
+                                //     padding-left: 20px;
+                                //     cursor: pointer;
+
+                                //     &:nth-child(1) {
+                                //       padding: 5px 0px 0px 20px;
+                                //     }
+
+                                //     &:nth-child(2) {
+                                //       padding: 0px 0px 0px 20px;
+                                //     }
+
+                                //     &:nth-child(3) {
+                                //       padding: 0px 0px 6px 20px;
+                                //     }
+                                //   }
+                                // }
                             }
-                          }
-      
-                          // .link-menu {
-                          //   position: absolute;
-                          //   background-color: white;
-                          //   left: -100%;
-                          //   top: 5px;
-                          //   width: 100%;
-                          //   margin: 0;
-                          //   padding: 0;
-                          //   display: none;
-      
-                          //   li {
-                          //     color: rgb(206, 206, 206);
-                          //     margin: 0;
-                          //     list-style: none;
-                          //     padding-left: 20px;
-                          //     cursor: pointer;
-      
-                          //     &:nth-child(1) {
-                          //       padding: 5px 0px 0px 20px;
-                          //     }
-      
-                          //     &:nth-child(2) {
-                          //       padding: 0px 0px 0px 20px;
-                          //     }
-      
-                          //     &:nth-child(3) {
-                          //       padding: 0px 0px 6px 20px;
-                          //     }
-                          //   }
-                          // }
+
+
                         }
-      
-      
-                      }
-      
-                      &:hover .menu {
-                        display: block;
-                      }
+
+                        &:hover .menu {
+                            display: block;
+                        }
                     }
-                  }
+                }
 
             }
         }
@@ -1048,7 +1048,7 @@ header {
 }
 
 
-main{
+main {
 
     #page-header {
 
@@ -1113,198 +1113,529 @@ main{
                 color: black;
             }
         }
-    }   
-
-    #no-product {
-
-        .content {
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            i {
-                font-size: 105px;
-                opacity: 0.8;
-            }
-
-            p {
-                margin-top: 20px;
-                opacity: 0.8;
-                font-size: 15px;
-            }
-
-            a {
-                text-decoration: none;
-                color: white;
-                background-color: $hover-color;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                margin-top: 10px;
-                transition: all 0.3s;
-
-                &:hover {
-                    background-color: rgb(191, 145, 61);
-                }
-            }
-        }
     }
 
-    #products{
+    #all {
 
-        thead{
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .left {
+            position: sticky;
+            top: -350px;
 
-            th{
-                opacity: 0.7;
-                font-size: 14px;
-            }
-            .product{
-                width: 500px;
-            }
-            .price{
-                width: 200px;
-            }
-            .status{
-                width: 100px;
-            }
-        }
-
-        tbody{
-
-            tr{
-                height: 90px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            hr {
+                opacity: 0.1;
             }
 
-            td{
-                    
-                img{
-                    width: 60px;
-                    height: 60px;
-                    margin-right: 20px;
-                    cursor: pointer;
-                }
-            }
-
-            .product,
-            .price,
-            .status{
-                font-size: 15px;
-                font-weight: 600;
-            }
-
-            .product{
+            .header {
                 display: flex;
-                align-items: center;
-                height: 90px;
-
-                a{
-                    text-decoration: none;
-                    color: black;
-                    transition: all 0.3s;
-
-                    &:hover{
-                        color: $hover-color;
-                    }
-                }
-            }
-
-            .price,
-            .status{
-                color: $hover-color;
-                position: relative;
-
-                span{
-                    position: absolute;
-                    top: 32px;
-                    font-size: 16px;
-                }
-            }
-
-            .options{
-                position: relative;
-
-                a{
-                    position: absolute;
-                    text-decoration: none;
-                    color: $hover-color;
-                    font-size: 13px;
-                    border: 1px solid $hover-color;
-                    padding-left: 25px;
-                    padding-right: 25px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    top: 26.6px;
-                    transition: all 0.3s;
-
-                    i{
-                        margin-right: 10px;
-                    }
-
-                    &:hover{
-                        color: white;
-                        background-color: $hover-color;
-                    }
-                }
-                .fa-x{
-                    font-size: 13px;
-                    opacity: 0.7;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 41px;
-                    left: 210px;
-                    transition: all 0.3s;
-
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-    }
-
-    #share{
-
-        .container{
-            
-            .content{
-                width: 235px;
-                display: flex;
-                align-items: center;
                 justify-content: space-between;
+                align-items: center;
 
-                span{
-                    font-size: 14px;
-                    opacity: 0.8;
-                    user-select: none;
+                span {
+                    font-weight: 600;
                 }
-                i{
-                    color: rgb(119,119,119);
+
+                span:last-child {
+                    color: $hover-color;
                     cursor: pointer;
                     font-size: 13px;
-                    border: 1px solid rgba(119,119,119, 0.3);
-                    border-radius: 100%;
-                    width: 30px;
-                    height: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: all 0.3s;
+                }
 
-                    &:hover{
-                        color: $hover-color;
-                        border: 1px solid $hover-color;
+                span:first-child {
+                    font-size: 14px;
+                }
+            }
+
+            .category,
+            .size,
+            .colour,
+            .brand,
+            .price {
+                width: 97%;
+
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 25px;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+
+                    p {
+                        margin: 0;
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+
+                    i {
+                        font-size: 13px;
+                    }
+                }
+
+                .categories-item {
+
+                    .item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span:first-child {
+                            font-size: 15px;
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+
+                        span:last-child {
+                            font-size: 13px;
+                            opacity: 0.8;
+                            padding-left: 6px;
+                            padding-right: 6px;
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            background-color: rgb(248, 248, 248);
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .item:not(.item-first) {
+                        margin-top: 5px;
+                    }
+                }
+
+                .size-items,
+                .brand-items {
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            margin-right: 10px;
+                            width: 15px;
+                            height: 15px;
+                            accent-color: rgb(51, 51, 51);
+                        }
+
+                        label {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .item:not(.item-first) {
+                        margin-top: 5px;
+                    }
+                }
+
+                .colour-items {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 75%;
+
+                    div {
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 100%;
+                        border: 0.1px solid white;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            box-shadow: 0 0 0 0.1rem #ccc;
+                            padding: 2px;
+                        }
+                    }
+
+                    .brown {
+                        background-color: rgb(204, 153, 102);
+                    }
+
+                    .blue {
+                        background-color: rgb(51, 153, 204);
+                    }
+
+                    .violet {
+                        background-color: rgb(153, 102, 204);
+                    }
+
+                    .black {
+                        background-color: rgb(51, 51, 51);
+                    }
+
+                    .green {
+                        background-color: rgb(102, 153, 51);
+                    }
+
+                    .red {
+                        background-color: rgb(204, 51, 51);
+                    }
+
+                    .grey {
+                        background-color: rgb(153, 153, 153);
                     }
                 }
             }
+        }
+
+        .right {
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 7px;
+
+                .left-head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 155px;
+
+                    span:nth-child(1),
+                    span:nth-child(3) {
+                        font-weight: 600;
+                        font-size: 13px;
+                        opacity: 0.6;
+                    }
+
+                    span:nth-child(2) {
+                        font-weight: 600;
+                        font-size: 13px;
+                    }
+                }
+
+                .right-head {
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                    select {
+                        width: 150px;
+                        height: 30px;
+                        margin-left: 10px;
+                        opacity: 0.7;
+                        font-size: 14px;
+                        padding-left: 7px;
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                    }
+
+                    .icons {
+                        display: inline;
+
+                        svg:not(.first-svg) {
+                            opacity: 0.5;
+                        }
+
+                        svg {
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .items {
+
+                hr {
+                    margin: 2rem 0;
+                    opacity: 0.1;
+                }
+
+                .item {
+                    display: flex;
+
+                    .img {
+                        height: 201px;
+                        width: 201px;
+                        display: inline-block;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .center {
+                        width: 410px;
+                        padding-left: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        span {
+                            font-size: 13px;
+                            opacity: 0.8;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                            opacity: 0.8;
+                        }
+
+                        .colors {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 23%;
+
+                            div {
+                                cursor: pointer;
+                                height: 16px;
+                                width: 16px;
+                                border-radius: 100%;
+                            }
+
+                            .black {
+                                background-color: rgb(51, 51, 51);
+                            }
+
+                            .blue {
+                                background-color: rgb(51, 153, 204)
+                            }
+
+                            .green {
+                                background-color: rgb(102, 153, 51);
+                            }
+
+                            .red {
+                                background-color: rgb(204, 51, 51);
+                            }
+                        }
+                    }
+
+                    .right {
+                        height: max-content;
+                        align-self: center;
+                        padding-left: 20px;
+
+                        .price {
+                            font-weight: 600;
+                            color: $hover-color
+                        }
+
+                        .rating {
+                            display: flex;
+                            align-items: center;
+                            width: 170px;
+                            justify-content: space-between;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+
+                            .stars {
+
+                                i {
+                                    font-size: 12px;
+                                    color: $hover-color;
+                                }
+
+                                .not {
+                                    color: rgb(204, 204, 204);
+                                }
+                            }
+
+                            span {
+                                font-size: 13px;
+                                opacity: 0.7;
+                            }
+                        }
+
+                        .icons {
+                            display: flex;
+                            width: 200px;
+                            margin-bottom: 15px;
+                            justify-content: space-around;
+
+                            .view {
+                                width: 95px;
+                            }
+
+                            .wishlist {
+                                width: 74px;
+                            }
+
+                            .view,
+                            .wishlist {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                cursor: pointer;
+
+                                i {
+                                    transition: all 0.3s;
+                                }
+
+                                span {
+                                    font-size: 15px;
+                                    transition: all 0.3s;
+                                    border-bottom: 1px solid rgba(252, 185, 65, 0);
+                                }
+
+                                &:hover i {
+                                    color: $hover-color;
+                                }
+
+                                &:hover span {
+                                    color: $hover-color;
+                                    border-bottom: 1px solid rgba(252, 185, 65, 1);
+                                }
+                            }
+
+                            .line {
+                                height: 23px;
+                                width: 1px;
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+
+                        .down-button {
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            border: 1px solid $hover-color;
+                            color: $hover-color;
+                            font-size: 15px;
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: white;
+                                background-color: $hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .prev {
+                    margin-right: 10px;
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    user-select: none;
+
+                    i {
+                        font-size: 10px;
+                        opacity: 0.5;
+                        position: relative;
+                        top: 2px;
+                    }
+
+                    span {
+                        opacity: 0.5;
+                        font-size: 14px;
+                    }
+                }
+
+                .page-numbers {
+
+                    span {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        font-size: 14px;
+                    }
+
+                    span:not(.last-span) {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: $hover-color;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                    }
+
+                    .middle-spans {
+                        border: 1px solid rgba(0, 0, 0, 0);
+                    }
+
+                    .first-span {
+                        color: $hover-color;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .last-span {
+                        font-weight: 600;
+                        opacity: 0.4;
+                    }
+                }
+
+                .next {
+                    margin-left: 10px;
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    user-select: none;
+                    transition: all 0.3s;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    width: 70px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    cursor: pointer;
+
+                    i {
+                        font-size: 10px;
+                        position: relative;
+                        top: 2px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    &:hover {
+                        color: $hover-color;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                }
+            }
+        }
+
+        .last-hr{
+            margin-top: 40px;
+            opacity: 0.1;
         }
     }
 }
-
 
 
 
@@ -1522,7 +1853,7 @@ footer {
                     display: none !important;
                 }
 
-                .links{
+                .links {
                     display: block !important;
                 }
             }
@@ -1542,7 +1873,7 @@ footer {
         }
     }
 
-    .go-to-top{
+    .go-to-top {
         margin-left: 89% !important;
     }
 }
@@ -1616,7 +1947,6 @@ body {
 .col-6,
 .col-2,
 .col-12,
-.col-lg-3,
 .col-sm-6,
 .col-4 {
     padding: 0;
