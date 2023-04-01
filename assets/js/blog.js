@@ -25,6 +25,12 @@ $(function () {
 
     })
 
+    $('.blog .img-slider').slick({
+        infinite: false,
+        prevArrow: ".blog .slider .fa-chevron-left",
+        nextArrow: ".blog .slider .fa-chevron-right",
+    });
+
     let wishlistCount = document.querySelector(".head-up .down .right-icons .wishlist .wish-count")
 
     function calculateWishlistCount() {

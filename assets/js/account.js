@@ -33,8 +33,6 @@ $(function () {
   }
 
 
-
-
   $(".head-up .logo i").on("click", function () {
 
     $(".sidebar").css("transform", "translateX(0px)");
@@ -63,6 +61,21 @@ $(function () {
   }
 
   calculateWishlistCount()
+
+  let products = JSON.parse(localStorage.getItem("products"))
+  let cartCount = document.querySelector(".head-up .down .right-icons .cart .cart-count")
+
+  calculateCartCount()
+
+  function calculateCartCount() {
+      let sum = 0
+
+      for (const item of products) {
+          sum += item.count;
+      }
+
+      cartCount.innerText = sum
+  }
 
 
   let sidebarHeader = $(".sidebar .tab-menu .header .head");

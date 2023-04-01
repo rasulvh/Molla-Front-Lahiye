@@ -896,6 +896,27 @@ main #all .blog .img img {
   cursor: pointer;
   width: 100%;
 }
+main #all .blog .slider {
+  position: relative;
+}
+main #all .blog .slider i {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  top: 267.5px;
+  font-size: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #all .blog .slider i:hover {
+  color: rgb(252, 185, 65);
+}
+main #all .blog .slider .fa-chevron-left {
+  left: 30px;
+}
+main #all .blog .slider .fa-chevron-right {
+  right: 30px;
+}
 main #all .blog .content {
   padding-top: 15px;
 }

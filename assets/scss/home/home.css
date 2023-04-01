@@ -2024,6 +2024,13 @@ main #firms .container .slider div {
   display: flex;
   align-items: center;
 }
+main #trending-products .owl-stage {
+  display: flex;
+}
+main #trending-products .owl-nav,
+main #trending-products .owl-dots {
+  display: none;
+}
 main #trending-products .head .trend-active {
   color: rgb(252, 185, 65);
   display: inline-block;
@@ -2343,6 +2350,13 @@ main #trending-products .products .right .slide-first .fa-chevron-right {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.1) -3px 0px 4px;
   color: rgb(252, 185, 65);
+}
+main #top-selling-products .owl-stage {
+  display: flex;
+}
+main #top-selling-products .owl-nav,
+main #top-selling-products .owl-dots {
+  display: none;
 }
 main #top-selling-products .head .trend-active {
   color: rgb(252, 185, 65);

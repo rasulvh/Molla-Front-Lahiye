@@ -898,6 +898,7 @@ main #login-register .register .head p {
   width: 50%;
   text-align: center;
   transition: all 0.3s;
+  padding-bottom: 40px;
   cursor: pointer;
 }
 main #login-register .login .head p:hover:not(.active-p),

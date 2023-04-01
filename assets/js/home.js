@@ -544,6 +544,7 @@ $(function () {
       localStorage.setItem("products", JSON.stringify(basketProducts))
 
       calculateCartCount()
+
     })
   }
 
@@ -588,6 +589,58 @@ $(function () {
     $(".content .menu .menu-item:nth-child(4) .pages").slideToggle("slow");
   })
 
+  let cards = document.querySelectorAll(".card .img img")
+
+  localStorage.removeItem("productImg")
+
+  for (const card of cards) {
+    card.addEventListener("click", function () {
+      localStorage.removeItem("productImg")
+
+      let img1 = this.closest(".card").firstElementChild.firstElementChild.getAttribute("src")
+      let img2 = this.closest(".card").firstElementChild.firstElementChild.nextElementSibling.getAttribute("src")
+
+      let imgs = [img1, img2]
+
+      localStorage.setItem("productImg", JSON.stringify(imgs))
+
+      location.href = 'product.html'
+    })
+  }
+
+  $('#trending-products .owl-specific').owlCarousel({
+    loop: false,
+    margin: 200,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+
+  $('#top-selling-products .owl-specific').owlCarousel({
+    loop: false,
+    margin: 300,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
 
   AOS.init();
 

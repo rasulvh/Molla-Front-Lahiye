@@ -1201,6 +1201,11 @@ main #all .right .items .item .center {
 main #all .right .items .item .center span {
   font-size: 13px;
   opacity: 0.8;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #all .right .items .item .center span:hover {
+  color: rgb(252, 185, 65);
 }
 main #all .right .items .item .center a {
   text-decoration: none;

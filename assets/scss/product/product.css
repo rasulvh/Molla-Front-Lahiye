@@ -840,369 +840,816 @@ header .header-line {
   margin-bottom: 0;
 }
 
-main #page-header {
-  width: 100%;
-  height: 170px;
-  background-image: url(./../../img/cart/page-header-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main #page-header .container {
-  height: 100%;
-}
-main #page-header .container .head {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main #page-header .container .head h1 {
-  font-weight: 600;
-  font-size: 38px;
-  margin-bottom: 0;
-}
-main #page-header .container .head p {
-  font-size: 20px;
-  font-weight: 600;
-  color: orange;
-}
 main #page-links .container {
   margin-top: 16px;
 }
-main #page-links .container a {
+main #page-links .container .left a {
   font-size: 15px;
   text-decoration: none;
   color: black;
   opacity: 0.8;
   transition: all 0.3s;
 }
-main #page-links .container a:hover {
+main #page-links .container .left a:hover {
   color: rgb(252, 185, 65);
   opacity: 1;
 }
-main #page-links .container i {
+main #page-links .container .left i {
   font-size: 9px;
   margin-left: 10px;
   margin-right: 10px;
 }
-main #page-links .container span {
+main #page-links .container .left span {
   font-size: 15px;
   color: black;
 }
-main #no-product .content {
-  height: 300px;
+main #page-links .container .right {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 120px;
+  justify-content: space-between;
 }
-main #no-product .content i {
-  font-size: 105px;
-  opacity: 0.8;
-}
-main #no-product .content p {
-  margin-top: 20px;
-  opacity: 0.8;
-  font-size: 15px;
-}
-main #no-product .content a {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(252, 185, 65);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
-  transition: all 0.3s;
-}
-main #no-product .content a:hover {
-  background-color: rgb(191, 145, 61);
-}
-main #products .left table {
-  width: 100%;
-}
-main #products .left table thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products .left table thead .product {
-  width: 400px;
-}
-main #products .left table thead .total-price {
-  padding-left: 30px;
-}
-main #products .left table th {
-  opacity: 0.7;
-  font-size: 14px;
-}
-main #products .left table tbody tr {
-  height: 90px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-main #products .left table tbody td img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-main #products .left table tbody .product,
-main #products .left table tbody .price,
-main #products .left table tbody .total-price {
-  font-size: 15px;
-  font-weight: 600;
-}
-main #products .left table tbody .price {
-  padding-top: 3px;
-}
-main #products .left table tbody .product {
+main #page-links .container .right .to-left,
+main #page-links .container .right .to-right {
   display: flex;
   align-items: center;
-  height: 90px;
+  justify-content: space-between;
+  width: 45px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
-main #products .left table tbody .quantity {
-  position: relative;
-}
-main #products .left table tbody .quantity input::-webkit-outer-spin-button,
-main #products .left table tbody .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-main #products .left table tbody .quantity input {
-  text-align: center;
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  top: 25px;
-  left: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+main #page-links .container .right .to-left i,
+main #page-links .container .right .to-right i {
   font-size: 13px;
   transition: all 0.3s;
-  outline: none;
 }
-main #products .left table tbody .quantity input:focus {
-  z-index: 4;
-  border: 1px solid rgb(252, 185, 65) !important;
-}
-main #products .left table tbody .quantity .decrease {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 9px;
-  font-size: 20px;
+main #page-links .container .right .to-left span,
+main #page-links .container .right .to-right span {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.8;
   transition: all 0.3s;
 }
-main #products .left table tbody .quantity .decrease:hover {
+main #page-links .container .right .to-left:hover i,
+main #page-links .container .right .to-right:hover i {
   color: rgb(252, 185, 65);
 }
-main #products .left table tbody .quantity .increase {
-  cursor: pointer;
-  position: absolute;
-  top: 29px;
-  z-index: 2;
-  left: 80px;
-  font-size: 20px;
+main #page-links .container .right .to-left:hover span,
+main #page-links .container .right .to-right:hover span {
+  color: rgb(252, 185, 65);
+}
+main #product-detail .img-tab {
+  display: flex;
+}
+main #product-detail .img-tab .left button {
+  width: 104px;
+  height: 104px;
+  border: 0;
+  padding: 0;
   transition: all 0.3s;
+  display: block;
 }
-main #products .left table tbody .quantity .increase:hover {
-  color: rgb(252, 185, 65);
+main #product-detail .img-tab .left button img {
+  width: 100%;
+  height: 100%;
 }
-main #products .left table tbody .total-price {
-  color: rgb(252, 185, 65);
-  padding-left: 30px;
+main #product-detail .img-tab .left button:not(.active) {
+  opacity: 0.6;
 }
-main #products .left table tbody .option {
-  font-size: 14px;
-  opacity: 0.3;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-main #products .left table tbody .option:hover {
+main #product-detail .img-tab .left button:not(.active):hover {
   opacity: 1;
 }
-main #products .down {
+main #product-detail .img-tab .left button:not(.first-img) {
+  margin-top: 15px;
+}
+main #product-detail .img-tab .left .active {
+  border: 1px solid rgb(252, 185, 65);
+}
+main #product-detail .img-tab .right {
+  padding-left: 5px;
+}
+main #product-detail .img-tab .right .zoomArea {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  cursor: move;
+}
+main #product-detail .img-tab .right .zoomArea img {
+  width: 100%;
+  height: 100%;
+  cursor: move !important;
+}
+main #product-detail .content h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+main #product-detail .content .rating {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 160px;
 }
-main #products .down .input {
+main #product-detail .content .rating .stars {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 24px;
 }
-main #products .down .input input {
-  height: 40px;
-  width: 250px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  outline: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgb(249, 249, 249);
-  transition: all 0.3s;
+main #product-detail .content .rating .stars i {
+  font-size: 13px;
+  color: rgb(204, 204, 204);
 }
-main #products .down .input input:focus {
-  border: 1px solid rgb(252, 185, 65) !important;
-  background-color: white;
-}
-main #products .down .input i {
-  height: 40px;
-  width: 40px;
+main #product-detail .content .rating span {
+  font-size: 13px;
+  opacity: 0.5;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
-  border: 1px solid rgb(252, 185, 65);
+}
+main #product-detail .content .price {
+  font-size: 23px;
+  font-weight: 600;
   color: rgb(252, 185, 65);
-  font-size: 13px;
-  transition: all 0.3s;
-}
-main #products .down .input i:hover {
-  background-color: rgb(252, 185, 65);
-  color: white;
-}
-main #products .down .update {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
-}
-main #products .down .update a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-main #products .down .update i {
-  font-size: 13px;
-  transition: all 0.3s;
-}
-main #products .down .update:hover > i {
-  color: rgb(252, 185, 65);
-}
-main #products .down .update:hover > a {
-  color: rgb(252, 185, 65);
-}
-main #products .cart-summary {
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-  background-color: rgb(249, 249, 249);
-  border: 1px dotted rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-main #products .cart-summary .cart-total {
-  font-weight: 600;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-main #products .cart-summary .sub-total {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .sub-total p {
-  font-weight: 600;
-}
-main #products .cart-summary .form p {
-  margin-top: 16px;
-  font-weight: 600;
-}
-main #products .cart-summary .form input {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
-main #products .cart-summary .form label {
-  width: 93%;
-  font-size: 14px;
-  opacity: 0.8;
-  font-weight: 600;
-}
-main #products .cart-summary .country {
-  margin-top: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-main #products .cart-summary .country p {
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-main #products .cart-summary .country a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 3px;
+main #product-detail .content .text {
+  font-size: 15px;
   opacity: 0.7;
-  transition: all 0.3s;
 }
-main #products .cart-summary .country a:hover {
-  color: rgb(252, 185, 65);
-  opacity: 1;
-  border-color: rgb(252, 185, 65);
-}
-main #products .cart-summary .total {
+main #product-detail .content .count {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-}
-main #products .cart-summary .total p {
-  font-weight: 600;
-  color: rgb(252, 185, 65);
-}
-main #products .cart-summary .button {
-  margin-top: 20px;
-}
-main #products .cart-summary .button a {
-  height: 40px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: rgb(252, 185, 65);
-  border: 1px solid rgb(252, 185, 65);
-  font-size: 13px;
-  font-weight: 600;
+  width: 200px;
+  margin-bottom: 20px;
+}
+main #product-detail .content .count .first-span {
+  font-size: 15px;
+}
+main #product-detail .content .count .count-box {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+main #product-detail .content .count .count-box .operator {
   transition: all 0.3s;
+  cursor: pointer;
 }
-main #products .cart-summary .button a:hover {
-  background-color: rgb(252, 185, 65);
-  color: white;
+main #product-detail .content .count .count-box .operator:hover {
+  color: rgb(252, 185, 65);
 }
-main #products .continue-shopping {
+main #product-detail .content .count .count-box .number {
+  opacity: 0.8;
+  font-size: 15px;
+}
+main #product-detail .content .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 15px;
-  padding-right: 15px;
+  justify-content: space-between;
+  width: 330px;
+}
+main #product-detail .content .buttons .cart {
+  width: 170px;
   height: 40px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-}
-main #products .continue-shopping a {
-  height: 100%;
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
+  justify-content: space-evenly;
+  border: 1px solid rgb(252, 185, 65);
+  font-size: 14px;
+  color: rgb(252, 185, 65);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #product-detail .content .buttons .cart:hover {
+  color: white;
+  background-color: rgb(252, 185, 65);
+}
+main #product-detail .content .buttons .wishlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+  cursor: pointer;
+}
+main #product-detail .content .buttons .wishlist i {
+  color: rgb(252, 185, 65);
+}
+main #product-detail .content .buttons .wishlist span {
   font-size: 14px;
   font-weight: 600;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
   transition: all 0.3s;
 }
-main #products .continue-shopping i {
+main #product-detail .content .buttons .wishlist:hover span {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #product-detail .content hr {
+  opacity: 0.1;
+}
+main #product-detail .content .category {
+  margin-bottom: 20px;
+}
+main #product-detail .content .category span:first-child {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+  margin-right: 5px;
+}
+main #product-detail .content .category .tags {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(252, 185, 65, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #product-detail .content .category .tags:hover {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #product-detail .content .share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+main #product-detail .content .share span {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+main #product-detail .content .share .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+main #product-detail .content .share .icons i {
+  color: rgb(119, 119, 119);
+  transition: all 0.3s;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  font-size: 13px;
+  cursor: pointer;
+}
+main #product-detail .content .share .icons i:hover {
+  color: rgb(252, 185, 65);
+  border: 1px solid rgb(252, 185, 65);
+}
+main #tab-menu {
+  margin-top: 50px;
+}
+main #tab-menu .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main #tab-menu .header p {
+  font-size: 18px;
+  font-weight: 600;
+  width: 190px;
+  text-align: center;
+  padding-bottom: 6px;
+  cursor: pointer;
+  margin: 0;
+}
+main #tab-menu .header .active {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-1,
+main #tab-menu .tabs .tab-2,
+main #tab-menu .tabs .tab-3 {
+  height: max-content;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+main #tab-menu .tabs .tab-1 h4,
+main #tab-menu .tabs .tab-2 h4,
+main #tab-menu .tabs .tab-3 h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+main #tab-menu .tabs .tab-1 p,
+main #tab-menu .tabs .tab-2 p,
+main #tab-menu .tabs .tab-3 p {
+  margin-top: 25px;
+  font-size: 15px;
+  color: rgb(120, 120, 120);
+}
+main #tab-menu .tabs .tab-1 ul,
+main #tab-menu .tabs .tab-2 ul,
+main #tab-menu .tabs .tab-3 ul {
+  padding-left: 18px;
+}
+main #tab-menu .tabs .tab-1 ul li,
+main #tab-menu .tabs .tab-2 ul li,
+main #tab-menu .tabs .tab-3 ul li {
+  font-size: 15px;
+}
+main #tab-menu .tabs .tab-1 a,
+main #tab-menu .tabs .tab-2 a,
+main #tab-menu .tabs .tab-3 a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+main #tab-menu .tabs .tab-1 a:hover,
+main #tab-menu .tabs .tab-2 a:hover,
+main #tab-menu .tabs .tab-3 a:hover {
+  color: rgb(252, 185, 65);
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-2 {
+  height: 400px;
+}
+main #tab-menu .tabs .tab-3 {
+  height: 140px;
+}
+main #tab-menu .tabs .tab-4 {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+main #tab-menu .tabs .tab-4 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+main #tab-menu .tabs .tab-4 .col-auto {
+  width: 120px !important;
+}
+main #tab-menu .tabs .tab-4 .comment {
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+main #tab-menu .tabs .tab-4 .comment h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+main #tab-menu .tabs .tab-4 .comment .names {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+main #tab-menu .tabs .tab-4 .comment .names:hover {
+  color: #fcb941;
+}
+main #tab-menu .tabs .tab-4 .comment .not {
+  color: rgb(204, 204, 209);
+  font-size: 11px;
+}
+main #tab-menu .tabs .tab-4 .comment span {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 26px;
+}
+main #tab-menu .tabs .tab-4 .comment p {
+  opacity: 0.7;
+}
+main #tab-menu .tabs .tab-4 .write-comment .row {
+  width: 100%;
+  margin: 0;
+}
+main #tab-menu .tabs .tab-4 .write-comment textarea {
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #777;
+  font-size: 14px;
+  min-height: 150px;
+  padding: 8px 20px;
+  width: 100%;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  outline: none;
+}
+main #tab-menu .tabs .tab-4 .write-comment textarea:focus {
+  border: 1px solid rgb(252, 185, 65);
+  background-color: white;
+}
+main #tab-menu .tabs .tab-4 .write-comment button {
+  min-width: 170px;
+  border: none;
+  margin-top: 30px;
+  padding: 8.5px 15px;
+  text-decoration: none;
+  background-color: rgb(252, 185, 65);
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+main #tab-menu .tabs .tab-4 .write-comment button:hover {
+  background-color: #bf913d;
+}
+main #tab-menu .tabs .tab-4 .write-comment h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+  line-height: 20px;
+}
+main #tab-menu .tabs .tab-4 .write-comment .stars {
+  margin-bottom: 20px;
+  display: flex;
+}
+main #tab-menu .tabs .tab-4 .write-comment .stars span {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+main #tab-menu .tabs .tab-4 .write-comment .stars .not {
+  color: rgb(204, 204, 209);
+  font-size: 11px;
+}
+main #tab-menu .tabs .tab-4 .write-comment input {
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  color: #777;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 14px;
+  height: 41px;
+  padding: 8.5px 20px;
+  width: 97%;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+main #tab-menu .tabs .tab-4 .write-comment input:focus {
+  border-color: #fcb941;
+  transition: border-color 0.3s ease;
+  outline: none;
+  background-color: white;
+}
+main #tab-menu .tabs .tab-4 .write-comment input[type=checkbox] {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0px !important;
+  margin-right: 6px !important;
+}
+main #tab-menu .tabs .tab-4 .write-comment input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+main #tab-menu .tabs .tab-4 .write-comment input[type=checkbox]:focus {
+  outline: none;
+}
+main #tab-menu .tabs .tab-4 .write-comment input[type=checkbox]:hover {
+  cursor: pointer;
+}
+main #tab-menu .tabs .tab-4 .write-comment label {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+main #tab-menu .tabs .tab-4 .emotion {
+  display: flex;
+  gap: 10px;
+}
+main #tab-menu .tabs .tab-4 .emotion .like {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+main #tab-menu .tabs .tab-4 .emotion .like i {
+  color: #777;
+  font-size: 12px;
+  transition: all 0.4s;
+}
+main #tab-menu .tabs .tab-4 .emotion .like a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #777;
+  transition: all 0.4s;
+}
+main #tab-menu .tabs .tab-4 .emotion .like:hover {
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 .emotion .like:hover a {
+  color: rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 .emotion .like:hover i {
+  color: rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike i {
+  color: #777;
+  font-size: 12px;
+  transition: all 0.4s;
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #777;
+  transition: all 0.4s;
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike:hover {
+  border-bottom: 1px solid rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike:hover a {
+  color: rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 .emotion .dislike:hover i {
+  color: rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0 !important;
+}
+main #tab-menu .tabs .tab-4 p a {
+  text-align: none;
+  border-bottom: 1px solid #b8b8b8;
+  transition: all 0.4s;
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 300;
+}
+main #tab-menu .tabs .tab-4 p a:hover {
+  border-bottom: 1px solid rgb(252, 185, 65);
+  color: rgb(252, 185, 65);
+}
+main #tab-menu .tabs .tab-4 ul {
+  margin-bottom: 15px !important;
+}
+main #tab-menu .tabs .tab-4 ul li {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main #cards .header {
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+}
+main #cards .slider .owl-stage {
+  display: flex;
+}
+main #cards .slider .card {
+  border: 0;
+  transition: all 0.3s;
+  border-radius: 0;
+  width: 275px;
+}
+main #cards .slider .card .img {
+  position: relative;
+  height: 275px;
+  width: 275px;
+  overflow: hidden;
+}
+main #cards .slider .card .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+main #cards .slider .card .img .first-img {
+  opacity: 1;
+  transition: all 0.5s;
+}
+main #cards .slider .card .img .second-img {
+  opacity: 0;
+  transition: all 0.5s;
+}
+main #cards .slider .card .img .new {
+  position: absolute;
+  z-index: 5;
+  height: 26px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(166, 199, 108);
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  left: 20px;
+  top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #cards .slider .card .img .sale {
+  position: absolute;
+  z-index: 5;
+  height: 26px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef837b;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  left: 20px;
+  top: 51px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #cards .slider .card .img .top {
+  position: absolute;
+  z-index: 5;
+  height: 26px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7dd2ea;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  left: 20px;
+  top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #cards .slider .card .img .add-cart {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: translateY(40px);
+}
+main #cards .slider .card .img .add-cart i {
+  color: rgb(252, 185, 65);
+  margin-right: 10px;
   font-size: 13px;
   transition: all 0.3s;
 }
-main #products .continue-shopping:hover > i {
+main #cards .slider .card .img .add-cart span {
+  color: white;
+  font-size: 14px;
+}
+main #cards .slider .card .img .add-cart:hover {
+  background-color: rgb(252, 185, 65);
+}
+main #cards .slider .card .img .add-cart:hover i {
+  color: white;
+}
+main #cards .slider .card .img .icons {
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 20px;
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.4s;
+}
+main #cards .slider .card .img .icons ul {
+  list-style: none;
+}
+main #cards .slider .card .img .icons ul li {
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+main #cards .slider .card .img .icons ul li i {
+  color: rgb(252, 185, 65);
+  position: absolute;
+}
+main #cards .slider .card .img .icons ul li span {
+  position: absolute;
+  width: 120px;
+  font-size: 14px;
+  right: 23px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s;
+  color: white;
+  padding-left: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+main #cards .slider .card .img .icons ul li:hover {
+  background-color: rgb(252, 185, 65);
+}
+main #cards .slider .card .img .icons ul li:hover i {
+  color: white;
+}
+main #cards .slider .card .img .icons ul .heart:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main #cards .slider .card .img .icons ul .heart:hover span {
+  transform: translate(0);
+  align-items: center;
+  background-color: rgb(252, 185, 65);
+  opacity: 1;
+}
+main #cards .slider .card .content p {
+  text-align: center;
+  width: 250px;
+  font-weight: 600;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main #cards .slider .card .content p:hover {
   color: rgb(252, 185, 65);
 }
-main #products .continue-shopping:hover > a {
+main #cards .slider .card .content .price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+main #cards .slider .card .content .price span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+main #cards .slider .card .content .price .discount {
+  color: #ef837b;
+}
+main #cards .slider .card .content .price .actual {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+main #cards .slider .card .content .price .normal {
   color: rgb(252, 185, 65);
+}
+main #cards .slider .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main #cards .slider .card:hover .first-img {
+  opacity: 0;
+}
+main #cards .slider .card:hover .second-img {
+  opacity: 1;
+}
+main #cards .slider .card:hover .add-cart {
+  transform: translateY(0) !important;
+}
+main #cards .slider .card:hover .icons {
+  opacity: 1;
+  transform: translateX(0);
+}
+main #cards .slider .owl-nav,
+main #cards .slider .owl-dots {
+  display: none;
 }
 
 footer #footer-up .container {
@@ -1345,18 +1792,6 @@ footer #footer-down img {
   .go-to-top {
     margin-left: 89% !important;
   }
-  th.product {
-    width: 215px !important;
-  }
-  td.product span {
-    font-size: 13px;
-  }
-  td.quantity input {
-    width: 75px !important;
-  }
-  td.quantity .increase {
-    left: 55px !important;
-  }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {
   footer #footer-up .left .number {
@@ -1404,8 +1839,7 @@ body {
 .col-6,
 .col-2,
 .col-12,
-.col-lg-3,
 .col-sm-6,
 .col-4 {
   padding: 0;
-}/*# sourceMappingURL=cart.css.map */
+}/*# sourceMappingURL=product.css.map */

@@ -994,6 +994,18 @@ main #our-team h2 {
 main #our-team .team-members {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+}
+main #our-team .team-members .owl-stage {
+  display: flex;
+}
+main #our-team .team-members .owl-nav,
+main #our-team .team-members .owl-dots {
+  display: none;
+}
+main #our-team .team-members .owl-item {
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 main #our-team .team-members .member {
   width: 376px;
@@ -1089,7 +1101,8 @@ main #our-team .team-members .member:hover .content {
   opacity: 0 !important;
 }
 main #customers-comment {
-  height: 475px;
+  height: -moz-max-content;
+  height: max-content;
   background-color: rgb(249, 249, 249);
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1284,6 +1297,15 @@ footer #footer-down img {
   }
   .go-to-top {
     margin-left: 89% !important;
+  }
+  #who-we-are {
+    height: 720px !important;
+  }
+  #who-we-are .img .first {
+    right: 320px !important;
+  }
+  main #brands .brands {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {

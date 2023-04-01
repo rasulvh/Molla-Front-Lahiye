@@ -152,19 +152,80 @@ $(function(){
         $(".content .menu .menu-item:nth-child(4) .pages").slideToggle("slow");
     })
 
-    $("#all .left .head").click(function(){
-        $(this).next().animate({
-            height: 'toggle'
-        })
-        if(!$(this).children().first().next().hasClass("d-none")){
-            $(this).children().first().next().addClass("d-none")
-            $(this).children().last().removeClass("d-none")
-        }
-        else{
-            $(this).children().first().next().removeClass("d-none")
-            $(this).children().last().addClass("d-none")
-        }
+    let productImgs = JSON.parse(localStorage.getItem("productImg"))
 
+    let imgTabs = document.querySelector("#product-detail .img-tab .left")
+    let rightImg = document.querySelector("#product-detail .img-tab .right")
+
+    if (productImgs != null) {
+        imgTabs.innerHTML = `
+        <button class="active first-img">
+        <img draggable="false" src="${productImgs[0]}" alt="">
+        </button>
+        <button>
+            <img draggable="false" src="${productImgs[1]}" alt="">
+        </button>
+        `
+    
+        rightImg.innerHTML = `
+        <div class="zoomArea">
+        <div id="NZoomContainer" style="width: 450px; height: 450px;"><img draggable="false" id="NZoomImg" data-nzoomscale="1.5" src="${productImgs[0]}" alt=""></div>
+        </div>
+        `
+
+    }
+
+    let imgTab = document.querySelectorAll("#product-detail .img-tab .left button")
+
+    for (const tab of imgTab) {
+        tab.addEventListener("click", function(){
+            let imgSrc = this.firstElementChild.getAttribute("src");
+            this.parentNode.firstElementChild.classList.remove("active")
+            this.parentNode.firstElementChild.nextElementSibling.classList.remove("active")
+            this.parentNode.lastElementChild.classList.remove("active")
+            this.classList.add("active")
+            this.parentNode.nextElementSibling.firstElementChild.firstElementChild.setAttribute("src", imgSrc)
+            this.parentNode.nextElementSibling.firstElementChild.firstElementChild.firstElementChild.setAttribute("src", imgSrc)
+        })
+    }
+
+    let tabMenuOptions = document.querySelectorAll("#tab-menu .header p")
+    let tabs = document.querySelectorAll("#tab-menu .tabs .tab")
+
+    for (const item of tabMenuOptions) {
+        item.addEventListener("click", function (){
+            document.querySelector("#tab-menu .header .active").classList.remove("active")
+            item.classList.add("active")
+
+            let id = item.getAttribute("data-id")
+
+            for (const tab of tabs) {
+                if(tab.getAttribute("data-id") == id){
+                    tab.classList.remove("d-none")
+                }
+                else{
+                    tab.classList.add("d-none")
+                }
+            }
+        })
+    }
+
+
+    $('#cards .slider').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
     })
 
 })

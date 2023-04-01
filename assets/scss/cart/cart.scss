@@ -1739,6 +1739,26 @@ footer {
     .go-to-top{
         margin-left: 89% !important;
     }
+
+    th.product{
+        width: 215px !important;
+    }
+
+    td.product{
+
+        span{
+            font-size: 13px;
+        }
+    }
+    td.quantity{
+        
+        input{
+            width: 75px !important;
+        }
+        .increase{
+            left: 55px !important;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 576px) {

@@ -1020,6 +1020,9 @@ main #form .right form button:hover {
 main #form hr {
   margin-top: 50px;
 }
+main #our-stores .store img {
+  width: 100%;
+}
 main #our-stores .store .content h3 {
   font-size: 17px;
   font-weight: 600;

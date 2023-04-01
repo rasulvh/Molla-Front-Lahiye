@@ -75,6 +75,25 @@ $(function () {
         $(".content .menu .menu-item:nth-child(4) .pages").slideToggle("slow");
     })
 
+    $('#our-team .team-members').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        responsiveClass:true,
+        autoWidth:true,
+        responsive:{
+            576:{
+                items:1
+            },
+            992:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    })
+
 
     let language = document.querySelector(".head-up .right .language-dropdown")
     if (localStorage.getItem("language") != null) {

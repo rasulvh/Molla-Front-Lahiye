@@ -1243,6 +1243,20 @@ main {
         .team-members {
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
+
+            .owl-stage{
+                display: flex;
+            }
+
+            .owl-nav,
+            .owl-dots{
+                display: none;
+            }
+
+            .owl-item{
+                width: max-content !important;
+            }
 
             .member {
                 width: 376px;
@@ -1358,7 +1372,7 @@ main {
     }
 
     #customers-comment {
-        height: 475px;
+        height: max-content;
         background-color: rgb(249, 249, 249);
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1687,6 +1701,21 @@ footer {
 
     .go-to-top {
         margin-left: 89% !important;
+    }
+
+    #who-we-are{
+        height: 720px !important;
+
+        .img{
+
+            .first{
+                right: 320px !important;
+            }
+        }
+    }
+
+    main #brands .brands{
+        padding-left: 0;
     }
 }
 

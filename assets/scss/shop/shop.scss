@@ -1149,7 +1149,7 @@ main {
             .size,
             .colour,
             .brand,
-            .price {
+            .price{
                 width: 97%;
 
                 .head {
@@ -1375,6 +1375,12 @@ main {
                         span {
                             font-size: 13px;
                             opacity: 0.8;
+                            transition: all 0.3s;
+                            cursor: pointer;
+
+                            &:hover{
+                                color: $hover-color;
+                            }
                         }
 
                         a {

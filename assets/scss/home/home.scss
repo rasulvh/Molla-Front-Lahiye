@@ -2360,6 +2360,14 @@ main {
 
     #trending-products {
 
+        .owl-stage{
+            display: flex;
+        }
+        .owl-nav,
+        .owl-dots{
+            display: none;
+        }
+
         .head {
 
             .trend-active {
@@ -2749,6 +2757,14 @@ main {
     }
 
     #top-selling-products{
+
+        .owl-stage{
+            display: flex;
+        }
+        .owl-nav,
+        .owl-dots{
+            display: none;
+        }
 
         .head {
 

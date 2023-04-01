@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/scss/product/product.css">
+    <title>Product Detail</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="close">
+            <i class="fa-light fa-xmark fa-xs"></i>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search product ...">
+            <i class="fa-light fa-magnifying-glass fa-flip-horizontal"></i>
+        </div>
+        <div class="tab-menu">
+            <div class="header">
+                <p class="head active-head" data-id="1">MENU</p>
+                <p class="head" data-id="2">CATEGORIES</p>
+            </div>
+            <div class="content">
+                <ul data-id="1" class="menu show">
+                    <li class="menu-item">
+                        <p>HOME</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>SHOP</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>PRODUCT</p>
+                    </li>
+                    <li class="menu-pages menu-item">
+                        <p>PAGES <i class="fa-solid fa-angle-down down"></i></p>
+
+                        <ul class="pages">
+                            <li class="dropdown-self">Account</li>
+                            <li class="dropdown-self">About</li>
+                            <li class="dropdown-self">Cart</li>
+                            <li class="dropdown-self">Wishlist</li>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item">
+                        <p>BLOG</p>
+                    </li>
+                    <li class="menu-item">
+                        <p>CONTACT</p>
+                    </li>
+                </ul>
+
+                <ul data-id="2" class="categories">
+                    <li>Electronics</li>
+                    <li>Gift Ideas</li>
+                    <li>Beds</li>
+                    <li>Lighting</li>
+                    <li>Sofas & Sleeper sofas</li>
+                    <li>Storage</li>
+                    <li>Armchairs & Chaises</li>
+                    <li>Decoration</li>
+                    <li>Kitchen Cabinets</li>
+                    <li>Coffee & Tables</li>
+                    <li>Outdoor Furniture</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="head-up">
+            <div class="container-lg">
+                <div class="up">
+                    <div class="left">
+                        <i class="fa-solid fa-phone"></i><span>Call: +0123 456 789</span>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="currency-dropdown">
+                                USD <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li class="euro">Eur</li>
+                                    <li class="dollar">Usd</li>
+                                </ul>
+                            </li>
+                            <li class="language-dropdown">
+                                English <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li class="english">English</li>
+                                    <li class="french">French</li>
+                                    <li class="spanish">Spanish</li>
+                                </ul>
+                            </li>
+                            <li><a href="account.html">Sign in / Sign up</a></li>
+                        </ul>
+                        <div class="links">
+                            <div class="links-body">
+                                <p class="choosen">Links <i class="fa-solid fa-angle-down down"></i></p>
+
+                                <ul class="menu p-0 m-0">
+                                    <li class="link">
+                                        <p class="link-choosen">USD <i class="fa-solid fa-angle-down down"></i></p>
+
+                                        <ul class="link-menu p-0 m-0">
+                                            <li>Eur</li>
+                                            <li>Usd</li>
+                                        </ul>
+                                    </li>
+                                    <li class="link">
+                                        <p class="link-choosen">Language <i class="fa-solid fa-angle-down down"></i></p>
+
+                                        <ul class="link-menu p-0 m-0">
+                                            <li>English</li>
+                                            <li>French</li>
+                                            <li>Spanish</li>
+                                        </ul>
+                                    </li>
+                                    <li class="link">
+                                        <p class="account">Sign in / Sign up</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="down">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-3">
+                            <div class="logo">
+                                <i class="fa-regular fa-bars d-none"></i>
+                                <a href="home.html">
+                                    <img src="./assets/img/home/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                            <div class="search-area">
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search product ...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <div class="right-icons">
+                                <div class="compare">
+                                    <a href=""><i class="fa-light fa-shuffle"></i></a>
+                                    <p>Compare</p>
+                                </div>
+                                <div class="wishlist">
+                                    <a href="wishlist.html"><i class="fa-light fa-heart"></i></a>
+                                    <span class="wish-count">0</span>
+                                    <p>Wishlist</p>
+                                </div>
+                                <div class="cart">
+                                    <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+                                    <span class="cart-count">0</span>
+                                    <p>Cart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="left">
+                            <i class="fa-solid fa-x"></i>
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Browse Catagories</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div class="left-dropdown">
+                                <ul>
+                                    <li>Electronics</li>
+                                    <li>Gift Ideas</li>
+                                    <li>Beds</li>
+                                    <li>Lighting</li>
+                                    <li>Sofas & Sleeper sofas</li>
+                                    <li>Storage</li>
+                                    <li>Armchairs & Chaises</li>
+                                    <li>Decoration</li>
+                                    <li>Kitchen Cabinets</li>
+                                    <li>Coffee & Tables</li>
+                                    <li class="last-list-element">Outdoor Furniture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="center">
+                            <div class="left-line"></div>
+                            <div class="contents">
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="product.html">Product</a></li>
+                                    <li class="drop-hover">
+                                        <a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
+
+                                        <div class="dropdown-list">
+                                            <ul>
+                                                <li class="dropdown-list-item"><a href="account.html">Account</a></li>
+                                                <li class="dropdown-list-item"><a href="about.html">About</a></li>
+                                                <li class="dropdown-list-item"><a href="cart.html">Cart</a></li>
+                                                <li class="dropdown-list-item"><a href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="right">
+                            <i class="fa-regular fa-lightbulb"></i><span><span>Clearance</span> Up to 30% Off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="header-line">
+    </header>
+
+
+    <main>
+        <section id="page-links">
+            <div class="container d-flex justify-content-between">
+                <div class="left">
+                    <a href="home.html">Home</a><i class="fa-light fa-chevron-right"></i>
+                    <a href="">Product</a><i class="fa-light fa-chevron-right"></i>
+                    <span>Default</span>
+                </div>
+                <div class="right">
+                    <div class="to-left">
+                        <i class="fa-light fa-chevron-left"></i>
+                        <span>Prev</span>
+                    </div>
+                    <div class="to-right">
+                        <span>Next</span>
+                        <i class="fa-light fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-detail" class="my-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-tab">
+                            <div class="left">
+                                <button class="active first-img">
+                                    <img draggable="false" src="./assets/img/product/product-1-1.jpg" alt="">
+                                </button>
+                                <button>
+                                    <img draggable="false" src="./assets/img/product/product-1-2.jpg" alt="">
+                                </button>
+                                <button>
+                                    <img draggable="false" src="./assets/img/product/product-1-3.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="right">
+                                <div class="zoomArea">
+                                    <img draggable="false" id="NZoomImg" data-NZoomscale="1.5"
+                                        src="./assets/img/product/product-1-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h2>Microsoft – Refurbish Xbox One S 500GB</h2>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>( 2 Reviews )</span>
+                            </div>
+                            <p class="price">$279.99</p>
+                            <p class="text">
+                                Morbi purus libero, faucibus adipiscing, commodo quis,
+                                gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
+                                Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
+                                sagittis, mi neque euismod dui,
+                                eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,
+                            </p>
+                            <div class="count">
+                                <span class="first-span">Qty:</span>
+                                <div class="count-box">
+                                    <span class="operator">-</span>
+                                    <span class="number">1</span>
+                                    <span class="operator">+</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="cart">
+                                    <i class="fa-light fa-cart-plus"></i>
+                                    <span>ADD TO CART</span>
+                                </div>
+                                <div class="wishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>Go to Wishlist</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="category">
+                                <span>Category:</span>
+                                <span class="tags">Accessories</span>,<span class="tags"> Video Games</span>,<span
+                                    class="tags"> Entertainment</span>
+                            </div>
+                            <div class="share">
+                                <span>Share:</span>
+                                <div class="icons">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-menu">
+            <div class="container">
+                <div class="header">
+                    <p class="active" data-id="1">Description</p>
+                    <p data-id="2">Additional Information</p>
+                    <p data-id="3">Shipping & Returns</p>
+                    <p data-id="4">Reviews (2)</p>
+                </div>
+                <div class="tabs">
+                    <div class="tab tab-1" data-id="1">
+                        <h4>Product Informtion</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+                            Donec nec justo eget felis facilisis fermentum.
+                            Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim pellentesque felis.
+                            Phasellus ultrices nulla quis nibh. Quisque a lectus.
+                            Donec consectetuer ligula vulputate sem tristique cursus.
+                        </p>
+                        <ul>
+                            <li>Nunc nec porttitor turpis. In eu risus enim. In vitae mollis elit.</li>
+                            <li>Vivamus finibus vel mauris ut vehicula.</li>
+                            <li>Nullam a magna porttitor, dictum risus nec, faucibus sapien.</li>
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Donec odio. Quisque volutpat mattis eros.
+                            Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+                            Donec nec justo eget felis facilisis fermentum.
+                            Aliquam porttitor mauris sit amet orci.
+                            Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh.
+                            Quisque a lectus.
+                            Donec consectetuer ligula vulputate sem tristique cursus.
+                        </p>
+                    </div>
+                    <div class="tab tab-2 d-none" data-id="2">
+                        <h4>Information</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Donec odio. Quisque volutpat mattis eros.
+                            Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+                            Donec nec justo eget felis facilisis fermentum.
+                            Aliquam porttitor mauris sit amet orci.
+                        </p>
+                        <h4>Fabric & care</h4>
+                        <ul>
+                            <li>Faux suede fabric</li>
+                            <li>Gold tone metal hoop handles.</li>
+                            <li>Gold tone metal hoop handles.</li>
+                            <li>Snake print trim interior</li>
+                            <li>Adjustable cross body strap</li>
+                            <li>Height: 31cm; Width: 32cm; Depth: 12cm; Handle Drop: 61cm</li>
+                        </ul>
+                        <h4>Size</h4>
+                        <p>one size</p>
+                    </div>
+                    <div class="tab tab-3 d-none" data-id="3">
+                        <h4>Delivery & returns</h4>
+                        <p>
+                            We deliver to over 100 countries around the world. For full
+                            details of the delivery options we offer,
+                            please view our <a href="">Delivery information</a>
+                            We hope you’ll love every purchase, but if
+                            you ever need to return an item you
+                            can do so within a month of receipt. For full
+                            details of how to make a return, please view
+                            our <a href="">Returns information</a>
+                        </p>
+                    </div>
+                    <div class="tab tab-4 d-none" data-id="4">
+                        <h4>Reviews (2)</h4>
+                        <div class="comment">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="names">Samanta J.</h5>
+                                    <div class="rating">
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                    </div>
+                                    <span>6 days ago</span>
+                                </div>
+                                <div class="col">
+                                    <h5>Good, perfect size</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus cum dolores
+                                        assumenda asperiores facilis porro reprehenderit animi culpa atque blanditiis
+                                        commodi perspiciatis doloremque, possimus, explicabo, autem fugit beatae quae
+                                        voluptas!</p>
+                                    <div class="emotion">
+                                        <div class="like">
+                                            <i class="fa-light fa-thumbs-up"></i>
+                                            <a href="">Helpful (2)</a>
+                                        </div>
+                                        <div class="dislike">
+                                            <i class="fa-light fa-thumbs-up fa-rotate-180"></i>
+                                            <a href="">Unhelpful (2)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h5 class="names">John Doe</h5>
+                                    <div class="ratings">
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                        <i class="fa-sharp fa-solid fa-star not"></i>
+                                    </div>
+                                    <span>5 days ago</span>
+                                </div>
+                                <div class="col">
+                                    <h5>Very good</h5>
+                                    <p>Sed, molestias, tempore? Ex dolor esse iure hic veniam laborum blanditiis
+                                        laudantium iste amet. Cum non voluptate eos enim, ab cumque nam, modi, quas iure
+                                        illum repellendus, blanditiis perspiciatis beatae!</p>
+                                    <div class="emotion">
+                                        <div class="like">
+                                            <i class="fa-light fa-thumbs-up"></i>
+                                            <a href="">Helpful (2)</a>
+                                        </div>
+                                        <div class="dislike">
+                                            <i class="fa-light fa-thumbs-up fa-rotate-180"></i>
+                                            <a href="">Unhelpful (2)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="write-comment">
+                            <h2>Add a Review</h2>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <div class="stars">
+                                <span>Your rating * </span>
+                                <div class="ratings">
+                                    <i class="fa-sharp fa-solid fa-star not"></i>
+                                    <i class="fa-sharp fa-solid fa-star not"></i>
+                                    <i class="fa-sharp fa-solid fa-star not"></i>
+                                    <i class="fa-sharp fa-solid fa-star not"></i>
+                                    <i class="fa-sharp fa-solid fa-star not"></i>
+                                </div>
+                            </div>
+                            <textarea placeholder="Comment *"></textarea>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Name *">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Email *" class="float-end">
+                                </div>
+                            </div>
+                            <div class="input d-flex align-items-center">
+                                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                                <label for="checkbox">Save my name, email, and website in this browser for the
+                                    next time I comment.</label>
+                            </div>
+
+                            <button>Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards" class="my-5">
+            <div class="container">
+                <p class="header">You May Also Like</p>
+                <div class="slider">
+                    <div class="card">
+                        <div class="img">
+                            <img class="first-img" src="./assets/img/product/slide-pro-1.jpg" alt="">
+                            <img class="second-img" src="./assets/img/product/slide-pro-1-hover.jpg" alt="">
+                            <p class="new">New</p>
+                            <p class="sale">Sale</p>
+                            <div class="add-cart">
+                                <i class="fa-light fa-cart-plus"></i>
+                                <span>add to cart</span>
+                            </div>
+                            <div class="icons">
+                                <ul>
+                                    <li class="heart"><span>add to wishlist</span><i class="fa-light fa-heart"></i></li>
+                                    <li><i class="fa-light fa-binoculars"></i></li>
+                                    <li><i class="fa-light fa-shuffle"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>
+                                GoPro – HERO7 Black HD Waterproof Action
+                            </p>
+                            <div class="price">
+                                <span class="discount">$130.00</span>
+                                <span class="actual">$360.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img class="first-img" src="./assets/img/product/slide-pro-2.jpg" alt="">
+                            <img class="second-img" src="./assets/img/product/slide-pro-1-hover.jpg" alt="">
+                            <p class="top">Top</p>
+                            <div class="add-cart">
+                                <i class="fa-light fa-cart-plus"></i>
+                                <span>add to cart</span>
+                            </div>
+                            <div class="icons">
+                                <ul>
+                                    <li class="heart"><span>add to wishlist</span><i class="fa-light fa-heart"></i></li>
+                                    <li><i class="fa-light fa-binoculars"></i></li>
+                                    <li><i class="fa-light fa-shuffle"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Sony – Alpha a5100 Mirrorless Camera
+                            </p>
+                            <div class="price">
+                                <span class="normal">$499.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <section id="footer-up" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="left">
+                            <img src="./assets/img/home/logo-footer.png" alt="">
+                            <p>
+                                Praesent dapibus, neque id cursus ucibus,
+                                tortor neque egestas augue,
+                                eu vulputate magna eros eu erat.
+                            </p>
+                            <div class="number">
+                                <i class="fa-light fa-phone"></i>
+                                <div class="text">
+                                    <span>Got Question? Call us 24/7</span><br>
+                                    <a href="">+0123 456 789</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Useful Links</p>
+                        <ul>
+                            <li><a href="">About Molla</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">How to shop on Molla</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>Customer Service</p>
+                        <ul>
+                            <li><a href="">Payment Methods</a></li>
+                            <li><a href="">Money-back guarantee!</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Terms and conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p>My Account</p>
+                        <ul>
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="cart.html" target="bl">View Cart</a></li>
+                            <li><a href="">My Wishlist</a></li>
+                            <li><a href="">Track My Order</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </section>
+
+        <section id="footer-down">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p>Copyright © 2023 Molla Store. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 img-div">
+                        <img src="./assets/img/home/payments.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+    <a href="#" class="go-to-top"><i class="fa-regular fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="./assets/image-pan-zoom-hover/src/Nzoom.min.js"></script>
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./assets/js/product.js"></script>
+</body>
+
+</html>
